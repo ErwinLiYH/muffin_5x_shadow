@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-menu">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-menu.top_of_page">menu</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>menu</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-menu.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="MetaWindowMenu"><returnvalue>MetaWindowMenu</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-menu-new">meta_window_menu_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-menu-popup">meta_window_menu_popup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-menu-free">meta_window_menu_free</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-menu.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="METACITY-STOCK-DELETE:CAPS">METACITY_STOCK_DELETE</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="METACITY-STOCK-MINIMIZE:CAPS">METACITY_STOCK_MINIMIZE</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="METACITY-STOCK-MAXIMIZE:CAPS">METACITY_STOCK_MAXIMIZE</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaWindowMenu">MetaWindowMenu</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-menu.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-menu.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-window-menu-new" role="function">
+<title>meta_window_menu_new&#160;()</title>
+<indexterm zone="meta-window-menu-new"><primary>meta_window_menu_new</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWindowMenu"><returnvalue>MetaWindowMenu</returnvalue></link>&#160;*
+meta_window_menu_new (<parameter><link linkend="MetaFrames"><type>MetaFrames</type></link> *frames</parameter>,
+                      <parameter><link linkend="MetaMenuOp"><type>MetaMenuOp</type></link> ops</parameter>,
+                      <parameter><link linkend="MetaMenuOp"><type>MetaMenuOp</type></link> insensitive</parameter>,
+                      <parameter><link linkend="Window"><type>Window</type></link> client_xwindow</parameter>,
+                      <parameter><type>unsigned long </type> active_workspace</parameter>,
+                      <parameter><link linkend="int"><type>int</type></link> n_workspaces</parameter>,
+                      <parameter><link linkend="MetaWindowMenuFunc"><type>MetaWindowMenuFunc</type></link> func</parameter>,
+                      <parameter><link linkend="gpointer"><type>gpointer</type></link> data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-menu-popup" role="function">
+<title>meta_window_menu_popup&#160;()</title>
+<indexterm zone="meta-window-menu-popup"><primary>meta_window_menu_popup</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_menu_popup (<parameter><link linkend="MetaWindowMenu"><type>MetaWindowMenu</type></link> *menu</parameter>,
+                        <parameter><link linkend="int"><type>int</type></link> root_x</parameter>,
+                        <parameter><link linkend="int"><type>int</type></link> root_y</parameter>,
+                        <parameter><link linkend="int"><type>int</type></link> button</parameter>,
+                        <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-menu-free" role="function">
+<title>meta_window_menu_free&#160;()</title>
+<indexterm zone="meta-window-menu-free"><primary>meta_window_menu_free</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_menu_free (<parameter><link linkend="MetaWindowMenu"><type>MetaWindowMenu</type></link> *menu</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-menu.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="METACITY-STOCK-DELETE:CAPS" role="macro">
+<title>METACITY_STOCK_DELETE</title>
+<indexterm zone="METACITY-STOCK-DELETE:CAPS"><primary>METACITY_STOCK_DELETE</primary></indexterm>
+<programlisting language="C">#define METACITY_STOCK_DELETE   "metacity-delete"
+</programlisting>
+</refsect2>
+<refsect2 id="METACITY-STOCK-MINIMIZE:CAPS" role="macro">
+<title>METACITY_STOCK_MINIMIZE</title>
+<indexterm zone="METACITY-STOCK-MINIMIZE:CAPS"><primary>METACITY_STOCK_MINIMIZE</primary></indexterm>
+<programlisting language="C">#define METACITY_STOCK_MINIMIZE "metacity-minimize"
+</programlisting>
+</refsect2>
+<refsect2 id="METACITY-STOCK-MAXIMIZE:CAPS" role="macro">
+<title>METACITY_STOCK_MAXIMIZE</title>
+<indexterm zone="METACITY-STOCK-MAXIMIZE:CAPS"><primary>METACITY_STOCK_MAXIMIZE</primary></indexterm>
+<programlisting language="C">#define METACITY_STOCK_MAXIMIZE "metacity-maximize"
+</programlisting>
+</refsect2>
+<refsect2 id="MetaWindowMenu" role="struct">
+<title>MetaWindowMenu</title>
+<indexterm zone="MetaWindowMenu"><primary>MetaWindowMenu</primary></indexterm>
+<programlisting language="C">typedef struct {
+  MetaFrames *frames;
+  Window client_xwindow;
+  GtkWidget *menu;
+  MetaWindowMenuFunc func;
+  gpointer data;
+  MetaMenuOp ops;
+  MetaMenuOp insensitive;
+} MetaWindowMenu;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

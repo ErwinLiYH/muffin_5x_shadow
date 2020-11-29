@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaRectangle">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaRectangle.top_of_page">MetaRectangle</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaRectangle</refname>
+<refpurpose>Simple box operations</refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaRectangle.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="MetaRectangle"><returnvalue>MetaRectangle</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-rectangle-copy">meta_rectangle_copy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-free">meta_rectangle_free</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaRectangle"><returnvalue>MetaRectangle</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rect">meta_rect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-area">meta_rectangle_area</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-intersect">meta_rectangle_intersect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-equal">meta_rectangle_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-union">meta_rectangle_union</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-overlap">meta_rectangle_overlap</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-vert-overlap">meta_rectangle_vert_overlap</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-horiz-overlap">meta_rectangle_horiz_overlap</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-could-fit-rect">meta_rectangle_could_fit_rect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-rectangle-contains-rect">meta_rectangle_contains_rect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaRectangle.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaStrut">MetaStrut</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaEdgeType">MetaEdgeType</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaEdge">MetaEdge</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaRectangle.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GBoxed">GBoxed</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaRectangle
+</screen>
+</refsect1>
+
+
+<refsect1 id="MetaRectangle.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="MetaRectangle.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-rectangle-copy" role="function">
+<title>meta_rectangle_copy&#160;()</title>
+<indexterm zone="meta-rectangle-copy"><primary>meta_rectangle_copy</primary></indexterm>
+<programlisting language="C"><link linkend="MetaRectangle"><returnvalue>MetaRectangle</returnvalue></link>&#160;*
+meta_rectangle_copy (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-free" role="function">
+<title>meta_rectangle_free&#160;()</title>
+<indexterm zone="meta-rectangle-free"><primary>meta_rectangle_free</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_rectangle_free (<parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rect" role="function">
+<title>meta_rect&#160;()</title>
+<indexterm zone="meta-rect"><primary>meta_rect</primary></indexterm>
+<programlisting language="C"><link linkend="MetaRectangle"><returnvalue>MetaRectangle</returnvalue></link>
+meta_rect (<parameter><link linkend="int"><type>int</type></link> x</parameter>,
+           <parameter><link linkend="int"><type>int</type></link> y</parameter>,
+           <parameter><link linkend="int"><type>int</type></link> width</parameter>,
+           <parameter><link linkend="int"><type>int</type></link> height</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-area" role="function">
+<title>meta_rectangle_area&#160;()</title>
+<indexterm zone="meta-rectangle-area"><primary>meta_rectangle_area</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+meta_rectangle_area (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-intersect" role="function">
+<title>meta_rectangle_intersect&#160;()</title>
+<indexterm zone="meta-rectangle-intersect"><primary>meta_rectangle_intersect</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_rectangle_intersect (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *src1</parameter>,
+                          <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *src2</parameter>,
+                          <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *dest</parameter>);</programlisting>
+<refsect3 id="meta-rectangle-intersect.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>src1</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaRectangle"><type>MetaRectangle</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>src2</para></entry>
+<entry role="parameter_description"><para>another <link linkend="MetaRectangle"><type>MetaRectangle</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dest</para></entry>
+<entry role="parameter_description"><para>an empty <link linkend="MetaRectangle"><type>MetaRectangle</type></link>, to be filled
+with the coordinates of the intersection. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>out caller-allocates</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-rectangle-intersect.returns" role="returns">
+<title>Returns</title>
+<para> TRUE is some intersection exists and is not degenerate, FALSE
+otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-rectangle-equal" role="function">
+<title>meta_rectangle_equal&#160;()</title>
+<indexterm zone="meta-rectangle-equal"><primary>meta_rectangle_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_rectangle_equal (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *src1</parameter>,
+                      <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *src2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-union" role="function">
+<title>meta_rectangle_union&#160;()</title>
+<indexterm zone="meta-rectangle-union"><primary>meta_rectangle_union</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_rectangle_union (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect1</parameter>,
+                      <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect2</parameter>,
+                      <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *dest</parameter>);</programlisting>
+<refsect3 id="meta-rectangle-union.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>rect1</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaRectangle"><type>MetaRectangle</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>rect2</para></entry>
+<entry role="parameter_description"><para>another <link linkend="MetaRectangle"><type>MetaRectangle</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>dest</para></entry>
+<entry role="parameter_description"><para>an empty <link linkend="MetaRectangle"><type>MetaRectangle</type></link>, to be filled
+with the coordinates of the bounding box. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>out caller-allocates</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-rectangle-overlap" role="function">
+<title>meta_rectangle_overlap&#160;()</title>
+<indexterm zone="meta-rectangle-overlap"><primary>meta_rectangle_overlap</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_rectangle_overlap (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect1</parameter>,
+                        <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-vert-overlap" role="function">
+<title>meta_rectangle_vert_overlap&#160;()</title>
+<indexterm zone="meta-rectangle-vert-overlap"><primary>meta_rectangle_vert_overlap</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_rectangle_vert_overlap (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect1</parameter>,
+                             <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-horiz-overlap" role="function">
+<title>meta_rectangle_horiz_overlap&#160;()</title>
+<indexterm zone="meta-rectangle-horiz-overlap"><primary>meta_rectangle_horiz_overlap</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_rectangle_horiz_overlap (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect1</parameter>,
+                              <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-could-fit-rect" role="function">
+<title>meta_rectangle_could_fit_rect&#160;()</title>
+<indexterm zone="meta-rectangle-could-fit-rect"><primary>meta_rectangle_could_fit_rect</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_rectangle_could_fit_rect (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *outer_rect</parameter>,
+                               <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *inner_rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-rectangle-contains-rect" role="function">
+<title>meta_rectangle_contains_rect&#160;()</title>
+<indexterm zone="meta-rectangle-contains-rect"><primary>meta_rectangle_contains_rect</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_rectangle_contains_rect (<parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *outer_rect</parameter>,
+                              <parameter>const <link linkend="MetaRectangle"><type>MetaRectangle</type></link> *inner_rect</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="MetaRectangle.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaStrut" role="struct">
+<title>struct MetaStrut</title>
+<indexterm zone="MetaStrut"><primary>MetaStrut</primary></indexterm>
+<programlisting language="C">struct MetaStrut {
+  MetaRectangle rect;
+  MetaSide side;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="MetaEdgeType" role="enum">
+<title>enum MetaEdgeType</title>
+<indexterm zone="MetaEdgeType"><primary>MetaEdgeType</primary></indexterm>
+<refsect3 id="MetaEdgeType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-EDGE-WINDOW:CAPS">META_EDGE_WINDOW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-EDGE-MONITOR:CAPS">META_EDGE_MONITOR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-EDGE-SCREEN:CAPS">META_EDGE_SCREEN</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaEdge" role="struct">
+<title>struct MetaEdge</title>
+<indexterm zone="MetaEdge"><primary>MetaEdge</primary></indexterm>
+<programlisting language="C">struct MetaEdge {
+  MetaRectangle rect;      /* width or height should be 1 */
+  MetaSide side_type;
+  MetaEdgeType  edge_type;
+};
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

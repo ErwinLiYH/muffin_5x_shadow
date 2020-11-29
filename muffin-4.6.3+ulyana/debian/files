@@ -1,0 +1,7 @@
+gir1.2-meta-muffin-0.0_4.6.3+ulyana_amd64.deb introspection optional
+libmuffin0_4.6.3+ulyana_amd64.deb libs optional
+muffin-common_4.6.3+ulyana_all.deb misc optional
+muffin-dbg_4.6.3+ulyana_amd64.deb debug extra
+muffin-doc_4.6.3+ulyana_all.deb doc optional
+muffin_4.6.3+ulyana_amd64.buildinfo x11 optional
+muffin_4.6.3+ulyana_amd64.deb x11 optional

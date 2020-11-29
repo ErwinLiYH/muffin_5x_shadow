@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaWindowActor">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaWindowActor.top_of_page">MetaWindowActor</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaWindowActor</refname>
+<refpurpose>An actor representing a top-level window in the scene graph</refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaWindowActor.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="Window"><returnvalue>Window</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-actor-get-x-window">meta_window_actor_get_x_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-actor-get-workspace">meta_window_actor_get_workspace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-actor-get-meta-window">meta_window_actor_get_meta_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-actor-get-texture">meta_window_actor_get_texture</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-actor-is-override-redirect">meta_window_actor_is_override_redirect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-actor-showing-on-its-workspace">meta_window_actor_showing_on_its_workspace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-actor-is-destroyed">meta_window_actor_is_destroyed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaWindowActor.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gpointer"><type>gpointer</type></link></entry><entry role="property_name"><link linkend="MetaWindowActor--meta-screen">meta-screen</link></entry><entry role="property_flags">Read / Write / Construct</entry></row>
+<row><entry role="property_type"><link linkend="MetaWindow"><type>MetaWindow</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindowActor--meta-window">meta-window</link></entry><entry role="property_flags">Read / Write / Construct</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindowActor--no-shadow">no-shadow</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindowActor--shadow-class">shadow-class</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gulong"><type>gulong</type></link></entry><entry role="property_name"><link linkend="MetaWindowActor--x-window">x-window</link></entry><entry role="property_flags">Read / Write / Construct</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaWindowActor.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signal_proto_type" colwidth="150px"/>
+<colspec colname="signal_proto_name" colwidth="300px"/>
+<colspec colname="signal_proto_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindowActor-position-changed">position-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindowActor-size-changed">size-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaWindowActor.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="ClutterActor">ClutterActor</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaWindowActor
+</screen>
+</refsect1>
+
+
+<refsect1 id="MetaWindowActor.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="MetaWindowActor.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-window-actor-get-x-window" role="function">
+<title>meta_window_actor_get_x_window&#160;()</title>
+<indexterm zone="meta-window-actor-get-x-window"><primary>meta_window_actor_get_x_window</primary></indexterm>
+<programlisting language="C"><link linkend="Window"><returnvalue>Window</returnvalue></link>
+meta_window_actor_get_x_window (<parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *self</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-window-actor-get-workspace" role="function">
+<title>meta_window_actor_get_workspace&#160;()</title>
+<indexterm zone="meta-window-actor-get-workspace"><primary>meta_window_actor_get_workspace</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+meta_window_actor_get_workspace (<parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *self</parameter>);</programlisting>
+<para>Returns the index of workspace on which this window is located; if the
+window is sticky, or is not currently located on any workspace, returns -1.
+This function is deprecated  and should not be used in newly written code;
+<link linkend="meta-window-get-workspace"><function>meta_window_get_workspace()</function></link> instead.</para>
+<refsect3 id="meta-window-actor-get-workspace.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>self</para></entry>
+<entry role="parameter_description"><para><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-actor-get-workspace.returns" role="returns">
+<title>Returns</title>
+<para> index of workspace on which this window is
+located.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-actor-get-meta-window" role="function">
+<title>meta_window_actor_get_meta_window&#160;()</title>
+<indexterm zone="meta-window-actor-get-meta-window"><primary>meta_window_actor_get_meta_window</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+meta_window_actor_get_meta_window (<parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *self</parameter>);</programlisting>
+<para>Gets the <link linkend="MetaWindow"><type>MetaWindow</type></link> object that the the <link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> is displaying</para>
+<refsect3 id="meta-window-actor-get-meta-window.returns" role="returns">
+<title>Returns</title>
+<para>the displayed <link linkend="MetaWindow"><type>MetaWindow</type></link>. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-actor-get-texture" role="function">
+<title>meta_window_actor_get_texture&#160;()</title>
+<indexterm zone="meta-window-actor-get-texture"><primary>meta_window_actor_get_texture</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_window_actor_get_texture (<parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *self</parameter>);</programlisting>
+<para>Gets the ClutterActor that is used to display the contents of the window</para>
+<refsect3 id="meta-window-actor-get-texture.returns" role="returns">
+<title>Returns</title>
+<para>the <link linkend="ClutterActor"><type>ClutterActor</type></link> for the contents. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-actor-is-override-redirect" role="function">
+<title>meta_window_actor_is_override_redirect&#160;()</title>
+<indexterm zone="meta-window-actor-is-override-redirect"><primary>meta_window_actor_is_override_redirect</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_actor_is_override_redirect
+                               (<parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *self</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-actor-showing-on-its-workspace" role="function">
+<title>meta_window_actor_showing_on_its_workspace&#160;()</title>
+<indexterm zone="meta-window-actor-showing-on-its-workspace"><primary>meta_window_actor_showing_on_its_workspace</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_actor_showing_on_its_workspace
+                               (<parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *self</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-actor-is-destroyed" role="function">
+<title>meta_window_actor_is_destroyed&#160;()</title>
+<indexterm zone="meta-window-actor-is-destroyed"><primary>meta_window_actor_is_destroyed</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_actor_is_destroyed (<parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *self</parameter>);</programlisting>
+<para>Gets whether the X window that the actor was displaying has been destroyed</para>
+<refsect3 id="meta-window-actor-is-destroyed.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> when the window is destroyed, otherwise <link linkend="FALSE:CAPS"><literal>FALSE</literal></link></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="MetaWindowActor.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="MetaWindowActor--meta-screen" role="property"><title>The <literal>“meta-screen”</literal> property</title>
+<indexterm zone="MetaWindowActor--meta-screen"><primary>MetaWindowActor:meta-screen</primary></indexterm>
+<programlisting>  “meta-screen”              <link linkend="gpointer"><type>gpointer</type></link></programlisting>
+<para>MetaScreen.</para><para>Owner: MetaWindowActor</para>
+<para>Flags: Read / Write / Construct</para>
+</refsect2>
+<refsect2 id="MetaWindowActor--meta-window" role="property"><title>The <literal>“meta-window”</literal> property</title>
+<indexterm zone="MetaWindowActor--meta-window"><primary>MetaWindowActor:meta-window</primary></indexterm>
+<programlisting>  “meta-window”              <link linkend="MetaWindow"><type>MetaWindow</type></link>&#160;*</programlisting>
+<para>The displayed MetaWindow.</para><para>Owner: MetaWindowActor</para>
+<para>Flags: Read / Write / Construct</para>
+</refsect2>
+<refsect2 id="MetaWindowActor--no-shadow" role="property"><title>The <literal>“no-shadow”</literal> property</title>
+<indexterm zone="MetaWindowActor--no-shadow"><primary>MetaWindowActor:no-shadow</primary></indexterm>
+<programlisting>  “no-shadow”                <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Do not add shaddow to this window.</para><para>Owner: MetaWindowActor</para>
+<para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindowActor--shadow-class" role="property"><title>The <literal>“shadow-class”</literal> property</title>
+<indexterm zone="MetaWindowActor--shadow-class"><primary>MetaWindowActor:shadow-class</primary></indexterm>
+<programlisting>  “shadow-class”             <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>NULL means to use the default shadow class for this window type.</para><para>Owner: MetaWindowActor</para>
+<para>Flags: Read / Write</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindowActor--x-window" role="property"><title>The <literal>“x-window”</literal> property</title>
+<indexterm zone="MetaWindowActor--x-window"><primary>MetaWindowActor:x-window</primary></indexterm>
+<programlisting>  “x-window”                 <link linkend="gulong"><type>gulong</type></link></programlisting>
+<para>Window.</para><para>Owner: MetaWindowActor</para>
+<para>Flags: Read / Write / Construct</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="MetaWindowActor.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="MetaWindowActor-position-changed" role="signal"><title>The <literal>“position-changed”</literal> signal</title>
+<indexterm zone="MetaWindowActor-position-changed"><primary>MetaWindowActor::position-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *metawindowactor,
+               <link linkend="gpointer"><type>gpointer</type></link>         user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindowActor-size-changed" role="signal"><title>The <literal>“size-changed”</literal> signal</title>
+<indexterm zone="MetaWindowActor-size-changed"><primary>MetaWindowActor::size-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *metawindowactor,
+               <link linkend="gpointer"><type>gpointer</type></link>         user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MetaWorkspace: Muffin Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Muffin Reference Manual">
+<link rel="up" href="core-reference.html" title="Part III. Muffin Core Reference">
+<link rel="prev" href="MetaWindow.html" title="MetaWindow">
+<link rel="next" href="object-tree.html" title="Object Hierarchy">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#MetaWorkspace.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="MetaWindow.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="object-tree.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="MetaWorkspace"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="MetaWorkspace.top_of_page"></a>MetaWorkspace</span></h2>
+<p>MetaWorkspace — Workspaces</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="MetaWorkspace.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-index" title="meta_workspace_index ()">meta_workspace_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GList</span> *
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-list-windows" title="meta_workspace_list_windows ()">meta_workspace_list_windows</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-get-work-area-for-monitor" title="meta_workspace_get_work_area_for_monitor ()">meta_workspace_get_work_area_for_monitor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-get-work-area-all-monitors" title="meta_workspace_get_work_area_all_monitors ()">meta_workspace_get_work_area_all_monitors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-activate" title="meta_workspace_activate ()">meta_workspace_activate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-activate-with-focus" title="meta_workspace_activate_with_focus ()">meta_workspace_activate_with_focus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-activate-with-direction-hint" title="meta_workspace_activate_with_direction_hint ()">meta_workspace_activate_with_direction_hint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-update-window-hints" title="meta_workspace_update_window_hints ()">meta_workspace_update_window_hints</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-set-builtin-struts" title="meta_workspace_set_builtin_struts ()">meta_workspace_set_builtin_struts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="returnvalue">MetaWorkspace</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-get-neighbor" title="meta_workspace_get_neighbor ()">meta_workspace_get_neighbor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaWorkspace.html#meta-workspace-focus-default-window" title="meta_workspace_focus_default_window ()">meta_workspace_focus_default_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="MetaWorkspace.description"></a><h2>Description</h2>
+<p>A workspace is a set of windows which all live on the same
+screen.  (You may also see the name "desktop" around the place,
+which is the EWMH's name for the same thing.)  Only one workspace
+of a screen may be active at once; all windows on all other workspaces
+are unmapped.</p>
+</div>
+<div class="refsect1">
+<a name="MetaWorkspace.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="meta-workspace-index"></a><h3>meta_workspace_index ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+meta_workspace_index (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-list-windows"></a><h3>meta_workspace_list_windows ()</h3>
+<pre class="programlisting"><span class="returnvalue">GList</span> *
+meta_workspace_list_windows (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>);</pre>
+<p>Gets windows contained on the workspace, including workspace-&gt;windows
+and also sticky windows. Override-redirect windows are not included.</p>
+<div class="refsect3">
+<a name="meta-workspace-list-windows.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>workspace</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="meta-workspace-list-windows.returns"></a><h4>Returns</h4>
+<p>the list of windows. </p>
+<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> MetaWindow]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-get-work-area-for-monitor"></a><h3>meta_workspace_get_work_area_for_monitor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_get_work_area_for_monitor
+                               (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                                <em class="parameter"><code><span class="type">int</span> which_monitor</code></em>,
+                                <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *area</code></em>);</pre>
+<p>Stores the work area for <em class="parameter"><code>which_monitor</code></em>
+ on <em class="parameter"><code>workspace</code></em>
+
+in <em class="parameter"><code>area</code></em>
+.</p>
+<div class="refsect3">
+<a name="meta-workspace-get-work-area-for-monitor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>workspace</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>which_monitor</p></td>
+<td class="parameter_description"><p>a monitor index</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>location to store the work area. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-get-work-area-all-monitors"></a><h3>meta_workspace_get_work_area_all_monitors ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_get_work_area_all_monitors
+                               (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                                <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *area</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-activate"></a><h3>meta_workspace_activate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_activate (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-activate-with-focus"></a><h3>meta_workspace_activate_with_focus ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_activate_with_focus (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                                    <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *focus_this</code></em>,
+                                    <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+<p>Switches to <em class="parameter"><code>workspace</code></em>
+ and possibly activates the window <em class="parameter"><code>focus_this</code></em>
+.</p>
+<p>The window <em class="parameter"><code>focus_this</code></em>
+ is activated by calling <a class="link" href="MetaWindow.html#meta-window-activate" title="meta_window_activate ()"><code class="function">meta_window_activate()</code></a>
+which will unminimize it and transient parents, raise it and give it
+the focus.</p>
+<p>If a window is currently being moved by the user, it will be
+moved to <em class="parameter"><code>workspace</code></em>
+.</p>
+<p>The advantage of calling this function instead of <a class="link" href="MetaWorkspace.html#meta-workspace-activate" title="meta_workspace_activate ()"><code class="function">meta_workspace_activate()</code></a>
+followed by <a class="link" href="MetaWindow.html#meta-window-activate" title="meta_window_activate ()"><code class="function">meta_window_activate()</code></a> is that it happens as a unit, so
+no other window gets focused first before <em class="parameter"><code>focus_this</code></em>
+.</p>
+<div class="refsect3">
+<a name="meta-workspace-activate-with-focus.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>workspace</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>focus_this</p></td>
+<td class="parameter_description"><p>the <a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> to be focused, or <code class="literal">NULL</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timestamp</p></td>
+<td class="parameter_description"><p>timestamp for <em class="parameter"><code>focus_this</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-activate-with-direction-hint"></a><h3>meta_workspace_activate_with_direction_hint ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_activate_with_direction_hint
+                               (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                                <em class="parameter"><code><a class="link" href="muffin-Common.html#MetaMotionDirection" title="enum MetaMotionDirection"><span class="type">MetaMotionDirection</span></a> direction</code></em>,
+                                <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+<p>Switches to <em class="parameter"><code>workspace</code></em>
+ in the specified <em class="parameter"><code>direction</code></em>
+ (if possible)</p>
+<div class="refsect3">
+<a name="meta-workspace-activate-with-direction-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>workspace</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>the suggested <a class="link" href="muffin-Common.html#MetaMotionDirection" title="enum MetaMotionDirection"><span class="type">MetaMotionDirection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timestamp</p></td>
+<td class="parameter_description"><p>timestamp for <em class="parameter"><code>focus_this</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-update-window-hints"></a><h3>meta_workspace_update_window_hints ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_update_window_hints (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-set-builtin-struts"></a><h3>meta_workspace_set_builtin_struts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_set_builtin_struts (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                                   <em class="parameter"><code><span class="type">GSList</span> *struts</code></em>);</pre>
+<p>Sets a list of struts that will be used in addition to the struts
+of the windows in the workspace when computing the work area of
+the workspace.</p>
+<div class="refsect3">
+<a name="meta-workspace-set-builtin-struts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>workspace</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>struts</p></td>
+<td class="parameter_description"><p>list of <a class="link" href="MetaRectangle.html#MetaStrut" title="struct MetaStrut"><span class="type">MetaStrut</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Meta.Strut][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-get-neighbor"></a><h3>meta_workspace_get_neighbor ()</h3>
+<pre class="programlisting"><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="returnvalue">MetaWorkspace</span></a> *
+meta_workspace_get_neighbor (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                             <em class="parameter"><code><a class="link" href="muffin-Common.html#MetaMotionDirection" title="enum MetaMotionDirection"><span class="type">MetaMotionDirection</span></a> direction</code></em>);</pre>
+<p>Gets the neighbor of the <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> in the given direction</p>
+<div class="refsect3">
+<a name="meta-workspace-get-neighbor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>workspace</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>a <a class="link" href="muffin-Common.html#MetaMotionDirection" title="enum MetaMotionDirection"><span class="type">MetaMotionDirection</span></a>, direction in which to look for the neighbor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="meta-workspace-get-neighbor.returns"></a><h4>Returns</h4>
+<p>the neighbor <a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-workspace-focus-default-window"></a><h3>meta_workspace_focus_default_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_workspace_focus_default_window (<em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *workspace</code></em>,
+                                     <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *not_this_one</code></em>,
+                                     <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

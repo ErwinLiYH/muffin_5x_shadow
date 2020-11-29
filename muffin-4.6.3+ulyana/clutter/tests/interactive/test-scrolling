@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/kylis/Desktop/src/muffin-4.6.3+ulyana/clutter/tests/interactive/wrapper.sh test-scrolling $@

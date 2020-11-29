@@ -1,0 +1,2029 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaWindow">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaWindow.top_of_page">MetaWindow</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaWindow</refname>
+<refpurpose>Muffin X managed windows</refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaWindow.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="MetaFrame"><returnvalue>MetaFrame</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-frame">meta_window_get_frame</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-has-focus">meta_window_has_focus</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-appears-focused">meta_window_appears_focused</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-shaded">meta_window_is_shaded</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-override-redirect">meta_window_is_override_redirect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-skip-taskbar">meta_window_is_skip_taskbar</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-interesting">meta_window_is_interesting</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaRectangle"><returnvalue>MetaRectangle</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-rect">meta_window_get_rect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-input-rect">meta_window_get_input_rect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-outer-rect">meta_window_get_outer_rect</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaScreen"><returnvalue>MetaScreen</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-screen">meta_window_get_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaDisplay"><returnvalue>MetaDisplay</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-display">meta_window_get_display</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">unsigned <link linkend="long"><returnvalue>long</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-xwindow">meta_window_get_xwindow</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaWindowType"><returnvalue>MetaWindowType</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-window-type">meta_window_get_window_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="Atom"><returnvalue>Atom</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-window-type-atom">meta_window_get_window_type_atom</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaWorkspace"><returnvalue>MetaWorkspace</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-workspace">meta_window_get_workspace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-monitor">meta_window_get_monitor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-on-all-workspaces">meta_window_is_on_all_workspaces</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-hidden">meta_window_is_hidden</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-activate">meta_window_activate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-activate-with-workspace">meta_window_activate_with_workspace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-description">meta_window_get_description</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-wm-class">meta_window_get_wm_class</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-wm-class-instance">meta_window_get_wm_class_instance</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-showing-on-its-workspace">meta_window_showing_on_its_workspace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-gtk-application-id">meta_window_get_gtk_application_id</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-gtk-unique-bus-name">meta_window_get_gtk_unique_bus_name</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-gtk-application-object-path">meta_window_get_gtk_application_object_path</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-gtk-window-object-path">meta_window_get_gtk_window_object_path</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-gtk-app-menu-object-path">meta_window_get_gtk_app_menu_object_path</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-gtk-menubar-object-path">meta_window_get_gtk_menubar_object_path</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-move">meta_window_move</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-move-frame">meta_window_move_frame</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-move-resize-frame">meta_window_move_resize_frame</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-move-to-monitor">meta_window_move_to_monitor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-resize">meta_window_resize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-set-demands-attention">meta_window_set_demands_attention</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-unset-demands-attention">meta_window_unset_demands_attention</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-startup-id">meta_window_get_startup_id</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-change-workspace-by-index">meta_window_change_workspace_by_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-change-workspace">meta_window_change_workspace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-stick">meta_window_stick</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-unstick">meta_window_unstick</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GObject"><returnvalue>GObject</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-compositor-private">meta_window_get_compositor_private</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-set-compositor-private">meta_window_set_compositor_private</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-configure-notify">meta_window_configure_notify</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-role">meta_window_get_role</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaStackLayer"><returnvalue>MetaStackLayer</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-layer">meta_window_get_layer</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-find-root-ancestor">meta_window_find_root_ancestor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-ancestor-of-transient">meta_window_is_ancestor_of_transient</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="MetaWindowForeachFunc">*MetaWindowForeachFunc</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-foreach-transient">meta_window_foreach_transient</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-foreach-ancestor">meta_window_foreach_ancestor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaMaximizeFlags"><returnvalue>MetaMaximizeFlags</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-maximized">meta_window_get_maximized</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-fullscreen">meta_window_is_fullscreen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-monitor-sized">meta_window_is_monitor_sized</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-on-primary-monitor">meta_window_is_on_primary_monitor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-all-monitors">meta_window_get_all_monitors</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-demanding-attention">meta_window_is_demanding_attention</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-urgent">meta_window_is_urgent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-requested-bypass-compositor">meta_window_requested_bypass_compositor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-requested-dont-bypass-compositor">meta_window_requested_dont_bypass_compositor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-icon-geometry">meta_window_get_icon_geometry</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-set-icon-geometry">meta_window_set_icon_geometry</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-maximize">meta_window_maximize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-unmaximize">meta_window_unmaximize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-minimize">meta_window_minimize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-unminimize">meta_window_unminimize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-raise">meta_window_raise</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-lower">meta_window_lower</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-reset-opacity">meta_window_reset_opacity</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-title">meta_window_get_title</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-transient-for">meta_window_get_transient_for</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="Window"><returnvalue>Window</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-transient-for-as-xid">meta_window_get_transient_for_as_xid</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-delete">meta_window_delete</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-stable-sequence">meta_window_get_stable_sequence</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="guint32"><returnvalue>guint32</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-user-time">meta_window_get_user_time</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-pid">meta_window_get_pid</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-client-pid">meta_window_get_client_pid</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-client-machine">meta_window_get_client_machine</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-remote">meta_window_is_remote</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-modal">meta_window_is_modal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-attached-dialog">meta_window_is_attached_dialog</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-muffin-hints">meta_window_get_muffin_hints</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaFrameType"><returnvalue>MetaFrameType</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-get-frame-type">meta_window_get_frame_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="cairo-region-t"><returnvalue>cairo_region_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-frame-bounds">meta_window_get_frame_bounds</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-tile-match">meta_window_get_tile_match</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-can-maximize">meta_window_can_maximize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-can-minimize">meta_window_can_minimize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-can-shade">meta_window_can_shade</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-can-close">meta_window_can_close</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-always-on-all-workspaces">meta_window_is_always_on_all_workspaces</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-is-always-on-top">meta_window_is_always_on_top</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-can-move">meta_window_can_move</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-can-resize">meta_window_can_resize</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-can-tile">meta_window_can_tile</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-tile">meta_window_tile</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-icon-name">meta_window_get_icon_name</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GdkPixbuf"><returnvalue>GdkPixbuf</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-create-icon">meta_window_create_icon</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaWindow.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaWindowType">MetaWindowType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaMaximizeFlags">MetaMaximizeFlags</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="MetaWindow.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="MetaWindow.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-window-get-frame" role="function">
+<title>meta_window_get_frame&#160;()</title>
+<indexterm zone="meta-window-get-frame"><primary>meta_window_get_frame</primary></indexterm>
+<programlisting language="C"><link linkend="MetaFrame"><returnvalue>MetaFrame</returnvalue></link>&#160;*
+meta_window_get_frame (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-window-has-focus" role="function">
+<title>meta_window_has_focus&#160;()</title>
+<indexterm zone="meta-window-has-focus"><primary>meta_window_has_focus</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_has_focus (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-appears-focused" role="function">
+<title>meta_window_appears_focused&#160;()</title>
+<indexterm zone="meta-window-appears-focused"><primary>meta_window_appears_focused</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_appears_focused (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Determines if the window should be drawn with a focused appearance. This is
+true for focused windows but also true for windows with a focused modal
+dialog attached.</para>
+<refsect3 id="meta-window-appears-focused.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-appears-focused.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the window should be drawn with a focused frame</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-shaded" role="function">
+<title>meta_window_is_shaded&#160;()</title>
+<indexterm zone="meta-window-is-shaded"><primary>meta_window_is_shaded</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_shaded (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-is-override-redirect" role="function">
+<title>meta_window_is_override_redirect&#160;()</title>
+<indexterm zone="meta-window-is-override-redirect"><primary>meta_window_is_override_redirect</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_override_redirect (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns if this window isn't managed by muffin; it will
+control its own positioning and muffin won't draw decorations
+among other things.  In X terminology this is "override redirect".</para>
+<refsect3 id="meta-window-is-override-redirect.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-skip-taskbar" role="function">
+<title>meta_window_is_skip_taskbar&#160;()</title>
+<indexterm zone="meta-window-is-skip-taskbar"><primary>meta_window_is_skip_taskbar</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_skip_taskbar (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets whether this window should be ignored by task lists.</para>
+<refsect3 id="meta-window-is-skip-taskbar.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-is-skip-taskbar.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the skip bar hint is set.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-interesting" role="function">
+<title>meta_window_is_interesting&#160;()</title>
+<indexterm zone="meta-window-is-interesting"><primary>meta_window_is_interesting</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_interesting (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-rect" role="function">
+<title>meta_window_get_rect&#160;()</title>
+<indexterm zone="meta-window-get-rect"><primary>meta_window_get_rect</primary></indexterm>
+<programlisting language="C"><link linkend="MetaRectangle"><returnvalue>MetaRectangle</returnvalue></link>&#160;*
+meta_window_get_rect (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the rectangle that bounds <parameter>window</parameter>
+, ignoring any window decorations.</para>
+<refsect3 id="meta-window-get-rect.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-rect.returns" role="returns">
+<title>Returns</title>
+<para>the <link linkend="MetaRectangle"><type>MetaRectangle</type></link> for the window. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-input-rect" role="function">
+<title>meta_window_get_input_rect&#160;()</title>
+<indexterm zone="meta-window-get-input-rect"><primary>meta_window_get_input_rect</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_get_input_rect (<parameter>const <link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                            <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect</parameter>);</programlisting>
+<para>Gets the rectangle that bounds <parameter>window</parameter>
+ that is responsive to mouse events.
+This includes decorations - the visible portion of its border - and (if
+present) any invisible area that we make make responsive to mouse clicks in
+order to allow convenient border dragging.</para>
+<refsect3 id="meta-window-get-input-rect.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>rect</para></entry>
+<entry role="parameter_description"><para>pointer to an allocated <link linkend="MetaRectangle"><type>MetaRectangle</type></link>. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>out</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-outer-rect" role="function">
+<title>meta_window_get_outer_rect&#160;()</title>
+<indexterm zone="meta-window-get-outer-rect"><primary>meta_window_get_outer_rect</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_get_outer_rect (<parameter>const <link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                            <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect</parameter>);</programlisting>
+<para>Gets the rectangle that bounds <parameter>window</parameter>
+ that is responsive to mouse events.
+This includes only what is visible; it doesn't include any extra reactive
+area we add to the edges of windows.</para>
+<refsect3 id="meta-window-get-outer-rect.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>rect</para></entry>
+<entry role="parameter_description"><para>pointer to an allocated <link linkend="MetaRectangle"><type>MetaRectangle</type></link>. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>out</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-screen" role="function">
+<title>meta_window_get_screen&#160;()</title>
+<indexterm zone="meta-window-get-screen"><primary>meta_window_get_screen</primary></indexterm>
+<programlisting language="C"><link linkend="MetaScreen"><returnvalue>MetaScreen</returnvalue></link>&#160;*
+meta_window_get_screen (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the <link linkend="MetaScreen"><type>MetaScreen</type></link> that the window is on.</para>
+<refsect3 id="meta-window-get-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-screen.returns" role="returns">
+<title>Returns</title>
+<para>the <link linkend="MetaScreen"><type>MetaScreen</type></link> for the window. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-display" role="function">
+<title>meta_window_get_display&#160;()</title>
+<indexterm zone="meta-window-get-display"><primary>meta_window_get_display</primary></indexterm>
+<programlisting language="C"><link linkend="MetaDisplay"><returnvalue>MetaDisplay</returnvalue></link>&#160;*
+meta_window_get_display (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-display.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-display.returns" role="returns">
+<title>Returns</title>
+<para>The display for <parameter>window</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-xwindow" role="function">
+<title>meta_window_get_xwindow&#160;()</title>
+<indexterm zone="meta-window-get-xwindow"><primary>meta_window_get_xwindow</primary></indexterm>
+<programlisting language="C">unsigned <link linkend="long"><returnvalue>long</returnvalue></link>
+meta_window_get_xwindow (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-xwindow.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-xwindow.returns" role="returns">
+<title>Returns</title>
+<para> The Window id of the <parameter>window</parameter>
+note - we return unsigned long because Window
+Can't be introspected (but Window *is* a ulong)</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-window-type" role="function">
+<title>meta_window_get_window_type&#160;()</title>
+<indexterm zone="meta-window-get-window-type"><primary>meta_window_get_window_type</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWindowType"><returnvalue>MetaWindowType</returnvalue></link>
+meta_window_get_window_type (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-window-type-atom" role="function">
+<title>meta_window_get_window_type_atom&#160;()</title>
+<indexterm zone="meta-window-get-window-type-atom"><primary>meta_window_get_window_type_atom</primary></indexterm>
+<programlisting language="C"><link linkend="Atom"><returnvalue>Atom</returnvalue></link>
+meta_window_get_window_type_atom (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the X atom from the _NET_WM_WINDOW_TYPE property used by the
+application to set the window type. (Note that this is constrained
+to be some value that Muffin recognizes - a completely unrecognized
+type atom will be returned as None.)</para>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para><refsect3 id="meta-window-get-window-type-atom.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-window-type-atom.returns" role="returns">
+<title>Returns</title>
+<para> the raw X atom for the window type, or None</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-workspace" role="function">
+<title>meta_window_get_workspace&#160;()</title>
+<indexterm zone="meta-window-get-workspace"><primary>meta_window_get_workspace</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWorkspace"><returnvalue>MetaWorkspace</returnvalue></link>&#160;*
+meta_window_get_workspace (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> that the window is currently displayed on.
+If the window is on all workspaces, returns the currently active
+workspace.</para>
+<refsect3 id="meta-window-get-workspace.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-workspace.returns" role="returns">
+<title>Returns</title>
+<para>the <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> for the window. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-monitor" role="function">
+<title>meta_window_get_monitor&#160;()</title>
+<indexterm zone="meta-window-get-monitor"><primary>meta_window_get_monitor</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+meta_window_get_monitor (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets index of the monitor that this window is on.</para>
+<refsect3 id="meta-window-get-monitor.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-monitor.returns" role="returns">
+<title>Returns</title>
+<para> The index of the monitor in the screens monitor list</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-on-all-workspaces" role="function">
+<title>meta_window_is_on_all_workspaces&#160;()</title>
+<indexterm zone="meta-window-is-on-all-workspaces"><primary>meta_window_is_on_all_workspaces</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_on_all_workspaces (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-is-hidden" role="function">
+<title>meta_window_is_hidden&#160;()</title>
+<indexterm zone="meta-window-is-hidden"><primary>meta_window_is_hidden</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_hidden (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-activate" role="function">
+<title>meta_window_activate&#160;()</title>
+<indexterm zone="meta-window-activate"><primary>meta_window_activate</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_activate (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                      <parameter><link linkend="guint32"><type>guint32</type></link> current_time</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-activate-with-workspace" role="function">
+<title>meta_window_activate_with_workspace&#160;()</title>
+<indexterm zone="meta-window-activate-with-workspace"><primary>meta_window_activate_with_workspace</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_activate_with_workspace (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                     <parameter><link linkend="guint32"><type>guint32</type></link> current_time</parameter>,
+                                     <parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-description" role="function">
+<title>meta_window_get_description&#160;()</title>
+<indexterm zone="meta-window-get-description"><primary>meta_window_get_description</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_description (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-wm-class" role="function">
+<title>meta_window_get_wm_class&#160;()</title>
+<indexterm zone="meta-window-get-wm-class"><primary>meta_window_get_wm_class</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_wm_class (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Return the current value of the name part of WM_CLASS X property.</para>
+<refsect3 id="meta-window-get-wm-class.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-wm-class-instance" role="function">
+<title>meta_window_get_wm_class_instance&#160;()</title>
+<indexterm zone="meta-window-get-wm-class-instance"><primary>meta_window_get_wm_class_instance</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_wm_class_instance (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Return the current value of the instance part of WM_CLASS X property.</para>
+<refsect3 id="meta-window-get-wm-class-instance.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-showing-on-its-workspace" role="function">
+<title>meta_window_showing_on_its_workspace&#160;()</title>
+<indexterm zone="meta-window-showing-on-its-workspace"><primary>meta_window_showing_on_its_workspace</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_showing_on_its_workspace (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-showing-on-its-workspace.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-showing-on-its-workspace.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if window would be visible, if its workspace was current</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-gtk-application-id" role="function">
+<title>meta_window_get_gtk_application_id&#160;()</title>
+<indexterm zone="meta-window-get-gtk-application-id"><primary>meta_window_get_gtk_application_id</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_gtk_application_id (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-gtk-application-id.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-gtk-application-id.returns" role="returns">
+<title>Returns</title>
+<para>the application ID. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-gtk-unique-bus-name" role="function">
+<title>meta_window_get_gtk_unique_bus_name&#160;()</title>
+<indexterm zone="meta-window-get-gtk-unique-bus-name"><primary>meta_window_get_gtk_unique_bus_name</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_gtk_unique_bus_name (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-gtk-unique-bus-name.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-gtk-unique-bus-name.returns" role="returns">
+<title>Returns</title>
+<para>the unique name. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-gtk-application-object-path" role="function">
+<title>meta_window_get_gtk_application_object_path&#160;()</title>
+<indexterm zone="meta-window-get-gtk-application-object-path"><primary>meta_window_get_gtk_application_object_path</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_gtk_application_object_path
+                               (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-gtk-application-object-path.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-gtk-application-object-path.returns" role="returns">
+<title>Returns</title>
+<para>the object path. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-gtk-window-object-path" role="function">
+<title>meta_window_get_gtk_window_object_path&#160;()</title>
+<indexterm zone="meta-window-get-gtk-window-object-path"><primary>meta_window_get_gtk_window_object_path</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_gtk_window_object_path
+                               (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-gtk-window-object-path.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-gtk-window-object-path.returns" role="returns">
+<title>Returns</title>
+<para>the object path. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-gtk-app-menu-object-path" role="function">
+<title>meta_window_get_gtk_app_menu_object_path&#160;()</title>
+<indexterm zone="meta-window-get-gtk-app-menu-object-path"><primary>meta_window_get_gtk_app_menu_object_path</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_gtk_app_menu_object_path
+                               (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-gtk-app-menu-object-path.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-gtk-app-menu-object-path.returns" role="returns">
+<title>Returns</title>
+<para>the object path. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-gtk-menubar-object-path" role="function">
+<title>meta_window_get_gtk_menubar_object_path&#160;()</title>
+<indexterm zone="meta-window-get-gtk-menubar-object-path"><primary>meta_window_get_gtk_menubar_object_path</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_gtk_menubar_object_path
+                               (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-get-gtk-menubar-object-path.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-gtk-menubar-object-path.returns" role="returns">
+<title>Returns</title>
+<para>the object path. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-move" role="function">
+<title>meta_window_move&#160;()</title>
+<indexterm zone="meta-window-move"><primary>meta_window_move</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_move (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                  <parameter><link linkend="gboolean"><type>gboolean</type></link> user_op</parameter>,
+                  <parameter><link linkend="int"><type>int</type></link> root_x_nw</parameter>,
+                  <parameter><link linkend="int"><type>int</type></link> root_y_nw</parameter>);</programlisting>
+<para>Moves the window to the desired location on window's assigned workspace.
+NOTE: does NOT place according to the origin of the enclosing
+frame/window-decoration, but according to the origin of the window,
+itself.</para>
+<refsect3 id="meta-window-move.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>user_op</para></entry>
+<entry role="parameter_description"><para>bool to indicate whether or not this is a user operation</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>root_x_nw</para></entry>
+<entry role="parameter_description"><para>desired x pos</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>root_y_nw</para></entry>
+<entry role="parameter_description"><para>desired y pos</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-move-frame" role="function">
+<title>meta_window_move_frame&#160;()</title>
+<indexterm zone="meta-window-move-frame"><primary>meta_window_move_frame</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_move_frame (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                        <parameter><link linkend="gboolean"><type>gboolean</type></link> user_op</parameter>,
+                        <parameter><link linkend="int"><type>int</type></link> root_x_nw</parameter>,
+                        <parameter><link linkend="int"><type>int</type></link> root_y_nw</parameter>);</programlisting>
+<para>Moves the window to the desired location on window's assigned
+workspace, using the northwest edge of the frame as the reference,
+instead of the actual window's origin, but only if a frame is present.
+Otherwise, acts identically to <link linkend="meta-window-move"><function>meta_window_move()</function></link>.</para>
+<refsect3 id="meta-window-move-frame.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>user_op</para></entry>
+<entry role="parameter_description"><para>bool to indicate whether or not this is a user operation</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>root_x_nw</para></entry>
+<entry role="parameter_description"><para>desired x pos</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>root_y_nw</para></entry>
+<entry role="parameter_description"><para>desired y pos</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-move-resize-frame" role="function">
+<title>meta_window_move_resize_frame&#160;()</title>
+<indexterm zone="meta-window-move-resize-frame"><primary>meta_window_move_resize_frame</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_move_resize_frame (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                               <parameter><link linkend="gboolean"><type>gboolean</type></link> user_op</parameter>,
+                               <parameter><link linkend="int"><type>int</type></link> root_x_nw</parameter>,
+                               <parameter><link linkend="int"><type>int</type></link> root_y_nw</parameter>,
+                               <parameter><link linkend="int"><type>int</type></link> w</parameter>,
+                               <parameter><link linkend="int"><type>int</type></link> h</parameter>);</programlisting>
+<para>Resizes the window so that its outer bounds (including frame)
+fit within the given rect</para>
+<refsect3 id="meta-window-move-resize-frame.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>user_op</para></entry>
+<entry role="parameter_description"><para>bool to indicate whether or not this is a user operation</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>root_x_nw</para></entry>
+<entry role="parameter_description"><para>new x</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>root_y_nw</para></entry>
+<entry role="parameter_description"><para>new y</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>w</para></entry>
+<entry role="parameter_description"><para>desired width</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>h</para></entry>
+<entry role="parameter_description"><para>desired height</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-move-to-monitor" role="function">
+<title>meta_window_move_to_monitor&#160;()</title>
+<indexterm zone="meta-window-move-to-monitor"><primary>meta_window_move_to_monitor</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_move_to_monitor (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                             <parameter><link linkend="int"><type>int</type></link> monitor</parameter>);</programlisting>
+<para>Moves the window to the monitor with index <parameter>monitor</parameter>
+, keeping
+the relative position of the window's top left corner.</para>
+<refsect3 id="meta-window-move-to-monitor.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>monitor</para></entry>
+<entry role="parameter_description"><para>desired monitor index</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-resize" role="function">
+<title>meta_window_resize&#160;()</title>
+<indexterm zone="meta-window-resize"><primary>meta_window_resize</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_resize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                    <parameter><link linkend="gboolean"><type>gboolean</type></link> user_op</parameter>,
+                    <parameter><link linkend="int"><type>int</type></link> w</parameter>,
+                    <parameter><link linkend="int"><type>int</type></link> h</parameter>);</programlisting>
+<para>Resize the window to the desired size.</para>
+<refsect3 id="meta-window-resize.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>user_op</para></entry>
+<entry role="parameter_description"><para>bool to indicate whether or not this is a user operation</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>w</para></entry>
+<entry role="parameter_description"><para>desired width</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>h</para></entry>
+<entry role="parameter_description"><para>desired height</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-set-demands-attention" role="function">
+<title>meta_window_set_demands_attention&#160;()</title>
+<indexterm zone="meta-window-set-demands-attention"><primary>meta_window_set_demands_attention</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_set_demands_attention (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-unset-demands-attention" role="function">
+<title>meta_window_unset_demands_attention&#160;()</title>
+<indexterm zone="meta-window-unset-demands-attention"><primary>meta_window_unset_demands_attention</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_unset_demands_attention (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-startup-id" role="function">
+<title>meta_window_get_startup_id&#160;()</title>
+<indexterm zone="meta-window-get-startup-id"><primary>meta_window_get_startup_id</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_startup_id (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-change-workspace-by-index" role="function">
+<title>meta_window_change_workspace_by_index&#160;()</title>
+<indexterm zone="meta-window-change-workspace-by-index"><primary>meta_window_change_workspace_by_index</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_change_workspace_by_index (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                       <parameter><link linkend="gint"><type>gint</type></link> space_index</parameter>,
+                                       <parameter><link linkend="gboolean"><type>gboolean</type></link> append</parameter>,
+                                       <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-change-workspace" role="function">
+<title>meta_window_change_workspace&#160;()</title>
+<indexterm zone="meta-window-change-workspace"><primary>meta_window_change_workspace</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_change_workspace (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                              <parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>);</programlisting>
+<para>Moves the window to the specified workspace.</para>
+<refsect3 id="meta-window-change-workspace.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>workspace</para></entry>
+<entry role="parameter_description"><para>the <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> where to put the window</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-stick" role="function">
+<title>meta_window_stick&#160;()</title>
+<indexterm zone="meta-window-stick"><primary>meta_window_stick</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_stick (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-unstick" role="function">
+<title>meta_window_unstick&#160;()</title>
+<indexterm zone="meta-window-unstick"><primary>meta_window_unstick</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_unstick (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-compositor-private" role="function">
+<title>meta_window_get_compositor_private&#160;()</title>
+<indexterm zone="meta-window-get-compositor-private"><primary>meta_window_get_compositor_private</primary></indexterm>
+<programlisting language="C"><link linkend="GObject"><returnvalue>GObject</returnvalue></link>&#160;*
+meta_window_get_compositor_private (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the compositor's wrapper object for <parameter>window</parameter>
+.</para>
+<refsect3 id="meta-window-get-compositor-private.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-compositor-private.returns" role="returns">
+<title>Returns</title>
+<para>the wrapper object. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-set-compositor-private" role="function">
+<title>meta_window_set_compositor_private&#160;()</title>
+<indexterm zone="meta-window-set-compositor-private"><primary>meta_window_set_compositor_private</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_set_compositor_private (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                    <parameter><link linkend="GObject"><type>GObject</type></link> *priv</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-configure-notify" role="function">
+<title>meta_window_configure_notify&#160;()</title>
+<indexterm zone="meta-window-configure-notify"><primary>meta_window_configure_notify</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_configure_notify (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                              <parameter><link linkend="XConfigureEvent"><type>XConfigureEvent</type></link> *event</parameter>);</programlisting>
+<para>This is used to notify us of an unrequested configuration
+(only applicable to override redirect windows)</para>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para><refsect3 id="meta-window-configure-notify.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>event</para></entry>
+<entry role="parameter_description"><para>a <link linkend="XConfigureEvent"><type>XConfigureEvent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-role" role="function">
+<title>meta_window_get_role&#160;()</title>
+<indexterm zone="meta-window-get-role"><primary>meta_window_get_role</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_role (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-layer" role="function">
+<title>meta_window_get_layer&#160;()</title>
+<indexterm zone="meta-window-get-layer"><primary>meta_window_get_layer</primary></indexterm>
+<programlisting language="C"><link linkend="MetaStackLayer"><returnvalue>MetaStackLayer</returnvalue></link>
+meta_window_get_layer (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-find-root-ancestor" role="function">
+<title>meta_window_find_root_ancestor&#160;()</title>
+<indexterm zone="meta-window-find-root-ancestor"><primary>meta_window_find_root_ancestor</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+meta_window_find_root_ancestor (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Follow the chain of parents of <parameter>window</parameter>
+, skipping transient windows,
+and return the "root" window which has no non-transient parent.</para>
+<refsect3 id="meta-window-find-root-ancestor.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-find-root-ancestor.returns" role="returns">
+<title>Returns</title>
+<para>The root ancestor window. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-ancestor-of-transient" role="function">
+<title>meta_window_is_ancestor_of_transient&#160;()</title>
+<indexterm zone="meta-window-is-ancestor-of-transient"><primary>meta_window_is_ancestor_of_transient</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_ancestor_of_transient (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                      <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *transient</parameter>);</programlisting>
+<para>The function determines whether <parameter>window</parameter>
+ is an ancestor of <parameter>transient</parameter>
+; it does
+so by traversing the <parameter>transient</parameter>
+'s ancestors until it either locates <parameter>window</parameter>
+
+or reaches an ancestor that is not transient.</para>
+<refsect3 id="meta-window-is-ancestor-of-transient.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>transient</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-is-ancestor-of-transient.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if window is an ancestor of transient.</para>
+</refsect3></refsect2>
+<refsect2 id="MetaWindowForeachFunc" role="function">
+<title>MetaWindowForeachFunc&#160;()</title>
+<indexterm zone="MetaWindowForeachFunc"><primary>MetaWindowForeachFunc</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*MetaWindowForeachFunc<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                          <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-foreach-transient" role="function">
+<title>meta_window_foreach_transient&#160;()</title>
+<indexterm zone="meta-window-foreach-transient"><primary>meta_window_foreach_transient</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_foreach_transient (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                               <parameter><link linkend="MetaWindowForeachFunc"><type>MetaWindowForeachFunc</type></link> func</parameter>,
+                               <parameter><link linkend="void"><type>void</type></link> *user_data</parameter>);</programlisting>
+<para>Call <parameter>func</parameter>
+ for every window which is either transient for <parameter>window</parameter>
+, or is
+a transient of a window which is in turn transient for <parameter>window</parameter>
+.
+The order of window enumeration is not defined.</para>
+<para>Iteration will stop if <parameter>func</parameter>
+ at any point returns <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.</para>
+<refsect3 id="meta-window-foreach-transient.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>func</para></entry>
+<entry role="parameter_description"><para>Called for each window which is a transient of <parameter>window</parameter>
+(transitively). </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>scope call</acronym>][<acronym>closure</acronym> user_data]</emphasis></entry></row>
+<row><entry role="parameter_name"><para>user_data</para></entry>
+<entry role="parameter_description"><para>User data</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-foreach-ancestor" role="function">
+<title>meta_window_foreach_ancestor&#160;()</title>
+<indexterm zone="meta-window-foreach-ancestor"><primary>meta_window_foreach_ancestor</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_foreach_ancestor (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                              <parameter><link linkend="MetaWindowForeachFunc"><type>MetaWindowForeachFunc</type></link> func</parameter>,
+                              <parameter><link linkend="void"><type>void</type></link> *user_data</parameter>);</programlisting>
+<para>If <parameter>window</parameter>
+ is transient, call <parameter>func</parameter>
+ with the window for which it's transient,
+repeatedly until either we find a non-transient window, or <parameter>func</parameter>
+ returns <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.</para>
+<refsect3 id="meta-window-foreach-ancestor.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>func</para></entry>
+<entry role="parameter_description"><para>Called for each window which is a transient parent of <parameter>window</parameter>
+. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>scope call</acronym>][<acronym>closure</acronym> user_data]</emphasis></entry></row>
+<row><entry role="parameter_name"><para>user_data</para></entry>
+<entry role="parameter_description"><para>User data</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-maximized" role="function">
+<title>meta_window_get_maximized&#160;()</title>
+<indexterm zone="meta-window-get-maximized"><primary>meta_window_get_maximized</primary></indexterm>
+<programlisting language="C"><link linkend="MetaMaximizeFlags"><returnvalue>MetaMaximizeFlags</returnvalue></link>
+meta_window_get_maximized (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the current maximization state of the window, as combination
+of the <link linkend="META-MAXIMIZE-HORIZONTAL:CAPS"><literal>META_MAXIMIZE_HORIZONTAL</literal></link> and <link linkend="META-MAXIMIZE-VERTICAL:CAPS"><literal>META_MAXIMIZE_VERTICAL</literal></link> flags;</para>
+<refsect3 id="meta-window-get-maximized.returns" role="returns">
+<title>Returns</title>
+<para> current maximization state</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-fullscreen" role="function">
+<title>meta_window_is_fullscreen&#160;()</title>
+<indexterm zone="meta-window-is-fullscreen"><primary>meta_window_is_fullscreen</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_fullscreen (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-is-fullscreen.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the window is currently fullscreen</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-monitor-sized" role="function">
+<title>meta_window_is_monitor_sized&#160;()</title>
+<indexterm zone="meta-window-is-monitor-sized"><primary>meta_window_is_monitor_sized</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_monitor_sized (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-is-monitor-sized.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the window is occupies an entire monitor or
+the whole screen.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-on-primary-monitor" role="function">
+<title>meta_window_is_on_primary_monitor&#160;()</title>
+<indexterm zone="meta-window-is-on-primary-monitor"><primary>meta_window_is_on_primary_monitor</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_on_primary_monitor (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-is-on-primary-monitor.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the window is on the primary monitor</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-all-monitors" role="function">
+<title>meta_window_get_all_monitors&#160;()</title>
+<indexterm zone="meta-window-get-all-monitors"><primary>meta_window_get_all_monitors</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>&#160;*
+meta_window_get_all_monitors (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                              <parameter><link linkend="gsize"><type>gsize</type></link> *length</parameter>);</programlisting>
+<refsect3 id="meta-window-get-all-monitors.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>The <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>length</para></entry>
+<entry role="parameter_description"><para>gint holding the length, may be <link linkend="NULL:CAPS"><literal>NULL</literal></link> to
+ignore. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>out caller-allocates</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-all-monitors.returns" role="returns">
+<title>Returns</title>
+<para>List of the monitor indices the window is on. </para>
+<para><emphasis role="annotation">[<acronym>array</acronym> length=length][<acronym>element-type</acronym> gint][<acronym>transfer container</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-demanding-attention" role="function">
+<title>meta_window_is_demanding_attention&#160;()</title>
+<indexterm zone="meta-window-is-demanding-attention"><primary>meta_window_is_demanding_attention</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_demanding_attention (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns true if window has the demands-attention flag set.</para>
+<refsect3 id="meta-window-is-demanding-attention.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-is-demanding-attention.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if wm_state_demands_attention is set.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-urgent" role="function">
+<title>meta_window_is_urgent&#160;()</title>
+<indexterm zone="meta-window-is-urgent"><primary>meta_window_is_urgent</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_urgent (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns true if window has the urgent hint set.</para>
+<refsect3 id="meta-window-is-urgent.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-is-urgent.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if wm_hints_urgent is set.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-requested-bypass-compositor" role="function">
+<title>meta_window_requested_bypass_compositor&#160;()</title>
+<indexterm zone="meta-window-requested-bypass-compositor"><primary>meta_window_requested_bypass_compositor</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_requested_bypass_compositor
+                               (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-requested-bypass-compositor.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the window requested to bypass the compositor</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-requested-dont-bypass-compositor" role="function">
+<title>meta_window_requested_dont_bypass_compositor&#160;()</title>
+<indexterm zone="meta-window-requested-dont-bypass-compositor"><primary>meta_window_requested_dont_bypass_compositor</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_requested_dont_bypass_compositor
+                               (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-requested-dont-bypass-compositor.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the window requested to opt out of unredirecting</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-icon-geometry" role="function">
+<title>meta_window_get_icon_geometry&#160;()</title>
+<indexterm zone="meta-window-get-icon-geometry"><primary>meta_window_get_icon_geometry</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_get_icon_geometry (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                               <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-set-icon-geometry" role="function">
+<title>meta_window_set_icon_geometry&#160;()</title>
+<indexterm zone="meta-window-set-icon-geometry"><primary>meta_window_set_icon_geometry</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_set_icon_geometry (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                               <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *rect</parameter>);</programlisting>
+<para>Sets or unsets the location of the icon corresponding to the window. If
+set, the location should correspond to a dock, task bar or other user
+interface element displaying the icon, and is relative to the root window.</para>
+<refsect3 id="meta-window-set-icon-geometry.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>rect</para></entry>
+<entry role="parameter_description"><para>rectangle with the desired geometry or <link linkend="NULL:CAPS"><literal>NULL</literal></link>. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>allow-none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-maximize" role="function">
+<title>meta_window_maximize&#160;()</title>
+<indexterm zone="meta-window-maximize"><primary>meta_window_maximize</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_maximize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                      <parameter><link linkend="MetaMaximizeFlags"><type>MetaMaximizeFlags</type></link> directions</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-unmaximize" role="function">
+<title>meta_window_unmaximize&#160;()</title>
+<indexterm zone="meta-window-unmaximize"><primary>meta_window_unmaximize</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_unmaximize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                        <parameter><link linkend="MetaMaximizeFlags"><type>MetaMaximizeFlags</type></link> directions</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-minimize" role="function">
+<title>meta_window_minimize&#160;()</title>
+<indexterm zone="meta-window-minimize"><primary>meta_window_minimize</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_minimize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-unminimize" role="function">
+<title>meta_window_unminimize&#160;()</title>
+<indexterm zone="meta-window-unminimize"><primary>meta_window_unminimize</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_unminimize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-raise" role="function">
+<title>meta_window_raise&#160;()</title>
+<indexterm zone="meta-window-raise"><primary>meta_window_raise</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_raise (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-lower" role="function">
+<title>meta_window_lower&#160;()</title>
+<indexterm zone="meta-window-lower"><primary>meta_window_lower</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_lower (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-reset-opacity" role="function">
+<title>meta_window_reset_opacity&#160;()</title>
+<indexterm zone="meta-window-reset-opacity"><primary>meta_window_reset_opacity</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_reset_opacity (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-title" role="function">
+<title>meta_window_get_title&#160;()</title>
+<indexterm zone="meta-window-get-title"><primary>meta_window_get_title</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_title (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns the current title of the window.</para>
+<refsect3 id="meta-window-get-title.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-transient-for" role="function">
+<title>meta_window_get_transient_for&#160;()</title>
+<indexterm zone="meta-window-get-transient-for"><primary>meta_window_get_transient_for</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+meta_window_get_transient_for (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns the <link linkend="MetaWindow"><type>MetaWindow</type></link> for the window that is pointed to by the
+WM_TRANSIENT_FOR hint on this window (see <link linkend="XGetTransientForHint"><function>XGetTransientForHint()</function></link>
+or <link linkend="XSetTransientForHint"><function>XSetTransientForHint()</function></link>). Metacity keeps transient windows above their
+parents. A typical usage of this hint is for a dialog that wants to stay
+above its associated window.</para>
+<refsect3 id="meta-window-get-transient-for.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-transient-for.returns" role="returns">
+<title>Returns</title>
+<para>the window this window is transient for, or
+<link linkend="NULL:CAPS"><literal>NULL</literal></link> if the WM_TRANSIENT_FOR hint is unset or does not point to a toplevel
+window that Metacity knows about. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-transient-for-as-xid" role="function">
+<title>meta_window_get_transient_for_as_xid&#160;()</title>
+<indexterm zone="meta-window-get-transient-for-as-xid"><primary>meta_window_get_transient_for_as_xid</primary></indexterm>
+<programlisting language="C"><link linkend="Window"><returnvalue>Window</returnvalue></link>
+meta_window_get_transient_for_as_xid (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns the XID of the window that is pointed to by the
+WM_TRANSIENT_FOR hint on this window (see <link linkend="XGetTransientForHint"><function>XGetTransientForHint()</function></link>
+or <link linkend="XSetTransientForHint"><function>XSetTransientForHint()</function></link>). Metacity keeps transient windows above their
+parents. A typical usage of this hint is for a dialog that wants to stay
+above its associated window.</para>
+<refsect3 id="meta-window-get-transient-for-as-xid.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-transient-for-as-xid.returns" role="returns">
+<title>Returns</title>
+<para> the window this window is transient for, or
+None if the WM_TRANSIENT_FOR hint is unset.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-delete" role="function">
+<title>meta_window_delete&#160;()</title>
+<indexterm zone="meta-window-delete"><primary>meta_window_delete</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_delete (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                    <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-get-stable-sequence" role="function">
+<title>meta_window_get_stable_sequence&#160;()</title>
+<indexterm zone="meta-window-get-stable-sequence"><primary>meta_window_get_stable_sequence</primary></indexterm>
+<programlisting language="C"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+meta_window_get_stable_sequence (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>The stable sequence number is a monotonicially increasing
+unique integer assigned to each <link linkend="MetaWindow"><type>MetaWindow</type></link> upon creation.</para>
+<para>This number can be useful for sorting windows in a stable
+fashion.</para>
+<refsect3 id="meta-window-get-stable-sequence.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-stable-sequence.returns" role="returns">
+<title>Returns</title>
+<para> Internal sequence number for this window</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-user-time" role="function">
+<title>meta_window_get_user_time&#160;()</title>
+<indexterm zone="meta-window-get-user-time"><primary>meta_window_get_user_time</primary></indexterm>
+<programlisting language="C"><link linkend="guint32"><returnvalue>guint32</returnvalue></link>
+meta_window_get_user_time (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>The user time represents a timestamp for the last time the user
+interacted with this window.  Note this property is only available
+for non-override-redirect windows.</para>
+<para>The property is set by Muffin initially upon window creation,
+and updated thereafter on input events (key and button presses) seen by Muffin,
+client updates to the _NET_WM_USER_TIME property (if later than the current time)
+and when focusing the window.</para>
+<refsect3 id="meta-window-get-user-time.returns" role="returns">
+<title>Returns</title>
+<para> The last time the user interacted with this window.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-pid" role="function">
+<title>meta_window_get_pid&#160;()</title>
+<indexterm zone="meta-window-get-pid"><primary>meta_window_get_pid</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+meta_window_get_pid (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns pid of the process that created this window, if known (obtained from
+the _NET_WM_PID property).</para>
+<refsect3 id="meta-window-get-pid.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-pid.returns" role="returns">
+<title>Returns</title>
+<para> the pid, or -1 if not known.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-client-pid" role="function">
+<title>meta_window_get_client_pid&#160;()</title>
+<indexterm zone="meta-window-get-client-pid"><primary>meta_window_get_client_pid</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+meta_window_get_client_pid (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns the client pid of the process that created this window, if known (obtained from XCB).</para>
+<refsect3 id="meta-window-get-client-pid.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-client-pid.returns" role="returns">
+<title>Returns</title>
+<para> the pid, or -1 if not known.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-client-machine" role="function">
+<title>meta_window_get_client_machine&#160;()</title>
+<indexterm zone="meta-window-get-client-machine"><primary>meta_window_get_client_machine</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_client_machine (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns name of the client machine from which this windows was created,
+if known (obtained from the WM_CLIENT_MACHINE property).</para>
+<refsect3 id="meta-window-get-client-machine.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-client-machine.returns" role="returns">
+<title>Returns</title>
+<para>the machine name, or NULL; the string is
+owned by the window manager and should not be freed or modified by the
+caller. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-remote" role="function">
+<title>meta_window_is_remote&#160;()</title>
+<indexterm zone="meta-window-is-remote"><primary>meta_window_is_remote</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_remote (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<refsect3 id="meta-window-is-remote.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-is-remote.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if this window originates from a host
+different from the one running muffin.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-modal" role="function">
+<title>meta_window_is_modal&#160;()</title>
+<indexterm zone="meta-window-is-modal"><primary>meta_window_is_modal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_modal (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Queries whether the window is in a modal state as described by the
+_NET_WM_STATE protocol.</para>
+<refsect3 id="meta-window-is-modal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-is-modal.returns" role="returns">
+<title>Returns</title>
+<para> TRUE if the window is in modal state.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-is-attached-dialog" role="function">
+<title>meta_window_is_attached_dialog&#160;()</title>
+<indexterm zone="meta-window-is-attached-dialog"><primary>meta_window_is_attached_dialog</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_attached_dialog (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Tests if <parameter>window</parameter>
+ is should be attached to its parent window.
+(If the "attach_modal_dialogs" option is not enabled, this will
+always return <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.)</para>
+<refsect3 id="meta-window-is-attached-dialog.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-is-attached-dialog.returns" role="returns">
+<title>Returns</title>
+<para> whether <parameter>window</parameter>
+should be attached to its parent</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-muffin-hints" role="function">
+<title>meta_window_get_muffin_hints&#160;()</title>
+<indexterm zone="meta-window-get-muffin-hints"><primary>meta_window_get_muffin_hints</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_muffin_hints (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the current value of the _MUFFIN_HINTS property.</para>
+<para>The purpose of the hints is to allow fine-tuning of the Window Manager and
+Compositor behaviour on per-window basis, and is intended primarily for
+hints that are plugin-specific.</para>
+<para>The property is a list of colon-separated key=value pairs. The key names for
+any plugin-specific hints must be suitably namespaced to allow for shared
+use; 'muffin-' key prefix is reserved for internal use, and must not be used
+by plugins.</para>
+<refsect3 id="meta-window-get-muffin-hints.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-muffin-hints.returns" role="returns">
+<title>Returns</title>
+<para>the _MUFFIN_HINTS string, or <link linkend="NULL:CAPS"><literal>NULL</literal></link> if no hints
+are set. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-frame-type" role="function">
+<title>meta_window_get_frame_type&#160;()</title>
+<indexterm zone="meta-window-get-frame-type"><primary>meta_window_get_frame_type</primary></indexterm>
+<programlisting language="C"><link linkend="MetaFrameType"><returnvalue>MetaFrameType</returnvalue></link>
+meta_window_get_frame_type (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets the type of window decorations that should be used for this window.</para>
+<refsect3 id="meta-window-get-frame-type.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-get-frame-type.returns" role="returns">
+<title>Returns</title>
+<para> the frame type</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-frame-bounds" role="function">
+<title>meta_window_get_frame_bounds&#160;()</title>
+<indexterm zone="meta-window-get-frame-bounds"><primary>meta_window_get_frame_bounds</primary></indexterm>
+<programlisting language="C"><link linkend="cairo-region-t"><returnvalue>cairo_region_t</returnvalue></link>&#160;*
+meta_window_get_frame_bounds (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Gets a region representing the outer bounds of the window's frame.</para>
+<refsect3 id="meta-window-get-frame-bounds.returns" role="returns">
+<title>Returns</title>
+<para>a <link linkend="cairo-region-t"><type>cairo_region_t</type></link>
+holding the outer bounds of the window, or <link linkend="NULL:CAPS"><literal>NULL</literal></link> if the window
+doesn't have a frame. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-tile-match" role="function">
+<title>meta_window_get_tile_match&#160;()</title>
+<indexterm zone="meta-window-get-tile-match"><primary>meta_window_get_tile_match</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWindow"><returnvalue>MetaWindow</returnvalue></link>&#160;*
+meta_window_get_tile_match (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns the matching tiled window on the same monitory as <parameter>window</parameter>
+. This is
+the topmost tiled window in a complementary tile mode that is:</para>
+<itemizedlist>
+<listitem><para>on the same monitor;</para></listitem>
+<listitem><para>on the same workspace;</para></listitem>
+<listitem><para>spanning the remaining monitor width;</para></listitem>
+<listitem><para>there is no 3rd window stacked between both tiled windows that's
+partially visible in the common edge.</para></listitem>
+</itemizedlist>
+<refsect3 id="meta-window-get-tile-match.returns" role="returns">
+<title>Returns</title>
+<para>the matching tiled window or
+<link linkend="NULL:CAPS"><literal>NULL</literal></link> if it doesn't exist. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-can-maximize" role="function">
+<title>meta_window_can_maximize&#160;()</title>
+<indexterm zone="meta-window-can-maximize"><primary>meta_window_can_maximize</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_can_maximize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-can-minimize" role="function">
+<title>meta_window_can_minimize&#160;()</title>
+<indexterm zone="meta-window-can-minimize"><primary>meta_window_can_minimize</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_can_minimize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-can-shade" role="function">
+<title>meta_window_can_shade&#160;()</title>
+<indexterm zone="meta-window-can-shade"><primary>meta_window_can_shade</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_can_shade (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-can-close" role="function">
+<title>meta_window_can_close&#160;()</title>
+<indexterm zone="meta-window-can-close"><primary>meta_window_can_close</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_can_close (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-is-always-on-all-workspaces" role="function">
+<title>meta_window_is_always_on_all_workspaces&#160;()</title>
+<indexterm zone="meta-window-is-always-on-all-workspaces"><primary>meta_window_is_always_on_all_workspaces</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_always_on_all_workspaces
+                               (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-is-always-on-top" role="function">
+<title>meta_window_is_always_on_top&#160;()</title>
+<indexterm zone="meta-window-is-always-on-top"><primary>meta_window_is_always_on_top</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_is_always_on_top (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-can-move" role="function">
+<title>meta_window_can_move&#160;()</title>
+<indexterm zone="meta-window-can-move"><primary>meta_window_can_move</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_can_move (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-can-resize" role="function">
+<title>meta_window_can_resize&#160;()</title>
+<indexterm zone="meta-window-can-resize"><primary>meta_window_can_resize</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_can_resize (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-can-tile" role="function">
+<title>meta_window_can_tile&#160;()</title>
+<indexterm zone="meta-window-can-tile"><primary>meta_window_can_tile</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_can_tile (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                      <parameter><link linkend="MetaTileMode"><type>MetaTileMode</type></link> mode</parameter>);</programlisting>
+<para>Tests if <parameter>window</parameter>
+ can be tiled or snapped in the supplied
+tiling zone</para>
+<refsect3 id="meta-window-can-tile.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>mode</para></entry>
+<entry role="parameter_description"><para>the <link linkend="MetaTileMode"><type>MetaTileMode</type></link> to check for</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-can-tile.returns" role="returns">
+<title>Returns</title>
+<para> whether <parameter>window</parameter>
+can be tiled</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-tile" role="function">
+<title>meta_window_tile&#160;()</title>
+<indexterm zone="meta-window-tile"><primary>meta_window_tile</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_window_tile (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                  <parameter><link linkend="MetaTileMode"><type>MetaTileMode</type></link> mode</parameter>,
+                  <parameter><link linkend="gboolean"><type>gboolean</type></link> snap</parameter>);</programlisting>
+<para>Tiles or snaps the window in the requested configuration</para>
+<refsect3 id="meta-window-tile.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>mode</para></entry>
+<entry role="parameter_description"><para>the <link linkend="MetaTileMode"><type>MetaTileMode</type></link> to use</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>snap</para></entry>
+<entry role="parameter_description"><para>whether to snap the window (as opposed to simple tile)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-tile.returns" role="returns">
+<title>Returns</title>
+<para> whether or not <parameter>window</parameter>
+was successfully tiled</para>
+</refsect3></refsect2>
+<refsect2 id="meta-window-get-icon-name" role="function">
+<title>meta_window_get_icon_name&#160;()</title>
+<indexterm zone="meta-window-get-icon-name"><primary>meta_window_get_icon_name</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_window_get_icon_name (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+<para>Returns the currently set icon name or icon path for the window.</para>
+<para>Note:</para>
+<para>This will currently only be non-NULL for programs that use XAppGtkWindow
+in place of GtkWindow and use <link linkend="xapp-gtk-window-set-icon-name"><function>xapp_gtk_window_set_icon_name()</function></link> or
+<link linkend="set-icon-from-file"><function>set_icon_from_file()</function></link>.  These methods will need to be used explicitly in
+C programs, but for introspection use you should not need to treat it any
+differently (except for using the correct window class.)</para>
+<refsect3 id="meta-window-get-icon-name.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-window-create-icon" role="function">
+<title>meta_window_create_icon&#160;()</title>
+<indexterm zone="meta-window-create-icon"><primary>meta_window_create_icon</primary></indexterm>
+<programlisting language="C"><link linkend="GdkPixbuf"><returnvalue>GdkPixbuf</returnvalue></link>&#160;*
+meta_window_create_icon (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                         <parameter><link linkend="int"><type>int</type></link> size</parameter>);</programlisting>
+<para>Creates an icon for <parameter>window</parameter>
+. This is intended to only be used for
+window-backed apps.</para>
+<refsect3 id="meta-window-create-icon.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWindow"><type>MetaWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>size</para></entry>
+<entry role="parameter_description"><para>icon width and height</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-window-create-icon.returns" role="returns">
+<title>Returns</title>
+<para>a <link linkend="GdkPixbuf"><type>GdkPixbuf</type></link>, or NULL. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="MetaWindow.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaWindowType" role="enum">
+<title>enum MetaWindowType</title>
+<indexterm zone="MetaWindowType"><primary>MetaWindowType</primary></indexterm>
+<refsect3 id="MetaWindowType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-NORMAL:CAPS">META_WINDOW_NORMAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-DESKTOP:CAPS">META_WINDOW_DESKTOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-DOCK:CAPS">META_WINDOW_DOCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-DIALOG:CAPS">META_WINDOW_DIALOG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-MODAL-DIALOG:CAPS">META_WINDOW_MODAL_DIALOG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-TOOLBAR:CAPS">META_WINDOW_TOOLBAR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-MENU:CAPS">META_WINDOW_MENU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-UTILITY:CAPS">META_WINDOW_UTILITY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-SPLASHSCREEN:CAPS">META_WINDOW_SPLASHSCREEN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-DROPDOWN-MENU:CAPS">META_WINDOW_DROPDOWN_MENU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-POPUP-MENU:CAPS">META_WINDOW_POPUP_MENU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-TOOLTIP:CAPS">META_WINDOW_TOOLTIP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-NOTIFICATION:CAPS">META_WINDOW_NOTIFICATION</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-COMBO:CAPS">META_WINDOW_COMBO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-DND:CAPS">META_WINDOW_DND</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-OVERRIDE-OTHER:CAPS">META_WINDOW_OVERRIDE_OTHER</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaMaximizeFlags" role="enum">
+<title>enum MetaMaximizeFlags</title>
+<indexterm zone="MetaMaximizeFlags"><primary>MetaMaximizeFlags</primary></indexterm>
+<refsect3 id="MetaMaximizeFlags.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-MAXIMIZE-HORIZONTAL:CAPS">META_MAXIMIZE_HORIZONTAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MAXIMIZE-VERTICAL:CAPS">META_MAXIMIZE_VERTICAL</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

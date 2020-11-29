@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-MetaCompositor">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-MetaCompositor.top_of_page">MetaCompositor</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaCompositor</refname>
+<refpurpose>Compositor API</refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-MetaCompositor.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="MetaCompositor"><returnvalue>MetaCompositor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-compositor-new">meta_compositor_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-destroy">meta_compositor_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-manage-screen">meta_compositor_manage_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-unmanage-screen">meta_compositor_unmanage_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-window-shape-changed">meta_compositor_window_shape_changed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-process-event">meta_compositor_process_event</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-add-window">meta_compositor_add_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-remove-window">meta_compositor_remove_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-show-window">meta_compositor_show_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-hide-window">meta_compositor_hide_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-switch-workspace">meta_compositor_switch_workspace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-maximize-window">meta_compositor_maximize_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-unmaximize-window">meta_compositor_unmaximize_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-sync-window-geometry">meta_compositor_sync_window_geometry</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-set-updates-frozen">meta_compositor_set_updates_frozen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-queue-frame-drawn">meta_compositor_queue_frame_drawn</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-sync-stack">meta_compositor_sync_stack</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-sync-screen-size">meta_compositor_sync_screen_size</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-flash-screen">meta_compositor_flash_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-tile-window">meta_compositor_tile_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-show-tile-preview">meta_compositor_show_tile_preview</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-hide-tile-preview">meta_compositor_hide_tile_preview</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-show-hud-preview">meta_compositor_show_hud_preview</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-hide-hud-preview">meta_compositor_hide_hud_preview</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-toggle-send-frame-timings">meta_compositor_toggle_send_frame_timings</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-MetaCompositor.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaCompEffect">MetaCompEffect</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-MetaCompositor.description" role="desc">
+<title role="desc.title">Description</title>
+<para>At a high-level, a window is not-visible or visible. When a
+window is added (with <link linkend="meta-compositor-add-window"><function>meta_compositor_add_window()</function></link>) it is not visible.
+<link linkend="meta-compositor-show-window"><function>meta_compositor_show_window()</function></link> indicates a transition from not-visible to
+visible. Some of the reasons for this:</para>
+<itemizedlist>
+<listitem><para>Window newly created</para></listitem>
+<listitem><para>Window is unminimized</para></listitem>
+<listitem><para>Window is moved to the current desktop</para></listitem>
+<listitem>
+<para>Window was made sticky</para>
+</listitem>
+</itemizedlist>
+<para>meta_compositor_hide_window() indicates that the window has transitioned from
+visible to not-visible. Some reasons include:</para>
+<itemizedlist>
+<listitem><para>Window was destroyed</para></listitem>
+<listitem><para>Window is minimized</para></listitem>
+<listitem><para>Window is moved to a different desktop</para></listitem>
+<listitem>
+<para>Window no longer sticky.</para>
+</listitem>
+</itemizedlist>
+<para>Note that combinations are possible - a window might have first
+been minimized and then moved to a different desktop. The 'effect' parameter
+to <link linkend="meta-compositor-show-window"><function>meta_compositor_show_window()</function></link> and <link linkend="meta-compositor-hide-window"><function>meta_compositor_hide_window()</function></link> is a hint
+as to the appropriate effect to show the user and should not
+be considered to be indicative of a state change.</para>
+<para>When the active workspace is changed, <link linkend="meta-compositor-switch-workspace"><function>meta_compositor_switch_workspace()</function></link> is
+called first, then <link linkend="meta-compositor-show-window"><function>meta_compositor_show_window()</function></link> and
+<link linkend="meta-compositor-hide-window"><function>meta_compositor_hide_window()</function></link> are called individually for each window
+affected, with an effect of META_COMP_EFFECT_NONE.
+If hiding windows will affect the switch workspace animation, the
+compositor needs to delay hiding the windows until the switch
+workspace animation completes.</para>
+<para>meta_compositor_maximize_window() and <link linkend="meta-compositor-unmaximize-window"><function>meta_compositor_unmaximize_window()</function></link>
+are transitions within the visible state. The window is resized __before__
+the call, so it may be necessary to readjust the display based on the
+old_rect to start the animation.</para>
+<refsect2><title>Containers</title><para>There's two containers in the stage that are used to place window actors, here
+are listed in the order in which they are painted:</para>
+<itemizedlist>
+<listitem><para>window group, accessible with <link linkend="meta-get-window-group-for-screen"><function>meta_get_window_group_for_screen()</function></link></para></listitem>
+<listitem>
+<para>top window group, accessible with <link linkend="meta-get-top-window-group-for-screen"><function>meta_get_top_window_group_for_screen()</function></link></para>
+</listitem>
+</itemizedlist>
+<para>Muffin will place actors representing windows in the window group, except for
+override-redirect windows (ie. popups and menus) which will be placed in the
+top window group.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-MetaCompositor.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-compositor-new" role="function">
+<title>meta_compositor_new&#160;()</title>
+<indexterm zone="meta-compositor-new"><primary>meta_compositor_new</primary></indexterm>
+<programlisting language="C"><link linkend="MetaCompositor"><returnvalue>MetaCompositor</returnvalue></link>&#160;*
+meta_compositor_new (<parameter><link linkend="MetaDisplay"><type>MetaDisplay</type></link> *display</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-compositor-destroy" role="function">
+<title>meta_compositor_destroy&#160;()</title>
+<indexterm zone="meta-compositor-destroy"><primary>meta_compositor_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_destroy (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-manage-screen" role="function">
+<title>meta_compositor_manage_screen&#160;()</title>
+<indexterm zone="meta-compositor-manage-screen"><primary>meta_compositor_manage_screen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_manage_screen (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                               <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-unmanage-screen" role="function">
+<title>meta_compositor_unmanage_screen&#160;()</title>
+<indexterm zone="meta-compositor-unmanage-screen"><primary>meta_compositor_unmanage_screen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_unmanage_screen (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                 <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-window-shape-changed" role="function">
+<title>meta_compositor_window_shape_changed&#160;()</title>
+<indexterm zone="meta-compositor-window-shape-changed"><primary>meta_compositor_window_shape_changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_window_shape_changed (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                      <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-process-event" role="function">
+<title>meta_compositor_process_event&#160;()</title>
+<indexterm zone="meta-compositor-process-event"><primary>meta_compositor_process_event</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_compositor_process_event (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                               <parameter><link linkend="XEvent"><type>XEvent</type></link> *event</parameter>,
+                               <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-compositor-add-window" role="function">
+<title>meta_compositor_add_window&#160;()</title>
+<indexterm zone="meta-compositor-add-window"><primary>meta_compositor_add_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_add_window (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                            <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-remove-window" role="function">
+<title>meta_compositor_remove_window&#160;()</title>
+<indexterm zone="meta-compositor-remove-window"><primary>meta_compositor_remove_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_remove_window (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                               <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-show-window" role="function">
+<title>meta_compositor_show_window&#160;()</title>
+<indexterm zone="meta-compositor-show-window"><primary>meta_compositor_show_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_show_window (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                             <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                             <parameter><link linkend="MetaCompEffect"><type>MetaCompEffect</type></link> effect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-hide-window" role="function">
+<title>meta_compositor_hide_window&#160;()</title>
+<indexterm zone="meta-compositor-hide-window"><primary>meta_compositor_hide_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_hide_window (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                             <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                             <parameter><link linkend="MetaCompEffect"><type>MetaCompEffect</type></link> effect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-switch-workspace" role="function">
+<title>meta_compositor_switch_workspace&#160;()</title>
+<indexterm zone="meta-compositor-switch-workspace"><primary>meta_compositor_switch_workspace</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_switch_workspace (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                  <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                                  <parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *from</parameter>,
+                                  <parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *to</parameter>,
+                                  <parameter><link linkend="MetaMotionDirection"><type>MetaMotionDirection</type></link> direction</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-maximize-window" role="function">
+<title>meta_compositor_maximize_window&#160;()</title>
+<indexterm zone="meta-compositor-maximize-window"><primary>meta_compositor_maximize_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_maximize_window (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                 <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                 <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *old_rect</parameter>,
+                                 <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *new_rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-unmaximize-window" role="function">
+<title>meta_compositor_unmaximize_window&#160;()</title>
+<indexterm zone="meta-compositor-unmaximize-window"><primary>meta_compositor_unmaximize_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_unmaximize_window (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                   <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                   <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *old_rect</parameter>,
+                                   <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *new_rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-sync-window-geometry" role="function">
+<title>meta_compositor_sync_window_geometry&#160;()</title>
+<indexterm zone="meta-compositor-sync-window-geometry"><primary>meta_compositor_sync_window_geometry</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_sync_window_geometry (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                      <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                      <parameter><link linkend="gboolean"><type>gboolean</type></link> did_placement</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-set-updates-frozen" role="function">
+<title>meta_compositor_set_updates_frozen&#160;()</title>
+<indexterm zone="meta-compositor-set-updates-frozen"><primary>meta_compositor_set_updates_frozen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_set_updates_frozen (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                    <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                    <parameter><link linkend="gboolean"><type>gboolean</type></link> updates_frozen</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-queue-frame-drawn" role="function">
+<title>meta_compositor_queue_frame_drawn&#160;()</title>
+<indexterm zone="meta-compositor-queue-frame-drawn"><primary>meta_compositor_queue_frame_drawn</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_queue_frame_drawn (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                   <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                   <parameter><link linkend="gboolean"><type>gboolean</type></link> no_delay_frame</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-sync-stack" role="function">
+<title>meta_compositor_sync_stack&#160;()</title>
+<indexterm zone="meta-compositor-sync-stack"><primary>meta_compositor_sync_stack</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_sync_stack (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                            <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                            <parameter><link linkend="GList"><type>GList</type></link> *stack</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-sync-screen-size" role="function">
+<title>meta_compositor_sync_screen_size&#160;()</title>
+<indexterm zone="meta-compositor-sync-screen-size"><primary>meta_compositor_sync_screen_size</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_sync_screen_size (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                  <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                                  <parameter><link linkend="guint"><type>guint</type></link> width</parameter>,
+                                  <parameter><link linkend="guint"><type>guint</type></link> height</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-flash-screen" role="function">
+<title>meta_compositor_flash_screen&#160;()</title>
+<indexterm zone="meta-compositor-flash-screen"><primary>meta_compositor_flash_screen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_flash_screen (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                              <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-tile-window" role="function">
+<title>meta_compositor_tile_window&#160;()</title>
+<indexterm zone="meta-compositor-tile-window"><primary>meta_compositor_tile_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_tile_window (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                             <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                             <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *old_rect</parameter>,
+                             <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *new_rect</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-show-tile-preview" role="function">
+<title>meta_compositor_show_tile_preview&#160;()</title>
+<indexterm zone="meta-compositor-show-tile-preview"><primary>meta_compositor_show_tile_preview</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_show_tile_preview (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                   <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                                   <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>,
+                                   <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *tile_rect</parameter>,
+                                   <parameter><link linkend="int"><type>int</type></link> tile_monitor_number</parameter>,
+                                   <parameter><link linkend="guint"><type>guint</type></link> snap_queued</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-hide-tile-preview" role="function">
+<title>meta_compositor_hide_tile_preview&#160;()</title>
+<indexterm zone="meta-compositor-hide-tile-preview"><primary>meta_compositor_hide_tile_preview</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_hide_tile_preview (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                   <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-show-hud-preview" role="function">
+<title>meta_compositor_show_hud_preview&#160;()</title>
+<indexterm zone="meta-compositor-show-hud-preview"><primary>meta_compositor_show_hud_preview</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_show_hud_preview (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                  <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                                  <parameter><link linkend="guint"><type>guint</type></link> current_proximity_zone</parameter>,
+                                  <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *work_area</parameter>,
+                                  <parameter><link linkend="guint"><type>guint</type></link> snap_queued</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-hide-hud-preview" role="function">
+<title>meta_compositor_hide_hud_preview&#160;()</title>
+<indexterm zone="meta-compositor-hide-hud-preview"><primary>meta_compositor_hide_hud_preview</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_hide_hud_preview (<parameter><link linkend="MetaCompositor"><type>MetaCompositor</type></link> *compositor</parameter>,
+                                  <parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-compositor-toggle-send-frame-timings" role="function">
+<title>meta_compositor_toggle_send_frame_timings&#160;()</title>
+<indexterm zone="meta-compositor-toggle-send-frame-timings"><primary>meta_compositor_toggle_send_frame_timings</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_toggle_send_frame_timings
+                               (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-MetaCompositor.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaCompEffect" role="enum">
+<title>enum MetaCompEffect</title>
+<indexterm zone="MetaCompEffect"><primary>MetaCompEffect</primary></indexterm>
+<para>Indicates the appropriate effect to show the user for
+<link linkend="meta-compositor-show-window"><function>meta_compositor_show_window()</function></link> and <link linkend="meta-compositor-hide-window"><function>meta_compositor_hide_window()</function></link></para>
+<refsect3 id="MetaCompEffect.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-COMP-EFFECT-CREATE:CAPS">META_COMP_EFFECT_CREATE</para></entry>
+<entry role="enum_member_description"><para>The window is newly created
+(also used for a window that was previously on a different
+workspace and is changed to become visible on the active
+workspace.)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-COMP-EFFECT-UNMINIMIZE:CAPS">META_COMP_EFFECT_UNMINIMIZE</para></entry>
+<entry role="enum_member_description"><para>The window should be shown
+as unminimizing from its icon geometry.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-COMP-EFFECT-DESTROY:CAPS">META_COMP_EFFECT_DESTROY</para></entry>
+<entry role="enum_member_description"><para>The window is being destroyed</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-COMP-EFFECT-MINIMIZE:CAPS">META_COMP_EFFECT_MINIMIZE</para></entry>
+<entry role="enum_member_description"><para>The window should be shown
+as minimizing to its icon geometry.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-COMP-EFFECT-NONE:CAPS">META_COMP_EFFECT_NONE</para></entry>
+<entry role="enum_member_description"><para>No effect, the window should be
+shown or hidden immediately.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

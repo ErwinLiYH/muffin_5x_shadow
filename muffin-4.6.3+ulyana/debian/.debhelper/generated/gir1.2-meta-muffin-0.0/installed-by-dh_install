@@ -1,0 +1,6 @@
+debian/tmp/usr/lib/x86_64-linux-gnu/muffin/Cally-0.typelib
+debian/tmp/usr/lib/x86_64-linux-gnu/muffin/Clutter-0.typelib
+debian/tmp/usr/lib/x86_64-linux-gnu/muffin/ClutterX11-0.typelib
+debian/tmp/usr/lib/x86_64-linux-gnu/muffin/Cogl-0.typelib
+debian/tmp/usr/lib/x86_64-linux-gnu/muffin/CoglPango-0.typelib
+debian/tmp/usr/lib/x86_64-linux-gnu/muffin/Meta-Muffin.0.typelib

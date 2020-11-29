@@ -1,0 +1,1 @@
+meta_shaped_texture_set_texture(pixmap)

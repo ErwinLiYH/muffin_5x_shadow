@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE informaltable PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<tbody>
+<row>
+<entry><link linkend="ClutterActor">ClutterActor</link></entry>
+<entry><link linkend="GBoxed">GBoxed</link></entry>
+<entry><link linkend="GInitiallyUnowned">GInitiallyUnowned</link></entry>
+</row>
+<row>
+<entry><link linkend="GObject">GObject</link></entry>
+<entry><link linkend="GtkLabel">GtkLabel</link></entry>
+<entry><link linkend="GtkMisc">GtkMisc</link></entry>
+</row>
+<row>
+<entry><link linkend="GtkWidget">GtkWidget</link></entry>
+<entry><link linkend="MetaAccelLabel">MetaAccelLabel</link></entry>
+<entry><link linkend="MetaBackground">MetaBackground</link></entry>
+</row>
+<row>
+<entry><link linkend="MetaBackgroundActor">MetaBackgroundActor</link></entry>
+<entry><link linkend="MetaDisplay">MetaDisplay</link></entry>
+<entry><link linkend="MetaKeyBinding">MetaKeyBinding</link></entry>
+</row>
+<row>
+<entry><link linkend="MetaPlugin">MetaPlugin</link></entry>
+<entry><link linkend="MetaRectangle">MetaRectangle</link></entry>
+<entry><link linkend="MetaScreen">MetaScreen</link></entry>
+</row>
+<row>
+<entry><link linkend="MetaShadowFactory">MetaShadowFactory</link></entry>
+<entry><link linkend="MetaShapedTexture">MetaShapedTexture</link></entry>
+<entry><link linkend="MetaWindow">MetaWindow</link></entry>
+</row>
+<row>
+<entry><link linkend="MetaWindowActor">MetaWindowActor</link></entry>
+<entry><link linkend="MetaWorkspace">MetaWorkspace</link></entry>
+</row>
+</tbody></tgroup></informaltable>

@@ -1,0 +1,97 @@
+/* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
+
+/**
+ * \file keybindings.h  Grab and ungrab keys, and process the key events
+ *
+ * Performs global X grabs on the keys we need to be told about, like
+ * the one to close a window.  It also deals with incoming key events.
+ */
+
+/* 
+ * Copyright (C) 2001 Havoc Pennington
+ * 
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street - Suite 500, Boston, MA
+ * 02110-1335, USA.
+ */
+
+#ifndef META_KEYBINDINGS_PRIVATE_H
+#define META_KEYBINDINGS_PRIVATE_H
+
+#include <meta/keybindings.h>
+
+struct _MetaKeyHandler
+{
+  char *name;
+  MetaKeyHandlerFunc func;
+  MetaKeyHandlerFunc default_func;
+  gint data, flags, action;
+  gpointer user_data;
+  GDestroyNotify user_data_free_func;
+};
+
+struct _MetaKeyBinding
+{
+  const char *name;
+  KeySym keysym;
+  KeyCode keycode;
+  unsigned int mask;
+  MetaVirtualModifier modifiers;
+  MetaKeyHandler *handler;
+};
+
+void     meta_display_init_keys             (MetaDisplay *display);
+void     meta_display_shutdown_keys         (MetaDisplay *display);
+void     meta_screen_grab_keys              (MetaScreen  *screen);
+void     meta_screen_ungrab_keys            (MetaScreen  *screen);
+void     meta_window_grab_keys              (MetaWindow  *window);
+void     meta_window_ungrab_keys            (MetaWindow  *window);
+gboolean meta_window_grab_all_keys          (MetaWindow  *window,
+                                             guint32      timestamp);
+void     meta_window_ungrab_all_keys        (MetaWindow  *window,
+                                             guint32      timestamp);
+
+gboolean meta_window_resize_or_move_allowed (MetaWindow *window,
+                                             MetaDirection dir);
+
+gboolean meta_display_grabbed_event_is_action (MetaDisplay         *display,
+                                               XEvent              *event,
+                                               MetaKeyBindingAction action);
+
+gboolean meta_display_process_key_event     (MetaDisplay *display,
+                                             MetaWindow  *window,
+                                             XEvent      *event);
+void     meta_set_keybindings_disabled      (gboolean     setting);
+void     meta_display_process_mapping_event (MetaDisplay *display,
+                                             XEvent      *event);
+
+gboolean meta_prefs_add_keybinding          (const char           *name,
+                                             const char           *schema,
+                                             MetaKeyBindingAction  action,
+                                             MetaKeyBindingFlags   flags);
+
+gboolean meta_prefs_remove_keybinding       (const char    *name);
+
+gboolean meta_prefs_add_custom_keybinding          (const char           *name,
+                                                    const char          **binding,
+                                                    MetaKeyBindingAction  action,
+                                                    MetaKeyBindingFlags   flags);
+
+gboolean meta_prefs_remove_custom_keybinding       (const char    *name);
+
+#endif
+
+
+
+

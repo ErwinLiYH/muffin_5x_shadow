@@ -1,0 +1,14 @@
+Package: muffin-common
+Source: muffin
+Version: 4.6.3+ulyana
+Architecture: all
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 5089
+Depends: dconf-gsettings-backend | gsettings-backend, sgml-base (>= 1.26)
+Section: misc
+Priority: optional
+Description: window and compositing manager (data files)
+ Muffin is a window manager performing compositing as well based on
+ GTK+ and Clutter and used in Cinnamon desktop environment.
+ .
+ This package contains the shared files.

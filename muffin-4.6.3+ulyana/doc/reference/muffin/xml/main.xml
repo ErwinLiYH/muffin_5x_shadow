@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-Main">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-Main.top_of_page">Main</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>Main</refname>
+<refpurpose>Program startup.</refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-Main.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GOptionContext"><returnvalue>GOptionContext</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-option-context">meta_get_option_context</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-init">meta_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-run">meta_run</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-get-replace-current-wm">meta_get_replace_current_wm</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-set-wm-name">meta_set_wm_name</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-set-gnome-wm-keybindings">meta_set_gnome_wm_keybindings</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-restart">meta_restart</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-exit">meta_exit</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-quit">meta_quit</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-Main.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaExitCode">MetaExitCode</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-Main.description" role="desc">
+<title role="desc.title">Description</title>
+<para>Functions which parse the command-line arguments, create the display,
+kick everything off and then close down Muffin when it's time to go.</para>
+<para>Muffin - a boring window manager for the adult in you</para>
+<para>Many window managers are like Marshmallow Froot Loops; Muffin
+is like Cheerios.</para>
+<para>The best way to get a handle on how the whole system fits together
+is discussed in doc/code-overview.txt; if you're looking for functions
+to investigate, read <link linkend="main"><function>main()</function></link>, <link linkend="meta-display-open"><function>meta_display_open()</function></link>, and <link linkend="event-callback"><function>event_callback()</function></link>.</para>
+
+</refsect1>
+<refsect1 id="muffin-Main.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-get-option-context" role="function">
+<title>meta_get_option_context&#160;()</title>
+<indexterm zone="meta-get-option-context"><primary>meta_get_option_context</primary></indexterm>
+<programlisting language="C"><link linkend="GOptionContext"><returnvalue>GOptionContext</returnvalue></link>&#160;*
+meta_get_option_context (<parameter><type>void</type></parameter>);</programlisting>
+<para>Returns a <link linkend="GOptionContext"><type>GOptionContext</type></link> initialized with muffin-related options.
+Parse the command-line args with this before calling <link linkend="meta-init"><function>meta_init()</function></link>.</para>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para><refsect3 id="meta-get-option-context.returns" role="returns">
+<title>Returns</title>
+<para> the <link linkend="GOptionContext"><type>GOptionContext</type></link></para>
+</refsect3></refsect2>
+<refsect2 id="meta-init" role="function">
+<title>meta_init&#160;()</title>
+<indexterm zone="meta-init"><primary>meta_init</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_init (<parameter><type>void</type></parameter>);</programlisting>
+<para>Initialize muffin. Call this after <link linkend="meta-get-option-context"><function>meta_get_option_context()</function></link> and
+<link linkend="meta-plugin-manager-set-plugin-type"><function>meta_plugin_manager_set_plugin_type()</function></link>, and before <link linkend="meta-run"><function>meta_run()</function></link>.</para>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-run" role="function">
+<title>meta_run&#160;()</title>
+<indexterm zone="meta-run"><primary>meta_run</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+meta_run (<parameter><type>void</type></parameter>);</programlisting>
+<para>Runs muffin. Call this after completing your own initialization.</para>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para><refsect3 id="meta-run.returns" role="returns">
+<title>Returns</title>
+<para> muffin's exit status</para>
+</refsect3></refsect2>
+<refsect2 id="meta-get-replace-current-wm" role="function">
+<title>meta_get_replace_current_wm&#160;()</title>
+<indexterm zone="meta-get-replace-current-wm"><primary>meta_get_replace_current_wm</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_get_replace_current_wm (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-set-wm-name" role="function">
+<title>meta_set_wm_name&#160;()</title>
+<indexterm zone="meta-set-wm-name"><primary>meta_set_wm_name</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_set_wm_name (<parameter>const <link linkend="char"><type>char</type></link> *wm_name</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-set-gnome-wm-keybindings" role="function">
+<title>meta_set_gnome_wm_keybindings&#160;()</title>
+<indexterm zone="meta-set-gnome-wm-keybindings"><primary>meta_set_gnome_wm_keybindings</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_set_gnome_wm_keybindings (<parameter>const <link linkend="char"><type>char</type></link> *wm_keybindings</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-restart" role="function">
+<title>meta_restart&#160;()</title>
+<indexterm zone="meta-restart"><primary>meta_restart</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_restart (<parameter><type>void</type></parameter>);</programlisting>
+<para>Starts the process of restarting the compositor.</para>
+</refsect2>
+<refsect2 id="meta-exit" role="function">
+<title>meta_exit&#160;()</title>
+<indexterm zone="meta-exit"><primary>meta_exit</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_exit (<parameter><link linkend="MetaExitCode"><type>MetaExitCode</type></link> code</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-quit" role="function">
+<title>meta_quit&#160;()</title>
+<indexterm zone="meta-quit"><primary>meta_quit</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_quit (<parameter><link linkend="MetaExitCode"><type>MetaExitCode</type></link> code</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-Main.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaExitCode" role="enum">
+<title>enum MetaExitCode</title>
+<indexterm zone="MetaExitCode"><primary>MetaExitCode</primary></indexterm>
+<refsect3 id="MetaExitCode.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-EXIT-SUCCESS:CAPS">META_EXIT_SUCCESS</para></entry>
+<entry role="enum_member_description"><para>Success</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-EXIT-ERROR:CAPS">META_EXIT_ERROR</para></entry>
+<entry role="enum_member_description"><para>Error</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

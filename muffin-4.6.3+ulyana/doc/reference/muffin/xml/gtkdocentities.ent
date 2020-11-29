@@ -1,0 +1,7 @@
+<!ENTITY package "muffin">
+<!ENTITY package_bugreport "https://github.com/linuxmint/muffin/issues">
+<!ENTITY package_name "muffin">
+<!ENTITY package_string "muffin 4.6.3">
+<!ENTITY package_tarname "muffin">
+<!ENTITY package_url "">
+<!ENTITY package_version "4.6.3">

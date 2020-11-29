@@ -1,0 +1,15 @@
+Package: muffin-dbg
+Source: muffin
+Version: 4.6.3+ulyana
+Architecture: amd64
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 7169
+Depends: libmuffin0 (= 4.6.3+ulyana), muffin (= 4.6.3+ulyana)
+Section: debug
+Priority: extra
+Description: window and compositing manager (debugging symbols)
+ Muffin is a window manager performing compositing as well based on
+ GTK+ and Clutter and used in Cinnamon desktop environment.
+ .
+ This package contains the debugging symbols.
+Build-Ids: 28def73b082b49b24c9f567b7688db1d26bb831f 5852a2074e61e6a8cf0792029ebed8c29b50923a 62e5876dc66c9f180f19e67b62d86d375aab24c8 7eed25287ea16fa95fd8b166ff050802a329dbc2 8c39da4866051e27d9274742959b8425e1fc1035 8d809a0eba3d11e8cdd2002caf31b158fa716f2e b9b14e176fba32dfcec0296987ae532e6f496c36 c090c0d6c43bcf58b897246d15852f96fcdbffc5 eae948b96d227f891ad1731d7537b6350b67b87d ed05d7803d8471f1a2505db4cc21ebf60d4a9be2 f8c2c8e2f2541d55aff528e3e7d08f8f3141f4fb

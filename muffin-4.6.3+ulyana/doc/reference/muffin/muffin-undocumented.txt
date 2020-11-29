@@ -1,0 +1,474 @@
+32% symbol docs coverage.
+215 symbols documented.
+246 symbols incomplete.
+456 not documented.
+
+
+MAX_BUTTONS_PER_CORNER
+METACITY_STOCK_DELETE
+METACITY_STOCK_MAXIMIZE
+METACITY_STOCK_MINIMIZE
+META_DEFAULT_ICON_NAME
+META_PLUGIN_DECLARE (<parameters>)
+META_POINT_IN_RECT (<parameters>)
+META_PRIORITY_BEFORE_REDRAW
+META_PRIORITY_PREFS_NOTIFY
+META_PRIORITY_REDRAW
+META_PRIORITY_RESIZE
+META_TYPE_KEY_BINDING
+MetaAccelLabel
+MetaBackgroundTransition (<items>)
+MetaBellType (<items>)
+MetaButtonFunction (<items>)
+MetaButtonLayout
+MetaCompositor
+MetaCursor (<items>)
+MetaDebugTopic (<items>)
+MetaDirection (<items>)
+MetaDisplay
+MetaDisplay::bell
+MetaDisplay::gl-video-memory-purged
+MetaDisplay::grab-op-begin
+MetaDisplay::grab-op-end
+MetaDisplay::window-created
+MetaDisplay::window-demands-attention
+MetaDisplay::window-marked-urgent
+MetaDisplay::zoom-scroll-in
+MetaDisplay::zoom-scroll-out
+MetaEdge (<items>)
+MetaEdgeType (<items>)
+MetaExitCode
+MetaFrame
+MetaFrameBorders (<items>)
+MetaFrameFlags (<items>)
+MetaFrameType (<items>)
+MetaGrabOp (<items>)
+MetaGradientType (<items>)
+MetaGroup
+MetaKeyBinding
+MetaKeyBindingAction (<items>)
+MetaKeyBindingFlags (<items>)
+MetaKeyHandler
+MetaKeyHandlerFunc (display, screen, window, binding, user_data)
+MetaLaterType
+MetaListWindowsFlags (<items>)
+MetaMaximizeFlags (<items>)
+MetaMenuOp (<items>)
+MetaMotionDirection (<items>)
+MetaPlacementMode (<items>)
+MetaPlugin
+MetaPluginClass (<items>)
+MetaPluginInfo (<items>)
+MetaPluginVersion (<items>)
+MetaPreference (<items>)
+MetaPrefsChangedFunc (<parameters>)
+MetaResizePopup
+MetaScreen
+MetaScreen::hide-snap-osd
+MetaScreen::in-fullscreen-changed
+MetaScreen::monitors-changed
+MetaScreen::restacked
+MetaScreen::show-snap-osd
+MetaScreen::show-workspace-osd
+MetaScreen::startup-sequence-changed
+MetaScreen::toggle-recording
+MetaScreen::window-added
+MetaScreen::window-entered-monitor
+MetaScreen::window-left-monitor
+MetaScreen::window-monitor-changed
+MetaScreen::window-removed
+MetaScreen::window-skip-taskbar-changed
+MetaScreen::window-workspace-changed
+MetaScreen::workareas-changed
+MetaScreen::workspace-added
+MetaScreen::workspace-removed
+MetaScreen::workspace-switched
+MetaScreenCorner (<items>)
+MetaShadowFactory
+MetaShadowParams
+MetaShapedTexture::size-changed
+MetaSide (<items>)
+MetaStackLayer (<items>)
+MetaStrut (<items>)
+MetaSyncMethod (<items>)
+MetaTabList (<items>)
+MetaTabShowType (<items>)
+MetaTileMode (<items>)
+MetaVirtualModifier (<items>)
+MetaWindow
+MetaWindow::focus
+MetaWindow::icon-changed
+MetaWindow::position-changed
+MetaWindow::raised
+MetaWindow::size-changed
+MetaWindow::unmanaged
+MetaWindow::workspace-changed
+MetaWindowActor::position-changed
+MetaWindowActor::size-changed
+MetaWindowForeachFunc (<parameters>)
+MetaWindowMenu (<items>)
+MetaWindowMenuFunc (<parameters>)
+MetaWindowTileType (<items>)
+MetaWindowType (<items>)
+MetaWorkspace
+MetaWorkspace::window-added
+MetaWorkspace::window-removed
+meta_XFree (<parameters>)
+meta_accel_label_new_with_mnemonic (<parameters>)
+meta_accel_label_set_accelerator (<parameters>)
+meta_alpha_gradient_spec_new
+meta_background_new (<parameters>)
+meta_background_set_layer (<parameters>)
+meta_background_set_layer_wrap_mode (<parameters>)
+meta_background_set_visible_region (<parameters>)
+meta_bug (<parameters>)
+meta_color_spec_new
+meta_color_spec_new_from_string
+meta_color_spec_new_gtk
+meta_compositor_add_window (<parameters>)
+meta_compositor_destroy (<parameters>)
+meta_compositor_flash_screen (<parameters>)
+meta_compositor_hide_hud_preview (<parameters>)
+meta_compositor_hide_tile_preview (<parameters>)
+meta_compositor_hide_window (<parameters>)
+meta_compositor_manage_screen (<parameters>)
+meta_compositor_maximize_window (<parameters>)
+meta_compositor_new (display)
+meta_compositor_on_shadow_factory_changed
+meta_compositor_process_event (compositor, event, window)
+meta_compositor_queue_frame_drawn (<parameters>)
+meta_compositor_remove_window (<parameters>)
+meta_compositor_set_updates_frozen (<parameters>)
+meta_compositor_show_hud_preview (<parameters>)
+meta_compositor_show_tile_preview (<parameters>)
+meta_compositor_show_window (<parameters>)
+meta_compositor_switch_workspace (<parameters>)
+meta_compositor_sync_screen_size (<parameters>)
+meta_compositor_sync_stack (<parameters>)
+meta_compositor_sync_window_geometry (<parameters>)
+meta_compositor_tile_window (<parameters>)
+meta_compositor_toggle_send_frame_timings (<parameters>)
+meta_compositor_unmanage_screen (<parameters>)
+meta_compositor_unmaximize_window (<parameters>)
+meta_compositor_window_shape_changed (<parameters>)
+meta_create_color_texture_4ub (red, green, blue, alpha)
+meta_debug_spew
+meta_debug_spew_real (<parameters>)
+meta_display_begin_grab_op (<parameters>)
+meta_display_end_grab_op (<parameters>)
+meta_display_focus_the_no_focus_window (<parameters>)
+meta_display_get_compositor (display)
+meta_display_get_compositor_version (<parameters>)
+meta_display_get_current_time (<parameters>)
+meta_display_get_current_time_roundtrip (<parameters>)
+meta_display_get_damage_event_base (<parameters>)
+meta_display_get_grab_op (display)
+meta_display_get_ignored_modifier_mask
+meta_display_get_last_user_time
+meta_display_get_screens
+meta_display_get_shape_event_base (<parameters>)
+meta_display_get_xdisplay (display)
+meta_display_has_shape (<parameters>)
+meta_display_keybinding_action_invoke_by_code (<parameters>)
+meta_display_lookup_group (display, group_leader)
+meta_display_screen_for_root (xroot)
+meta_display_set_input_focus_window (<parameters>)
+meta_display_unmanage_screen (<parameters>)
+meta_draw_op_list_new
+meta_draw_op_new
+meta_draw_spec_new
+meta_empty_stage_input_region (<parameters>)
+meta_error_trap_pop (<parameters>)
+meta_error_trap_pop_with_return (<parameters>)
+meta_error_trap_push (<parameters>)
+meta_error_trap_push_with_return (<parameters>)
+meta_exit (<parameters>)
+meta_fatal (<parameters>)
+meta_frame_borders_clear (<parameters>)
+meta_frame_type_to_string (type)
+meta_free_gslist_and_elements (list_to_deep_free)
+meta_g_utf8_strndup (<parameters>)
+meta_get_bottom_window_group_for_screen
+meta_get_overlay_group_for_screen
+meta_get_overlay_window (screen)
+meta_get_replace_current_wm
+meta_get_stage_for_screen
+meta_get_top_window_group_for_screen
+meta_get_window_actors
+meta_get_window_group_for_screen
+meta_gradient_add_alpha (<parameters>)
+meta_gradient_create_interwoven (width, height, colors1, thickness1, colors2, thickness2)
+meta_gradient_create_multi
+meta_gradient_create_simple
+meta_gradient_spec_new
+meta_gravity_to_string (<parameters>)
+meta_group_get_size (<parameters>)
+meta_group_get_startup_id (<parameters>)
+meta_group_list_windows
+meta_group_property_notify (group, event)
+meta_group_update_layers (<parameters>)
+meta_is_debugging
+meta_is_syncing
+meta_is_verbose
+meta_key_binding_get_mask (<parameters>)
+meta_key_binding_get_modifiers (<parameters>)
+meta_key_binding_get_name (<parameters>)
+meta_keybindings_set_custom_handler (<parameters>)
+meta_parse_position_expression
+meta_parse_size_expression
+meta_plugin_debug_mode (<parameters>)
+meta_plugin_destroy_completed (<parameters>)
+meta_plugin_get_info (<parameters>)
+meta_plugin_manager_set_plugin_type (<parameters>)
+meta_plugin_map_completed (<parameters>)
+meta_plugin_maximize_completed (<parameters>)
+meta_plugin_minimize_completed (<parameters>)
+meta_plugin_running (<parameters>)
+meta_plugin_switch_workspace_completed (<parameters>)
+meta_plugin_tile_completed (<parameters>)
+meta_plugin_unmaximize_completed (<parameters>)
+meta_pop_no_msg_prefix
+meta_pre_exec_close_fds
+meta_preference_to_string (<parameters>)
+meta_prefs_add_listener (func, data)
+meta_prefs_bell_is_audible
+meta_prefs_change_workspace_name (<parameters>)
+meta_prefs_get_action_double_click_titlebar
+meta_prefs_get_action_middle_click_titlebar
+meta_prefs_get_action_right_click_titlebar
+meta_prefs_get_action_scroll_wheel_titlebar
+meta_prefs_get_application_based
+meta_prefs_get_attach_modal_dialogs
+meta_prefs_get_auto_raise
+meta_prefs_get_auto_raise_delay
+meta_prefs_get_background_transition
+meta_prefs_get_compositing_manager
+meta_prefs_get_cursor_size
+meta_prefs_get_cursor_theme
+meta_prefs_get_disable_workarounds
+meta_prefs_get_draggable_border_width
+meta_prefs_get_dynamic_workspaces
+meta_prefs_get_edge_resistance_window
+meta_prefs_get_edge_tiling
+meta_prefs_get_focus_mode
+meta_prefs_get_focus_new_windows
+meta_prefs_get_force_fullscreen
+meta_prefs_get_gnome_accessibility
+meta_prefs_get_gnome_animations
+meta_prefs_get_ignore_hide_titlebar_when_maximized
+meta_prefs_get_invert_flip_direction
+meta_prefs_get_keybinding_action (<parameters>)
+meta_prefs_get_keybindings
+meta_prefs_get_legacy_snap
+meta_prefs_get_min_win_opacity
+meta_prefs_get_mouse_button_menu
+meta_prefs_get_mouse_button_mods
+meta_prefs_get_mouse_button_resize
+meta_prefs_get_mouse_button_zoom_mods
+meta_prefs_get_mouse_zoom_enabled
+meta_prefs_get_num_workspaces
+meta_prefs_get_placement_mode
+meta_prefs_get_raise_on_click
+meta_prefs_get_resize_threshold
+meta_prefs_get_screenshot_command
+meta_prefs_get_send_frame_timings
+meta_prefs_get_snap_modifier
+meta_prefs_get_sync_method
+meta_prefs_get_terminal_command
+meta_prefs_get_theme
+meta_prefs_get_threaded_swap
+meta_prefs_get_tile_hud_threshold
+meta_prefs_get_tile_maximize
+meta_prefs_get_titlebar_font
+meta_prefs_get_ui_scale
+meta_prefs_get_unredirect_fullscreen_windows
+meta_prefs_get_visual_bell
+meta_prefs_get_visual_bell_type
+meta_prefs_get_window_binding (<parameters>)
+meta_prefs_get_window_screenshot_command
+meta_prefs_get_workspace_cycle
+meta_prefs_get_workspace_name (<parameters>)
+meta_prefs_get_workspaces_only_on_primary
+meta_prefs_init
+meta_prefs_remove_listener (func, data)
+meta_prefs_set_compositing_manager (<parameters>)
+meta_prefs_set_force_fullscreen (<parameters>)
+meta_prefs_set_num_workspaces (<parameters>)
+meta_prefs_set_ui_scale (<parameters>)
+meta_print_backtrace
+meta_push_no_msg_prefix
+meta_quit (<parameters>)
+meta_rect (<parameters>)
+meta_rectangle_area (<parameters>)
+meta_rectangle_contains_rect (<parameters>)
+meta_rectangle_copy (<parameters>)
+meta_rectangle_could_fit_rect (<parameters>)
+meta_rectangle_equal (<parameters>)
+meta_rectangle_expand_region
+meta_rectangle_expand_region_conditionally
+meta_rectangle_find_nonintersected_monitor_edges
+meta_rectangle_free (<parameters>)
+meta_rectangle_horiz_overlap (<parameters>)
+meta_rectangle_intersect
+meta_rectangle_overlap (<parameters>)
+meta_rectangle_union
+meta_rectangle_vert_overlap (<parameters>)
+meta_screen_get_active_workspace (screen)
+meta_screen_get_active_workspace_index (<parameters>)
+meta_screen_get_display
+meta_screen_get_monitor_index_for_rect (<parameters>)
+meta_screen_get_n_workspaces (<parameters>)
+meta_screen_get_screen_number (<parameters>)
+meta_screen_get_startup_sequences
+meta_screen_get_workspaces
+meta_screen_get_xroot (screen)
+meta_screen_grab_all_keys (<parameters>)
+meta_screen_remove_workspace (<parameters>)
+meta_screen_set_cm_selection (<parameters>)
+meta_screen_show_desktop (<parameters>)
+meta_screen_toggle_desktop (<parameters>)
+meta_screen_ungrab_all_keys (<parameters>)
+meta_screen_unset_cm_selection (<parameters>)
+meta_screen_unshow_desktop (<parameters>)
+meta_set_debugging (<parameters>)
+meta_set_gnome_wm_keybindings (<parameters>)
+meta_set_replace_current_wm (<parameters>)
+meta_set_stage_input_region (<parameters>)
+meta_set_syncing (<parameters>)
+meta_set_verbose (<parameters>)
+meta_set_wm_name (<parameters>)
+meta_shadow_factory_get_default
+meta_shaped_texture_dirty_mask (<parameters>)
+meta_shaped_texture_ensure_mask (<parameters>)
+meta_shaped_texture_get_texture
+meta_shaped_texture_new
+meta_shaped_texture_set_create_mipmaps (<parameters>)
+meta_shaped_texture_set_overlay_path
+meta_shaped_texture_set_texture (texture)
+meta_show_dialog (type, message, timeout, display, ok_text, cancel_text, transient_for, columns, entries)
+meta_sync_ring_after_frame
+meta_sync_ring_destroy
+meta_sync_ring_handle_event (<parameters>)
+meta_sync_ring_init (<parameters>)
+meta_sync_ring_insert_wait
+meta_theme_get_current
+meta_theme_load
+meta_theme_load_image
+meta_theme_new
+meta_topic
+meta_topic_real (<parameters>)
+meta_unsigned_long_equal (<parameters>)
+meta_unsigned_long_hash (<parameters>)
+meta_verbose
+meta_verbose_real (<parameters>)
+meta_warning (<parameters>)
+meta_window_activate (<parameters>)
+meta_window_activate_with_workspace (<parameters>)
+meta_window_actor_get_meta_window (self)
+meta_window_actor_get_texture (self)
+meta_window_actor_get_x_window (self)
+meta_window_actor_is_destroyed (self)
+meta_window_actor_is_override_redirect (<parameters>)
+meta_window_actor_showing_on_its_workspace (<parameters>)
+meta_window_can_close (<parameters>)
+meta_window_can_maximize (<parameters>)
+meta_window_can_minimize (<parameters>)
+meta_window_can_move (<parameters>)
+meta_window_can_resize (<parameters>)
+meta_window_can_shade (<parameters>)
+meta_window_change_workspace_by_index (<parameters>)
+meta_window_compute_group (<parameters>)
+meta_window_delete (<parameters>)
+meta_window_get_all_monitors
+meta_window_get_description (<parameters>)
+meta_window_get_display
+meta_window_get_frame (window)
+meta_window_get_frame_bounds (window)
+meta_window_get_group (window)
+meta_window_get_gtk_app_menu_object_path
+meta_window_get_gtk_application_id
+meta_window_get_gtk_application_object_path
+meta_window_get_gtk_menubar_object_path
+meta_window_get_gtk_unique_bus_name
+meta_window_get_gtk_window_object_path
+meta_window_get_icon_geometry (<parameters>)
+meta_window_get_layer (<parameters>)
+meta_window_get_maximized (window)
+meta_window_get_role (<parameters>)
+meta_window_get_startup_id (<parameters>)
+meta_window_get_tile_match (window)
+meta_window_get_user_time (window)
+meta_window_get_window_type (<parameters>)
+meta_window_get_xwindow
+meta_window_group_leader_changed (<parameters>)
+meta_window_has_focus (<parameters>)
+meta_window_is_always_on_all_workspaces (<parameters>)
+meta_window_is_always_on_top (<parameters>)
+meta_window_is_fullscreen (window)
+meta_window_is_hidden (<parameters>)
+meta_window_is_interesting (<parameters>)
+meta_window_is_monitor_sized (window)
+meta_window_is_on_all_workspaces (<parameters>)
+meta_window_is_on_primary_monitor (window)
+meta_window_is_remote
+meta_window_is_shaded (<parameters>)
+meta_window_lower (<parameters>)
+meta_window_maximize (<parameters>)
+meta_window_menu_free (<parameters>)
+meta_window_menu_new (<parameters>)
+meta_window_menu_popup (<parameters>)
+meta_window_minimize (<parameters>)
+meta_window_raise (<parameters>)
+meta_window_requested_bypass_compositor (window)
+meta_window_requested_dont_bypass_compositor (window)
+meta_window_reset_opacity (<parameters>)
+meta_window_set_compositor_private (<parameters>)
+meta_window_set_demands_attention (<parameters>)
+meta_window_showing_on_its_workspace
+meta_window_shutdown_group (<parameters>)
+meta_window_stick (<parameters>)
+meta_window_unmaximize (<parameters>)
+meta_window_unminimize (<parameters>)
+meta_window_unset_demands_attention (<parameters>)
+meta_window_unstick (<parameters>)
+meta_workspace_activate (<parameters>)
+meta_workspace_focus_default_window (<parameters>)
+meta_workspace_get_work_area_all_monitors (<parameters>)
+meta_workspace_index (<parameters>)
+meta_workspace_update_window_hints (<parameters>)
+
+atomnames:long_description
+atomnames:short_description
+boxes:long_description
+common:long_description
+compositor-muffin:long_description
+compositor-muffin:short_description
+errors:long_description
+gradient:long_description
+gradient:short_description
+group:long_description
+keybindings:long_description
+menu:long_description
+menu:short_description
+meta-background-actor:long_description
+meta-background:long_description
+meta-background:short_description
+meta-plugin:long_description
+meta-shadow-factory:long_description
+meta-shaped-texture-private:long_description
+meta-shaped-texture-private:short_description
+meta-shaped-texture:long_description
+meta-sync-ring:long_description
+meta-sync-ring:short_description
+meta-window-actor:long_description
+metaaccellabel:long_description
+metaaccellabel:short_description
+prefs:long_description
+screen:long_description
+stack:long_description
+types:long_description
+types:short_description
+util-private:long_description
+util-private:short_description
+util:long_description
+window:long_description

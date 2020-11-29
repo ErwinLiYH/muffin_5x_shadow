@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MetaShapedTexture: Muffin Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Muffin Reference Manual">
+<link rel="up" href="core-reference.html" title="Part III. Muffin Core Reference">
+<link rel="prev" href="MetaShadowFactory.html" title="MetaShadowFactory">
+<link rel="next" href="MetaWindowActor.html" title="MetaWindowActor">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#MetaShapedTexture.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#MetaShapedTexture.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#MetaShapedTexture.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="MetaShadowFactory.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="MetaWindowActor.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="MetaShapedTexture"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="MetaShapedTexture.top_of_page"></a>MetaShapedTexture</span></h2>
+<p>MetaShapedTexture — An actor to draw a masked texture.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="MetaShapedTexture.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-set-create-mipmaps" title="meta_shaped_texture_set_create_mipmaps ()">meta_shaped_texture_set_create_mipmaps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-update-area" title="meta_shaped_texture_update_area ()">meta_shaped_texture_update_area</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">CoglTexture</span> *
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-get-texture" title="meta_shaped_texture_get_texture ()">meta_shaped_texture_get_texture</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-set-overlay-path" title="meta_shaped_texture_set_overlay_path ()">meta_shaped_texture_set_overlay_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-set-clip-region" title="meta_shaped_texture_set_clip_region ()">meta_shaped_texture_set_clip_region</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-set-opaque-region" title="meta_shaped_texture_set_opaque_region ()">meta_shaped_texture_set_opaque_region</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">cairo_surface_t</span> *
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-get-image" title="meta_shaped_texture_get_image ()">meta_shaped_texture_get_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-ensure-mask" title="meta_shaped_texture_ensure_mask ()">meta_shaped_texture_ensure_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="MetaShapedTexture.html#meta-shaped-texture-dirty-mask" title="meta_shaped_texture_dirty_mask ()">meta_shaped_texture_dirty_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="MetaShapedTexture.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="MetaShapedTexture.html#MetaShapedTexture-size-changed" title="The “size-changed” signal">size-changed</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="MetaShapedTexture.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
+        <span class="lineart">╰──</span> ClutterActor
+            <span class="lineart">╰──</span> MetaShapedTexture
+</pre>
+</div>
+<div class="refsect1">
+<a name="MetaShapedTexture.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="MetaShapedTexture.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="meta-shaped-texture-set-create-mipmaps"></a><h3>meta_shaped_texture_set_create_mipmaps ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_shaped_texture_set_create_mipmaps
+                               (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> create_mipmaps</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-update-area"></a><h3>meta_shaped_texture_update_area ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+meta_shaped_texture_update_area (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> x</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> y</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> width</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> height</code></em>,
+                                 <em class="parameter"><code><span class="type">cairo_region_t</span> *unobscured_region</code></em>);</pre>
+<p>Repairs the damaged area indicated by <em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+, <em class="parameter"><code>width</code></em>
+ and <em class="parameter"><code>height</code></em>
+
+and queues a redraw for the intersection <em class="parameter"><code>visibible_region</code></em>
+ and
+the damage area. If <em class="parameter"><code>visibible_region</code></em>
+ is <code class="literal">NULL</code> a redraw will always
+get queued.</p>
+<div class="refsect3">
+<a name="meta-shaped-texture-update-area.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stex</p></td>
+<td class="parameter_description"><p><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>the x coordinate of the damaged area</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>the y coordinate of the damaged area</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>the width of the damaged area</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>the height of the damaged area</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unobscured_region</p></td>
+<td class="parameter_description"><p>The unobscured region of the window or <code class="literal">NULL</code> if
+there is no valid one (like when the actor is transformed or
+has a mapped clone)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="meta-shaped-texture-update-area.returns"></a><h4>Returns</h4>
+<p> Whether a redraw have been queued or not</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-get-texture"></a><h3>meta_shaped_texture_get_texture ()</h3>
+<pre class="programlisting"><span class="returnvalue">CoglTexture</span> *
+meta_shaped_texture_get_texture (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>);</pre>
+<div class="refsect3">
+<a name="meta-shaped-texture-get-texture.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stex</p></td>
+<td class="parameter_description"><p>The <a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="meta-shaped-texture-get-texture.returns"></a><h4>Returns</h4>
+<p>the unshaped texture. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-set-overlay-path"></a><h3>meta_shaped_texture_set_overlay_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_shaped_texture_set_overlay_path (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>,
+                                      <em class="parameter"><code><span class="type">cairo_region_t</span> *overlay_region</code></em>,
+                                      <em class="parameter"><code><span class="type">cairo_path_t</span> *overlay_path</code></em>);</pre>
+<div class="refsect3">
+<a name="meta-shaped-texture-set-overlay-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stex</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>overlay_region</p></td>
+<td class="parameter_description"><p>A region containing the parts of the mask to overlay.
+All rectangles in this region are wiped clear to full transparency,
+and the overlay path is clipped to this region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>overlay_path</p></td>
+<td class="parameter_description"><p>This path will be painted onto the mask
+texture with a fully opaque source. Due to the lack of refcounting
+in <span class="type">cairo_path_t</span>, ownership of the path is assumed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-set-clip-region"></a><h3>meta_shaped_texture_set_clip_region ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_shaped_texture_set_clip_region (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>,
+                                     <em class="parameter"><code><span class="type">cairo_region_t</span> *clip_region</code></em>);</pre>
+<p>Provides a hint to the texture about what areas of the texture
+are not completely obscured and thus need to be painted. This
+is an optimization and is not supposed to have any effect on
+the output.</p>
+<p>Typically a parent container will set the clip region before
+painting its children, and then unset it afterwards.</p>
+<div class="refsect3">
+<a name="meta-shaped-texture-set-clip-region.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stex</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>clip_region</p></td>
+<td class="parameter_description"><p>the region of the texture that is visible and
+should be painted.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-set-opaque-region"></a><h3>meta_shaped_texture_set_opaque_region ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_shaped_texture_set_opaque_region (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>,
+                                       <em class="parameter"><code><span class="type">cairo_region_t</span> *opaque_region</code></em>);</pre>
+<p>As most windows have a large portion that does not require blending,
+we can easily turn off blending if we know the areas that do not
+require blending. This sets the region where we will not blend for
+optimization purposes.</p>
+<div class="refsect3">
+<a name="meta-shaped-texture-set-opaque-region.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stex</p></td>
+<td class="parameter_description"><p>a <a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opaque_region</p></td>
+<td class="parameter_description"><p>the region of the texture that
+can have blending turned off. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-get-image"></a><h3>meta_shaped_texture_get_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">cairo_surface_t</span> *
+meta_shaped_texture_get_image (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>,
+                               <em class="parameter"><code><span class="type">cairo_rectangle_int_t</span> *clip</code></em>);</pre>
+<p>Flattens the two layers of the shaped texture into one ARGB32
+image by alpha blending the two images, and returns the flattened
+image.</p>
+<div class="refsect3">
+<a name="meta-shaped-texture-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stex</p></td>
+<td class="parameter_description"><p>A <a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>clip</p></td>
+<td class="parameter_description"><p>A clipping rectangle, to help prevent extra processing.
+In the case that the clipping rectangle is partially or fully
+outside the bounds of the texture, the rectangle will be clipped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="meta-shaped-texture-get-image.returns"></a><h4>Returns</h4>
+<p>a new cairo surface to be freed with
+<code class="function">cairo_surface_destroy()</code>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-ensure-mask"></a><h3>meta_shaped_texture_ensure_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_shaped_texture_ensure_mask (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>,
+                                 <em class="parameter"><code><span class="type">cairo_region_t</span> *shape_region</code></em>,
+                                 <em class="parameter"><code><span class="type">gboolean</span> has_frame</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-shaped-texture-dirty-mask"></a><h3>meta_shaped_texture_dirty_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_shaped_texture_dirty_mask (<em class="parameter"><code><a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *stex</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="MetaShapedTexture.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="MetaShapedTexture-size-changed"></a><h3>The <code class="literal">“size-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="MetaShapedTexture.html" title="MetaShapedTexture"><span class="type">MetaShapedTexture</span></a> *metashapedtexture,
+               <span class="type">gpointer</span>           user_data)</pre>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

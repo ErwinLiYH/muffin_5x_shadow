@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaShadowFactory">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaShadowFactory.top_of_page">MetaShadowFactory</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaShadowFactory</refname>
+<refpurpose>Create and cache shadow textures for arbitrary window shapes</refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaShadowFactory.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="MetaShadowFactory"><returnvalue>MetaShadowFactory</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-shadow-factory-get-default">meta_shadow_factory_get_default</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shadow-factory-set-params">meta_shadow_factory_set_params</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shadow-factory-get-params">meta_shadow_factory_get_params</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-compositor-on-shadow-factory-changed">meta_compositor_on_shadow_factory_changed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaShadowFactory.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaShadowParams">MetaShadowParams</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaShadowFactory-struct">MetaShadowFactory</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaShadowFactory.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaShadowFactory
+</screen>
+</refsect1>
+
+
+<refsect1 id="MetaShadowFactory.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="MetaShadowFactory.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-shadow-factory-get-default" role="function">
+<title>meta_shadow_factory_get_default&#160;()</title>
+<indexterm zone="meta-shadow-factory-get-default"><primary>meta_shadow_factory_get_default</primary></indexterm>
+<programlisting language="C"><link linkend="MetaShadowFactory"><returnvalue>MetaShadowFactory</returnvalue></link>&#160;*
+meta_shadow_factory_get_default (<parameter><type>void</type></parameter>);</programlisting>
+<refsect3 id="meta-shadow-factory-get-default.returns" role="returns">
+<title>Returns</title>
+<para>the global singleton shadow factory. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-shadow-factory-set-params" role="function">
+<title>meta_shadow_factory_set_params&#160;()</title>
+<indexterm zone="meta-shadow-factory-set-params"><primary>meta_shadow_factory_set_params</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shadow_factory_set_params (<parameter><link linkend="MetaShadowFactory"><type>MetaShadowFactory</type></link> *factory</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *class_name</parameter>,
+                                <parameter><link linkend="gboolean"><type>gboolean</type></link> focused</parameter>,
+                                <parameter><link linkend="MetaShadowParams"><type>MetaShadowParams</type></link> *params</parameter>);</programlisting>
+<para>Updates the shadow parameters for a particular class of shadows
+for either the focused or unfocused state. If the class name
+does not name an existing class, a new class will be created
+(the other focus state for that class will have default values
+assigned to it.)</para>
+<refsect3 id="meta-shadow-factory-set-params.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>factory</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaShadowFactory"><type>MetaShadowFactory</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>class_name</para></entry>
+<entry role="parameter_description"><para>name of the class of shadow to set the params for.
+the default shadow classes are the names of the different
+theme frame types (normal, dialog, modal_dialog, utility,
+border, menu, attached) and in addition, popup-menu
+and dropdown-menu.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>focused</para></entry>
+<entry role="parameter_description"><para>whether the shadow is for a focused window</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>params</para></entry>
+<entry role="parameter_description"><para>new parameter values</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-shadow-factory-get-params" role="function">
+<title>meta_shadow_factory_get_params&#160;()</title>
+<indexterm zone="meta-shadow-factory-get-params"><primary>meta_shadow_factory_get_params</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shadow_factory_get_params (<parameter><link linkend="MetaShadowFactory"><type>MetaShadowFactory</type></link> *factory</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *class_name</parameter>,
+                                <parameter><link linkend="gboolean"><type>gboolean</type></link> focused</parameter>,
+                                <parameter><link linkend="MetaShadowParams"><type>MetaShadowParams</type></link> *params</parameter>);</programlisting>
+<para>Gets the shadow parameters for a particular class of shadows
+for either the focused or unfocused state. If the class name
+does not name an existing class, default values will be returned
+without printing an error.</para>
+<refsect3 id="meta-shadow-factory-get-params.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>factory</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaShadowFactory"><type>MetaShadowFactory</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>class_name</para></entry>
+<entry role="parameter_description"><para>name of the class of shadow to get the params for</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>focused</para></entry>
+<entry role="parameter_description"><para>whether the shadow is for a focused window</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>params</para></entry>
+<entry role="parameter_description"><para>location to store the current parameter values. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>out caller-allocates</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-compositor-on-shadow-factory-changed" role="function">
+<title>meta_compositor_on_shadow_factory_changed&#160;()</title>
+<indexterm zone="meta-compositor-on-shadow-factory-changed"><primary>meta_compositor_on_shadow_factory_changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_compositor_on_shadow_factory_changed
+                               (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="MetaShadowFactory.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaShadowParams" role="struct">
+<title>struct MetaShadowParams</title>
+<indexterm zone="MetaShadowParams"><primary>MetaShadowParams</primary></indexterm>
+<programlisting language="C">struct MetaShadowParams {
+  int radius;
+  int top_fade;
+  int x_offset;
+  int y_offset;
+  guint8 opacity;
+};
+</programlisting>
+<refsect3 id="MetaShadowParams.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="int"><type>int</type></link>&#160;<structfield id="MetaShadowParams.radius">radius</structfield>;</para></entry>
+<entry role="struct_member_description"><para>the radius (gaussian standard deviation) of the shadow</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><link linkend="int"><type>int</type></link>&#160;<structfield id="MetaShadowParams.top-fade">top_fade</structfield>;</para></entry>
+<entry role="struct_member_description"><para>if &gt;= 0, the shadow doesn't extend above the top
+of the shape, and fades out over the given number of pixels</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><link linkend="int"><type>int</type></link>&#160;<structfield id="MetaShadowParams.x-offset">x_offset</structfield>;</para></entry>
+<entry role="struct_member_description"><para>horizontal offset of the shadow with respect to the
+shape being shadowed, in pixels</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><link linkend="int"><type>int</type></link>&#160;<structfield id="MetaShadowParams.y-offset">y_offset</structfield>;</para></entry>
+<entry role="struct_member_description"><para>vertical offset of the shadow with respect to the
+shape being shadowed, in pixels</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><link linkend="guint8"><type>guint8</type></link>&#160;<structfield id="MetaShadowParams.opacity">opacity</structfield>;</para></entry>
+<entry role="struct_member_description"><para>opacity of the shadow, from 0 to 255</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+<refsect2 id="MetaShadowFactory-struct" role="struct">
+<title>MetaShadowFactory</title>
+<indexterm zone="MetaShadowFactory-struct"><primary>MetaShadowFactory</primary></indexterm>
+<programlisting language="C">typedef struct _MetaShadowFactory MetaShadowFactory;</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

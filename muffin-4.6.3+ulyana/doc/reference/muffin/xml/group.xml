@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-MetaGroup">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-MetaGroup.top_of_page">MetaGroup</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaGroup</refname>
+<refpurpose>Muffin window groups</refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-MetaGroup.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="MetaGroup"><returnvalue>MetaGroup</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-window-get-group">meta_window_get_group</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-compute-group">meta_window_compute_group</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-shutdown-group">meta_window_shutdown_group</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-window-group-leader-changed">meta_window_group_leader_changed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaGroup"><returnvalue>MetaGroup</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-display-lookup-group">meta_display_lookup_group</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-group-list-windows">meta_group_list_windows</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-group-update-layers">meta_group_update_layers</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-group-get-startup-id">meta_group_get_startup_id</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-group-get-size">meta_group_get_size</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-group-property-notify">meta_group_property_notify</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-MetaGroup.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-MetaGroup.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-window-get-group" role="function">
+<title>meta_window_get_group&#160;()</title>
+<indexterm zone="meta-window-get-group"><primary>meta_window_get_group</primary></indexterm>
+<programlisting language="C"><link linkend="MetaGroup"><returnvalue>MetaGroup</returnvalue></link>&#160;*
+meta_window_get_group (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-window-compute-group" role="function">
+<title>meta_window_compute_group&#160;()</title>
+<indexterm zone="meta-window-compute-group"><primary>meta_window_compute_group</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_compute_group (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-shutdown-group" role="function">
+<title>meta_window_shutdown_group&#160;()</title>
+<indexterm zone="meta-window-shutdown-group"><primary>meta_window_shutdown_group</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_shutdown_group (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-window-group-leader-changed" role="function">
+<title>meta_window_group_leader_changed&#160;()</title>
+<indexterm zone="meta-window-group-leader-changed"><primary>meta_window_group_leader_changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_window_group_leader_changed (<parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *window</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-display-lookup-group" role="function">
+<title>meta_display_lookup_group&#160;()</title>
+<indexterm zone="meta-display-lookup-group"><primary>meta_display_lookup_group</primary></indexterm>
+<programlisting language="C"><link linkend="MetaGroup"><returnvalue>MetaGroup</returnvalue></link>&#160;*
+meta_display_lookup_group (<parameter><link linkend="MetaDisplay"><type>MetaDisplay</type></link> *display</parameter>,
+                           <parameter><link linkend="Window"><type>Window</type></link> group_leader</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-group-list-windows" role="function">
+<title>meta_group_list_windows&#160;()</title>
+<indexterm zone="meta-group-list-windows"><primary>meta_group_list_windows</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+meta_group_list_windows (<parameter><link linkend="MetaGroup"><type>MetaGroup</type></link> *group</parameter>);</programlisting>
+<refsect3 id="meta-group-list-windows.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>group</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaGroup"><type>MetaGroup</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-group-list-windows.returns" role="returns">
+<title>Returns</title>
+<para>List of windows. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> Meta.Window]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-group-update-layers" role="function">
+<title>meta_group_update_layers&#160;()</title>
+<indexterm zone="meta-group-update-layers"><primary>meta_group_update_layers</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_group_update_layers (<parameter><link linkend="MetaGroup"><type>MetaGroup</type></link> *group</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-group-get-startup-id" role="function">
+<title>meta_group_get_startup_id&#160;()</title>
+<indexterm zone="meta-group-get-startup-id"><primary>meta_group_get_startup_id</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_group_get_startup_id (<parameter><link linkend="MetaGroup"><type>MetaGroup</type></link> *group</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-group-get-size" role="function">
+<title>meta_group_get_size&#160;()</title>
+<indexterm zone="meta-group-get-size"><primary>meta_group_get_size</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+meta_group_get_size (<parameter><link linkend="MetaGroup"><type>MetaGroup</type></link> *group</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-group-property-notify" role="function">
+<title>meta_group_property_notify&#160;()</title>
+<indexterm zone="meta-group-property-notify"><primary>meta_group_property_notify</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_group_property_notify (<parameter><link linkend="MetaGroup"><type>MetaGroup</type></link> *group</parameter>,
+                            <parameter><link linkend="XEvent"><type>XEvent</type></link> *event</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+
+</refsect1>
+
+</refentry>

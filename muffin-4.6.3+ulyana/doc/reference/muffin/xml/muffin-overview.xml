@@ -1,0 +1,15 @@
+<part id="muffin-overview">
+
+  <title>Overview</title>
+
+  <partintro>
+
+    <para>Muffin is a GObject-based library for creating compositing window managers.</para>
+
+    <para>Compositors that wish to use Mutter must implement a subclass of <link linkend="MetaPlugin"><type>MetaPlugin</type></link> and register it with <link linkend="meta-plugin-manager-set-plugin-type"><function>meta_plugin_manager_set_plugin_type()</function></link> before calling <link linkend="meta-init"><function>meta_init()</function></link> but after <link linkend="g-type-init"><function>g_type_init()</function></link>.</para>
+
+    <para><link linkend="MetaPlugin"><type>MetaPlugin</type></link> provides virtual functions that allow to override default behavior in the window management code, such as the effect to perform when a window is created or when switching workspaces.</para>
+
+  </partintro>
+
+</part>

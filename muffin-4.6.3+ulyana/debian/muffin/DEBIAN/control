@@ -1,0 +1,15 @@
+Package: muffin
+Version: 4.6.3+ulyana
+Architecture: amd64
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 165
+Depends: muffin-common (= 4.6.3+ulyana), zenity, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.9.12), libmuffin0, libpango-1.0-0 (>= 1.14.0), libx11-6
+Suggests: gnome-themes, xdg-user-dirs
+Provides: x-window-manager
+Section: x11
+Priority: optional
+Description: window and compositing manager
+ Muffin is a window manager performing compositing as well based on
+ GTK+ and Clutter and used in Cinnamon desktop environment.
+ .
+ This package contains the core binaries.

@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaWorkspace">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaWorkspace.top_of_page">MetaWorkspace</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaWorkspace</refname>
+<refpurpose>Workspaces</refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaWorkspace.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-index">meta_workspace_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-workspace-list-windows">meta_workspace_list_windows</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-get-work-area-for-monitor">meta_workspace_get_work_area_for_monitor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-get-work-area-all-monitors">meta_workspace_get_work_area_all_monitors</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-activate">meta_workspace_activate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-activate-with-focus">meta_workspace_activate_with_focus</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-activate-with-direction-hint">meta_workspace_activate_with_direction_hint</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-update-window-hints">meta_workspace_update_window_hints</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-set-builtin-struts">meta_workspace_set_builtin_struts</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaWorkspace"><returnvalue>MetaWorkspace</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-workspace-get-neighbor">meta_workspace_get_neighbor</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-workspace-focus-default-window">meta_workspace_focus_default_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="MetaWorkspace.description" role="desc">
+<title role="desc.title">Description</title>
+<para>A workspace is a set of windows which all live on the same
+screen.  (You may also see the name "desktop" around the place,
+which is the EWMH's name for the same thing.)  Only one workspace
+of a screen may be active at once; all windows on all other workspaces
+are unmapped.</para>
+
+</refsect1>
+<refsect1 id="MetaWorkspace.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-workspace-index" role="function">
+<title>meta_workspace_index&#160;()</title>
+<indexterm zone="meta-workspace-index"><primary>meta_workspace_index</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+meta_workspace_index (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-workspace-list-windows" role="function">
+<title>meta_workspace_list_windows&#160;()</title>
+<indexterm zone="meta-workspace-list-windows"><primary>meta_workspace_list_windows</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+meta_workspace_list_windows (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>);</programlisting>
+<para>Gets windows contained on the workspace, including workspace->windows
+and also sticky windows. Override-redirect windows are not included.</para>
+<refsect3 id="meta-workspace-list-windows.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>workspace</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-workspace-list-windows.returns" role="returns">
+<title>Returns</title>
+<para>the list of windows. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> MetaWindow]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-workspace-get-work-area-for-monitor" role="function">
+<title>meta_workspace_get_work_area_for_monitor&#160;()</title>
+<indexterm zone="meta-workspace-get-work-area-for-monitor"><primary>meta_workspace_get_work_area_for_monitor</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_get_work_area_for_monitor
+                               (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                                <parameter><link linkend="int"><type>int</type></link> which_monitor</parameter>,
+                                <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *area</parameter>);</programlisting>
+<para>Stores the work area for <parameter>which_monitor</parameter>
+ on <parameter>workspace</parameter>
+
+in <parameter>area</parameter>
+.</para>
+<refsect3 id="meta-workspace-get-work-area-for-monitor.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>workspace</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>which_monitor</para></entry>
+<entry role="parameter_description"><para>a monitor index</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>area</para></entry>
+<entry role="parameter_description"><para>location to store the work area. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>out</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-workspace-get-work-area-all-monitors" role="function">
+<title>meta_workspace_get_work_area_all_monitors&#160;()</title>
+<indexterm zone="meta-workspace-get-work-area-all-monitors"><primary>meta_workspace_get_work_area_all_monitors</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_get_work_area_all_monitors
+                               (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                                <parameter><link linkend="MetaRectangle"><type>MetaRectangle</type></link> *area</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-workspace-activate" role="function">
+<title>meta_workspace_activate&#160;()</title>
+<indexterm zone="meta-workspace-activate"><primary>meta_workspace_activate</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_activate (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                         <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-workspace-activate-with-focus" role="function">
+<title>meta_workspace_activate_with_focus&#160;()</title>
+<indexterm zone="meta-workspace-activate-with-focus"><primary>meta_workspace_activate_with_focus</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_activate_with_focus (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                                    <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *focus_this</parameter>,
+                                    <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+<para>Switches to <parameter>workspace</parameter>
+ and possibly activates the window <parameter>focus_this</parameter>
+.</para>
+<para>The window <parameter>focus_this</parameter>
+ is activated by calling <link linkend="meta-window-activate"><function>meta_window_activate()</function></link>
+which will unminimize it and transient parents, raise it and give it
+the focus.</para>
+<para>If a window is currently being moved by the user, it will be
+moved to <parameter>workspace</parameter>
+.</para>
+<para>The advantage of calling this function instead of <link linkend="meta-workspace-activate"><function>meta_workspace_activate()</function></link>
+followed by <link linkend="meta-window-activate"><function>meta_window_activate()</function></link> is that it happens as a unit, so
+no other window gets focused first before <parameter>focus_this</parameter>
+.</para>
+<refsect3 id="meta-workspace-activate-with-focus.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>workspace</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>focus_this</para></entry>
+<entry role="parameter_description"><para>the <link linkend="MetaWindow"><type>MetaWindow</type></link> to be focused, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>timestamp</para></entry>
+<entry role="parameter_description"><para>timestamp for <parameter>focus_this</parameter>
+</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-workspace-activate-with-direction-hint" role="function">
+<title>meta_workspace_activate_with_direction_hint&#160;()</title>
+<indexterm zone="meta-workspace-activate-with-direction-hint"><primary>meta_workspace_activate_with_direction_hint</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_activate_with_direction_hint
+                               (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                                <parameter><link linkend="MetaMotionDirection"><type>MetaMotionDirection</type></link> direction</parameter>,
+                                <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+<para>Switches to <parameter>workspace</parameter>
+ in the specified <parameter>direction</parameter>
+ (if possible)</para>
+<refsect3 id="meta-workspace-activate-with-direction-hint.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>workspace</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>direction</para></entry>
+<entry role="parameter_description"><para>the suggested <link linkend="MetaMotionDirection"><type>MetaMotionDirection</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>timestamp</para></entry>
+<entry role="parameter_description"><para>timestamp for <parameter>focus_this</parameter>
+</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-workspace-update-window-hints" role="function">
+<title>meta_workspace_update_window_hints&#160;()</title>
+<indexterm zone="meta-workspace-update-window-hints"><primary>meta_workspace_update_window_hints</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_update_window_hints (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-workspace-set-builtin-struts" role="function">
+<title>meta_workspace_set_builtin_struts&#160;()</title>
+<indexterm zone="meta-workspace-set-builtin-struts"><primary>meta_workspace_set_builtin_struts</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_set_builtin_struts (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                                   <parameter><link linkend="GSList"><type>GSList</type></link> *struts</parameter>);</programlisting>
+<para>Sets a list of struts that will be used in addition to the struts
+of the windows in the workspace when computing the work area of
+the workspace.</para>
+<refsect3 id="meta-workspace-set-builtin-struts.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>workspace</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>struts</para></entry>
+<entry role="parameter_description"><para>list of <link linkend="MetaStrut"><type>MetaStrut</type></link>. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>element-type</acronym> Meta.Strut][<acronym>transfer none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-workspace-get-neighbor" role="function">
+<title>meta_workspace_get_neighbor&#160;()</title>
+<indexterm zone="meta-workspace-get-neighbor"><primary>meta_workspace_get_neighbor</primary></indexterm>
+<programlisting language="C"><link linkend="MetaWorkspace"><returnvalue>MetaWorkspace</returnvalue></link>&#160;*
+meta_workspace_get_neighbor (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                             <parameter><link linkend="MetaMotionDirection"><type>MetaMotionDirection</type></link> direction</parameter>);</programlisting>
+<para>Gets the neighbor of the <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> in the given direction</para>
+<refsect3 id="meta-workspace-get-neighbor.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>workspace</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>direction</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaMotionDirection"><type>MetaMotionDirection</type></link>, direction in which to look for the neighbor</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-workspace-get-neighbor.returns" role="returns">
+<title>Returns</title>
+<para>the neighbor <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link>. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-workspace-focus-default-window" role="function">
+<title>meta_workspace_focus_default_window&#160;()</title>
+<indexterm zone="meta-workspace-focus-default-window"><primary>meta_workspace_focus_default_window</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_workspace_focus_default_window (<parameter><link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *workspace</parameter>,
+                                     <parameter><link linkend="MetaWindow"><type>MetaWindow</type></link> *not_this_one</parameter>,
+                                     <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

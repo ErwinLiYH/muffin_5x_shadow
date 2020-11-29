@@ -1,0 +1,4 @@
+debian/tmp/usr/share/glib-2.0
+debian/tmp/usr/share/locale
+debian/tmp/usr/share/man
+debian/tmp/usr/share/muffin

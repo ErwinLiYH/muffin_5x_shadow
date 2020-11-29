@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-meta-sync-ring">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-meta-sync-ring.top_of_page">meta-sync-ring</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>meta-sync-ring</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-meta-sync-ring.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-sync-ring-init">meta_sync_ring_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-sync-ring-destroy">meta_sync_ring_destroy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-sync-ring-after-frame">meta_sync_ring_after_frame</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-sync-ring-insert-wait">meta_sync_ring_insert_wait</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-sync-ring-handle-event">meta_sync_ring_handle_event</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-meta-sync-ring.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-meta-sync-ring.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-sync-ring-init" role="function">
+<title>meta_sync_ring_init&#160;()</title>
+<indexterm zone="meta-sync-ring-init"><primary>meta_sync_ring_init</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_sync_ring_init (<parameter><link linkend="Display"><type>Display</type></link> *dpy</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-sync-ring-destroy" role="function">
+<title>meta_sync_ring_destroy&#160;()</title>
+<indexterm zone="meta-sync-ring-destroy"><primary>meta_sync_ring_destroy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_sync_ring_destroy (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-sync-ring-after-frame" role="function">
+<title>meta_sync_ring_after_frame&#160;()</title>
+<indexterm zone="meta-sync-ring-after-frame"><primary>meta_sync_ring_after_frame</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_sync_ring_after_frame (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-sync-ring-insert-wait" role="function">
+<title>meta_sync_ring_insert_wait&#160;()</title>
+<indexterm zone="meta-sync-ring-insert-wait"><primary>meta_sync_ring_insert_wait</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_sync_ring_insert_wait (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-sync-ring-handle-event" role="function">
+<title>meta_sync_ring_handle_event&#160;()</title>
+<indexterm zone="meta-sync-ring-handle-event"><primary>meta_sync_ring_handle_event</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_sync_ring_handle_event (<parameter><link linkend="XEvent"><type>XEvent</type></link> *event</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE screen PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<screen>
+    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkMisc">GtkMisc</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>       <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkLabel">GtkLabel</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>           <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="MetaAccelLabel">MetaAccelLabel</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="ClutterActor">ClutterActor</link>
+    <phrase role="lineart">&#9474;</phrase>       <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaBackgroundActor">MetaBackgroundActor</link>
+    <phrase role="lineart">&#9474;</phrase>       <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaBackground">MetaBackground</link>
+    <phrase role="lineart">&#9474;</phrase>       <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaShapedTexture">MetaShapedTexture</link>
+    <phrase role="lineart">&#9474;</phrase>       <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="MetaWindowActor">MetaWindowActor</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaDisplay">MetaDisplay</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaPlugin">MetaPlugin</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaScreen">MetaScreen</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaShadowFactory">MetaShadowFactory</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaWindow">MetaWindow</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="MetaWorkspace">MetaWorkspace</link>
+    <link linkend="GBoxed">GBoxed</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="MetaKeyBinding">MetaKeyBinding</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="MetaRectangle">MetaRectangle</link>
+</screen>

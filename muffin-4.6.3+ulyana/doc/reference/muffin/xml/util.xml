@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-Utility-functions">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-Utility-functions.top_of_page">Utility functions</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>Utility functions</refname>
+<refpurpose>Miscellaneous utility functions</refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-Utility-functions.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-is-verbose">meta_is_verbose</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-is-debugging">meta_is_debugging</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-is-syncing">meta_is_syncing</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-debug-spew-real">meta_debug_spew_real</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-verbose-real">meta_verbose_real</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-bug">meta_bug</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-warning">meta_warning</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-fatal">meta_fatal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-topic-real">meta_topic_real</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-add-verbose-topic">meta_add_verbose_topic</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-remove-verbose-topic">meta_remove_verbose_topic</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-push-no-msg-prefix">meta_push_no_msg_prefix</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-pop-no-msg-prefix">meta_pop_no_msg_prefix</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-unsigned-long-equal">meta_unsigned_long_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-unsigned-long-hash">meta_unsigned_long_hash</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-print-backtrace">meta_print_backtrace</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-frame-type-to-string">meta_frame_type_to_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-gravity-to-string">meta_gravity_to_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-g-utf8-strndup">meta_g_utf8_strndup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-free-gslist-and-elements">meta_free_gslist_and_elements</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GPid"><returnvalue>GPid</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-show-dialog">meta_show_dialog</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-later-add">meta_later_add</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-later-remove">meta_later_remove</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-pre-exec-close-fds">meta_pre_exec_close_fds</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-Utility-functions.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaDebugTopic">MetaDebugTopic</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="meta-debug-spew">meta_debug_spew</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="meta-verbose">meta_verbose</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="meta-topic">meta_topic</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaLaterType">MetaLaterType</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-Utility-functions.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-Utility-functions.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-is-verbose" role="function">
+<title>meta_is_verbose&#160;()</title>
+<indexterm zone="meta-is-verbose"><primary>meta_is_verbose</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_is_verbose (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-is-debugging" role="function">
+<title>meta_is_debugging&#160;()</title>
+<indexterm zone="meta-is-debugging"><primary>meta_is_debugging</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_is_debugging (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-is-syncing" role="function">
+<title>meta_is_syncing&#160;()</title>
+<indexterm zone="meta-is-syncing"><primary>meta_is_syncing</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_is_syncing (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-debug-spew-real" role="function">
+<title>meta_debug_spew_real&#160;()</title>
+<indexterm zone="meta-debug-spew-real"><primary>meta_debug_spew_real</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_debug_spew_real (<parameter>const <link linkend="char"><type>char</type></link> *format</parameter>,
+                      <parameter>...</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-verbose-real" role="function">
+<title>meta_verbose_real&#160;()</title>
+<indexterm zone="meta-verbose-real"><primary>meta_verbose_real</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_verbose_real (<parameter>const <link linkend="char"><type>char</type></link> *format</parameter>,
+                   <parameter>...</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-bug" role="function">
+<title>meta_bug&#160;()</title>
+<indexterm zone="meta-bug"><primary>meta_bug</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_bug (<parameter>const <link linkend="char"><type>char</type></link> *format</parameter>,
+          <parameter>...</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-warning" role="function">
+<title>meta_warning&#160;()</title>
+<indexterm zone="meta-warning"><primary>meta_warning</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_warning (<parameter>const <link linkend="char"><type>char</type></link> *format</parameter>,
+              <parameter>...</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-fatal" role="function">
+<title>meta_fatal&#160;()</title>
+<indexterm zone="meta-fatal"><primary>meta_fatal</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_fatal (<parameter>const <link linkend="char"><type>char</type></link> *format</parameter>,
+            <parameter>...</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-topic-real" role="function">
+<title>meta_topic_real&#160;()</title>
+<indexterm zone="meta-topic-real"><primary>meta_topic_real</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_topic_real (<parameter><link linkend="MetaDebugTopic"><type>MetaDebugTopic</type></link> topic</parameter>,
+                 <parameter>const <link linkend="char"><type>char</type></link> *format</parameter>,
+                 <parameter>...</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-add-verbose-topic" role="function">
+<title>meta_add_verbose_topic&#160;()</title>
+<indexterm zone="meta-add-verbose-topic"><primary>meta_add_verbose_topic</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_add_verbose_topic (<parameter><link linkend="MetaDebugTopic"><type>MetaDebugTopic</type></link> topic</parameter>);</programlisting>
+<para>Ensure log messages for the given topic <parameter>topic</parameter>
+
+will be printed.</para>
+<refsect3 id="meta-add-verbose-topic.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>topic</para></entry>
+<entry role="parameter_description"><para>Topic for which logging will be started</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-remove-verbose-topic" role="function">
+<title>meta_remove_verbose_topic&#160;()</title>
+<indexterm zone="meta-remove-verbose-topic"><primary>meta_remove_verbose_topic</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_remove_verbose_topic (<parameter><link linkend="MetaDebugTopic"><type>MetaDebugTopic</type></link> topic</parameter>);</programlisting>
+<para>Stop printing log messages for the given topic <parameter>topic</parameter>
+.  Note
+that this method does not stack with <link linkend="meta-add-verbose-topic"><function>meta_add_verbose_topic()</function></link>;
+i.e. if two calls to <link linkend="meta-add-verbose-topic"><function>meta_add_verbose_topic()</function></link> for the same
+topic are made, one call to <link linkend="meta-remove-verbose-topic"><function>meta_remove_verbose_topic()</function></link> will
+remove it.</para>
+<refsect3 id="meta-remove-verbose-topic.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>topic</para></entry>
+<entry role="parameter_description"><para>Topic for which logging will be stopped</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-push-no-msg-prefix" role="function">
+<title>meta_push_no_msg_prefix&#160;()</title>
+<indexterm zone="meta-push-no-msg-prefix"><primary>meta_push_no_msg_prefix</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_push_no_msg_prefix (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-pop-no-msg-prefix" role="function">
+<title>meta_pop_no_msg_prefix&#160;()</title>
+<indexterm zone="meta-pop-no-msg-prefix"><primary>meta_pop_no_msg_prefix</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_pop_no_msg_prefix (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-unsigned-long-equal" role="function">
+<title>meta_unsigned_long_equal&#160;()</title>
+<indexterm zone="meta-unsigned-long-equal"><primary>meta_unsigned_long_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+meta_unsigned_long_equal (<parameter><link linkend="gconstpointer"><type>gconstpointer</type></link> v1</parameter>,
+                          <parameter><link linkend="gconstpointer"><type>gconstpointer</type></link> v2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-unsigned-long-hash" role="function">
+<title>meta_unsigned_long_hash&#160;()</title>
+<indexterm zone="meta-unsigned-long-hash"><primary>meta_unsigned_long_hash</primary></indexterm>
+<programlisting language="C"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+meta_unsigned_long_hash (<parameter><link linkend="gconstpointer"><type>gconstpointer</type></link> v</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-print-backtrace" role="function">
+<title>meta_print_backtrace&#160;()</title>
+<indexterm zone="meta-print-backtrace"><primary>meta_print_backtrace</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_print_backtrace (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-frame-type-to-string" role="function">
+<title>meta_frame_type_to_string&#160;()</title>
+<indexterm zone="meta-frame-type-to-string"><primary>meta_frame_type_to_string</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_frame_type_to_string (<parameter><link linkend="MetaFrameType"><type>MetaFrameType</type></link> type</parameter>);</programlisting>
+<para>Converts a frame type enum value to the name string that would
+appear in the theme definition file.</para>
+<refsect3 id="meta-frame-type-to-string.returns" role="returns">
+<title>Returns</title>
+<para> the string value</para>
+</refsect3></refsect2>
+<refsect2 id="meta-gravity-to-string" role="function">
+<title>meta_gravity_to_string&#160;()</title>
+<indexterm zone="meta-gravity-to-string"><primary>meta_gravity_to_string</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_gravity_to_string (<parameter><link linkend="int"><type>int</type></link> gravity</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-g-utf8-strndup" role="function">
+<title>meta_g_utf8_strndup&#160;()</title>
+<indexterm zone="meta-g-utf8-strndup"><primary>meta_g_utf8_strndup</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_g_utf8_strndup (<parameter>const <link linkend="gchar"><type>gchar</type></link> *src</parameter>,
+                     <parameter><link linkend="gsize"><type>gsize</type></link> n</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-free-gslist-and-elements" role="function">
+<title>meta_free_gslist_and_elements&#160;()</title>
+<indexterm zone="meta-free-gslist-and-elements"><primary>meta_free_gslist_and_elements</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_free_gslist_and_elements (<parameter><link linkend="GSList"><type>GSList</type></link> *list_to_deep_free</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-show-dialog" role="function">
+<title>meta_show_dialog&#160;()</title>
+<indexterm zone="meta-show-dialog"><primary>meta_show_dialog</primary></indexterm>
+<programlisting language="C"><link linkend="GPid"><returnvalue>GPid</returnvalue></link>
+meta_show_dialog (<parameter>const <link linkend="char"><type>char</type></link> *type</parameter>,
+                  <parameter>const <link linkend="char"><type>char</type></link> *message</parameter>,
+                  <parameter>const <link linkend="char"><type>char</type></link> *timeout</parameter>,
+                  <parameter>const <link linkend="char"><type>char</type></link> *display</parameter>,
+                  <parameter>const <link linkend="char"><type>char</type></link> *ok_text</parameter>,
+                  <parameter>const <link linkend="char"><type>char</type></link> *cancel_text</parameter>,
+                  <parameter>const <link linkend="int"><type>int</type></link> transient_for</parameter>,
+                  <parameter><link linkend="GSList"><type>GSList</type></link> *columns</parameter>,
+                  <parameter><link linkend="GSList"><type>GSList</type></link> *entries</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-later-add" role="function">
+<title>meta_later_add&#160;()</title>
+<indexterm zone="meta-later-add"><primary>meta_later_add</primary></indexterm>
+<programlisting language="C"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+meta_later_add (<parameter><link linkend="MetaLaterType"><type>MetaLaterType</type></link> when</parameter>,
+                <parameter><link linkend="GSourceFunc"><type>GSourceFunc</type></link> func</parameter>,
+                <parameter><link linkend="gpointer"><type>gpointer</type></link> data</parameter>,
+                <parameter><link linkend="GDestroyNotify"><type>GDestroyNotify</type></link> notify</parameter>);</programlisting>
+<para>Sets up a callback  to be called at some later time. <parameter>when</parameter>
+ determines the
+particular later occasion at which it is called. This is much like <link linkend="g-idle-add"><function>g_idle_add()</function></link>,
+except that the functions interact properly with clutter event handling.
+If a "later" function is added from a clutter event handler, and is supposed
+to be run before the stage is redrawn, it will be run before that redraw
+of the stage, not the next one.</para>
+<refsect3 id="meta-later-add.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>when</para></entry>
+<entry role="parameter_description"><para>enumeration value determining the phase at which to run the callback</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>func</para></entry>
+<entry role="parameter_description"><para>callback to run later</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>data to pass to the callback</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>notify</para></entry>
+<entry role="parameter_description"><para>function to call to destroy <parameter>data</parameter>
+when it is no longer in use, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-later-add.returns" role="returns">
+<title>Returns</title>
+<para> an integer ID (guaranteed to be non-zero) that can be used
+to cancel the callback and prevent it from being run.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-later-remove" role="function">
+<title>meta_later_remove&#160;()</title>
+<indexterm zone="meta-later-remove"><primary>meta_later_remove</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_later_remove (<parameter><link linkend="guint"><type>guint</type></link> later_id</parameter>);</programlisting>
+<para>Removes a callback added with <link linkend="meta-later-add"><function>meta_later_add()</function></link></para>
+<refsect3 id="meta-later-remove.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>later_id</para></entry>
+<entry role="parameter_description"><para>the integer ID returned from <link linkend="meta-later-add"><function>meta_later_add()</function></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-pre-exec-close-fds" role="function">
+<title>meta_pre_exec_close_fds&#160;()</title>
+<indexterm zone="meta-pre-exec-close-fds"><primary>meta_pre_exec_close_fds</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_pre_exec_close_fds (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-Utility-functions.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaDebugTopic" role="enum">
+<title>enum MetaDebugTopic</title>
+<indexterm zone="MetaDebugTopic"><primary>MetaDebugTopic</primary></indexterm>
+<refsect3 id="MetaDebugTopic.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-VERBOSE:CAPS">META_DEBUG_VERBOSE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-FOCUS:CAPS">META_DEBUG_FOCUS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-WORKAREA:CAPS">META_DEBUG_WORKAREA</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-STACK:CAPS">META_DEBUG_STACK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-THEMES:CAPS">META_DEBUG_THEMES</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-SM:CAPS">META_DEBUG_SM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-EVENTS:CAPS">META_DEBUG_EVENTS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-WINDOW-STATE:CAPS">META_DEBUG_WINDOW_STATE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-WINDOW-OPS:CAPS">META_DEBUG_WINDOW_OPS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-GEOMETRY:CAPS">META_DEBUG_GEOMETRY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-PLACEMENT:CAPS">META_DEBUG_PLACEMENT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-PING:CAPS">META_DEBUG_PING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-XINERAMA:CAPS">META_DEBUG_XINERAMA</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-KEYBINDINGS:CAPS">META_DEBUG_KEYBINDINGS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-SYNC:CAPS">META_DEBUG_SYNC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-ERRORS:CAPS">META_DEBUG_ERRORS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-STARTUP:CAPS">META_DEBUG_STARTUP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-PREFS:CAPS">META_DEBUG_PREFS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-GROUPS:CAPS">META_DEBUG_GROUPS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-RESIZING:CAPS">META_DEBUG_RESIZING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-SHAPES:CAPS">META_DEBUG_SHAPES</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-COMPOSITOR:CAPS">META_DEBUG_COMPOSITOR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DEBUG-EDGE-RESISTANCE:CAPS">META_DEBUG_EDGE_RESISTANCE</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-debug-spew" role="macro">
+<title>meta_debug_spew</title>
+<indexterm zone="meta-debug-spew"><primary>meta_debug_spew</primary></indexterm>
+<programlisting language="C">#define meta_debug_spew meta_debug_spew_real
+</programlisting>
+</refsect2>
+<refsect2 id="meta-verbose" role="macro">
+<title>meta_verbose</title>
+<indexterm zone="meta-verbose"><primary>meta_verbose</primary></indexterm>
+<programlisting language="C">#define meta_verbose    meta_verbose_real
+</programlisting>
+</refsect2>
+<refsect2 id="meta-topic" role="macro">
+<title>meta_topic</title>
+<indexterm zone="meta-topic"><primary>meta_topic</primary></indexterm>
+<programlisting language="C">#define meta_topic      meta_topic_real
+</programlisting>
+</refsect2>
+<refsect2 id="MetaLaterType" role="enum">
+<title>enum MetaLaterType</title>
+<indexterm zone="MetaLaterType"><primary>MetaLaterType</primary></indexterm>
+<refsect3 id="MetaLaterType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-LATER-RESIZE:CAPS">META_LATER_RESIZE</para></entry>
+<entry role="enum_member_description"><para>call in a resize processing phase that is done
+before GTK+ repainting (including window borders) is done.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LATER-CALC-SHOWING:CAPS">META_LATER_CALC_SHOWING</para></entry>
+<entry role="enum_member_description"><para>used by Muffin to compute which windows should be mapped</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LATER-CHECK-FULLSCREEN:CAPS">META_LATER_CHECK_FULLSCREEN</para></entry>
+<entry role="enum_member_description"><para>used by Muffin to see if there's a fullscreen window</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LATER-SYNC-STACK:CAPS">META_LATER_SYNC_STACK</para></entry>
+<entry role="enum_member_description"><para>used by Muffin to send it's idea of the stacking order to the server</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LATER-BEFORE-REDRAW:CAPS">META_LATER_BEFORE_REDRAW</para></entry>
+<entry role="enum_member_description"><para>call before the stage is redrawn</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LATER-IDLE:CAPS">META_LATER_IDLE</para></entry>
+<entry role="enum_member_description"><para>call at a very low priority (can be blocked
+by running animations or redrawing applications)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

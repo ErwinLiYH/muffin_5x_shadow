@@ -1,0 +1,979 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-Common">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-Common.top_of_page">Common</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>Common</refname>
+<refpurpose>Muffin common types</refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-Common.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="MetaWindowMenuFunc">*MetaWindowMenuFunc</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-frame-borders-clear">meta_frame_borders_clear</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-POINT-IN-RECT:CAPS">META_POINT_IN_RECT</link><phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-Common.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaFrameFlags">MetaFrameFlags</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaMenuOp">MetaMenuOp</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaGrabOp">MetaGrabOp</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaCursor">MetaCursor</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaFrameType">MetaFrameType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaVirtualModifier">MetaVirtualModifier</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaDirection">MetaDirection</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaMotionDirection">MetaMotionDirection</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaSide">MetaSide</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaButtonFunction">MetaButtonFunction</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaTileMode">MetaTileMode</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaWindowTileType">MetaWindowTileType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaBellType">MetaBellType</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="MAX-BUTTONS-PER-CORNER:CAPS">MAX_BUTTONS_PER_CORNER</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaButtonLayout">MetaButtonLayout</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaFrameBorders">MetaFrameBorders</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-DEFAULT-ICON-NAME:CAPS">META_DEFAULT_ICON_NAME</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-PRIORITY-RESIZE:CAPS">META_PRIORITY_RESIZE</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-PRIORITY-BEFORE-REDRAW:CAPS">META_PRIORITY_BEFORE_REDRAW</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-PRIORITY-REDRAW:CAPS">META_PRIORITY_REDRAW</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-PRIORITY-PREFS-NOTIFY:CAPS">META_PRIORITY_PREFS_NOTIFY</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaStackLayer">MetaStackLayer</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaPlacementMode">MetaPlacementMode</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaBackgroundTransition">MetaBackgroundTransition</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaSyncMethod">MetaSyncMethod</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaResizePopup">MetaResizePopup</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaWindowMenu">MetaWindowMenu</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-Common.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-Common.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="MetaWindowMenuFunc" role="function">
+<title>MetaWindowMenuFunc&#160;()</title>
+<indexterm zone="MetaWindowMenuFunc"><primary>MetaWindowMenuFunc</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*MetaWindowMenuFunc<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="MetaWindowMenu"><type>MetaWindowMenu</type></link> *menu</parameter>,
+                       <parameter><link linkend="Display"><type>Display</type></link> *xdisplay</parameter>,
+                       <parameter><link linkend="Window"><type>Window</type></link> client_xwindow</parameter>,
+                       <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>,
+                       <parameter><link linkend="MetaMenuOp"><type>MetaMenuOp</type></link> op</parameter>,
+                       <parameter><link linkend="int"><type>int</type></link> workspace</parameter>,
+                       <parameter><link linkend="gpointer"><type>gpointer</type></link> data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-frame-borders-clear" role="function">
+<title>meta_frame_borders_clear&#160;()</title>
+<indexterm zone="meta-frame-borders-clear"><primary>meta_frame_borders_clear</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_frame_borders_clear (<parameter><link linkend="MetaFrameBorders"><type>MetaFrameBorders</type></link> *self</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="META-POINT-IN-RECT:CAPS" role="macro">
+<title>META_POINT_IN_RECT()</title>
+<indexterm zone="META-POINT-IN-RECT:CAPS"><primary>META_POINT_IN_RECT</primary></indexterm>
+<programlisting language="C">#define             META_POINT_IN_RECT(xcoord, ycoord, rect)</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-Common.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaFrameFlags" role="enum">
+<title>enum MetaFrameFlags</title>
+<indexterm zone="MetaFrameFlags"><primary>MetaFrameFlags</primary></indexterm>
+<refsect3 id="MetaFrameFlags.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-DELETE:CAPS">META_FRAME_ALLOWS_DELETE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-MENU:CAPS">META_FRAME_ALLOWS_MENU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-MINIMIZE:CAPS">META_FRAME_ALLOWS_MINIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-MAXIMIZE:CAPS">META_FRAME_ALLOWS_MAXIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-LEFT-RESIZE:CAPS">META_FRAME_ALLOWS_LEFT_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-RIGHT-RESIZE:CAPS">META_FRAME_ALLOWS_RIGHT_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-TOP-RESIZE:CAPS">META_FRAME_ALLOWS_TOP_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-BOTTOM-RESIZE:CAPS">META_FRAME_ALLOWS_BOTTOM_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-HAS-FOCUS:CAPS">META_FRAME_HAS_FOCUS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-SHADED:CAPS">META_FRAME_SHADED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-STUCK:CAPS">META_FRAME_STUCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-MAXIMIZED:CAPS">META_FRAME_MAXIMIZED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-SHADE:CAPS">META_FRAME_ALLOWS_SHADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-MOVE:CAPS">META_FRAME_ALLOWS_MOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-FULLSCREEN:CAPS">META_FRAME_FULLSCREEN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-IS-FLASHING:CAPS">META_FRAME_IS_FLASHING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ABOVE:CAPS">META_FRAME_ABOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TILED-LEFT:CAPS">META_FRAME_TILED_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TILED-RIGHT:CAPS">META_FRAME_TILED_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-VERTICAL-RESIZE:CAPS">META_FRAME_ALLOWS_VERTICAL_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-ALLOWS-HORIZONTAL-RESIZE:CAPS">META_FRAME_ALLOWS_HORIZONTAL_RESIZE</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaMenuOp" role="enum">
+<title>enum MetaMenuOp</title>
+<indexterm zone="MetaMenuOp"><primary>MetaMenuOp</primary></indexterm>
+<refsect3 id="MetaMenuOp.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-NONE:CAPS">META_MENU_OP_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-DELETE:CAPS">META_MENU_OP_DELETE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MINIMIZE:CAPS">META_MENU_OP_MINIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-UNMAXIMIZE:CAPS">META_MENU_OP_UNMAXIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MAXIMIZE:CAPS">META_MENU_OP_MAXIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-UNSHADE:CAPS">META_MENU_OP_UNSHADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-SHADE:CAPS">META_MENU_OP_SHADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-UNSTICK:CAPS">META_MENU_OP_UNSTICK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-STICK:CAPS">META_MENU_OP_STICK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-WORKSPACES:CAPS">META_MENU_OP_WORKSPACES</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MOVE:CAPS">META_MENU_OP_MOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-RESIZE:CAPS">META_MENU_OP_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-ABOVE:CAPS">META_MENU_OP_ABOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-UNABOVE:CAPS">META_MENU_OP_UNABOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MOVE-LEFT:CAPS">META_MENU_OP_MOVE_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MOVE-RIGHT:CAPS">META_MENU_OP_MOVE_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MOVE-UP:CAPS">META_MENU_OP_MOVE_UP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MOVE-DOWN:CAPS">META_MENU_OP_MOVE_DOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-RECOVER:CAPS">META_MENU_OP_RECOVER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MENU-OP-MOVE-NEW:CAPS">META_MENU_OP_MOVE_NEW</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaGrabOp" role="enum">
+<title>enum MetaGrabOp</title>
+<indexterm zone="MetaGrabOp"><primary>MetaGrabOp</primary></indexterm>
+<refsect3 id="MetaGrabOp.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-NONE:CAPS">META_GRAB_OP_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-MOVING:CAPS">META_GRAB_OP_MOVING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-SE:CAPS">META_GRAB_OP_RESIZING_SE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-S:CAPS">META_GRAB_OP_RESIZING_S</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-SW:CAPS">META_GRAB_OP_RESIZING_SW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-N:CAPS">META_GRAB_OP_RESIZING_N</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-NE:CAPS">META_GRAB_OP_RESIZING_NE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-NW:CAPS">META_GRAB_OP_RESIZING_NW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-W:CAPS">META_GRAB_OP_RESIZING_W</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-RESIZING-E:CAPS">META_GRAB_OP_RESIZING_E</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-MOVING:CAPS">META_GRAB_OP_KEYBOARD_MOVING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-UNKNOWN:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_UNKNOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-S:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_S</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-N:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_N</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-W:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_W</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-E:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_E</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-SE:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_SE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-NE:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_NE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-SW:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_SW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-RESIZING-NW:CAPS">META_GRAB_OP_KEYBOARD_RESIZING_NW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-TABBING-NORMAL:CAPS">META_GRAB_OP_KEYBOARD_TABBING_NORMAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-TABBING-DOCK:CAPS">META_GRAB_OP_KEYBOARD_TABBING_DOCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-ESCAPING-NORMAL:CAPS">META_GRAB_OP_KEYBOARD_ESCAPING_NORMAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-ESCAPING-DOCK:CAPS">META_GRAB_OP_KEYBOARD_ESCAPING_DOCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-ESCAPING-GROUP:CAPS">META_GRAB_OP_KEYBOARD_ESCAPING_GROUP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-TABBING-GROUP:CAPS">META_GRAB_OP_KEYBOARD_TABBING_GROUP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-KEYBOARD-WORKSPACE-SWITCHING:CAPS">META_GRAB_OP_KEYBOARD_WORKSPACE_SWITCHING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-MINIMIZE:CAPS">META_GRAB_OP_CLICKING_MINIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-MAXIMIZE:CAPS">META_GRAB_OP_CLICKING_MAXIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-UNMAXIMIZE:CAPS">META_GRAB_OP_CLICKING_UNMAXIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-DELETE:CAPS">META_GRAB_OP_CLICKING_DELETE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-MENU:CAPS">META_GRAB_OP_CLICKING_MENU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-SHADE:CAPS">META_GRAB_OP_CLICKING_SHADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-UNSHADE:CAPS">META_GRAB_OP_CLICKING_UNSHADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-ABOVE:CAPS">META_GRAB_OP_CLICKING_ABOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-UNABOVE:CAPS">META_GRAB_OP_CLICKING_UNABOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-STICK:CAPS">META_GRAB_OP_CLICKING_STICK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-CLICKING-UNSTICK:CAPS">META_GRAB_OP_CLICKING_UNSTICK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-GRAB-OP-COMPOSITOR:CAPS">META_GRAB_OP_COMPOSITOR</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaCursor" role="enum">
+<title>enum MetaCursor</title>
+<indexterm zone="MetaCursor"><primary>MetaCursor</primary></indexterm>
+<refsect3 id="MetaCursor.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-DEFAULT:CAPS">META_CURSOR_DEFAULT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-NORTH-RESIZE:CAPS">META_CURSOR_NORTH_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-SOUTH-RESIZE:CAPS">META_CURSOR_SOUTH_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-WEST-RESIZE:CAPS">META_CURSOR_WEST_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-EAST-RESIZE:CAPS">META_CURSOR_EAST_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-SE-RESIZE:CAPS">META_CURSOR_SE_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-SW-RESIZE:CAPS">META_CURSOR_SW_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-NE-RESIZE:CAPS">META_CURSOR_NE_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-NW-RESIZE:CAPS">META_CURSOR_NW_RESIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-MOVE-OR-RESIZE-WINDOW:CAPS">META_CURSOR_MOVE_OR_RESIZE_WINDOW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-CURSOR-BUSY:CAPS">META_CURSOR_BUSY</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaFrameType" role="enum">
+<title>enum MetaFrameType</title>
+<indexterm zone="MetaFrameType"><primary>MetaFrameType</primary></indexterm>
+<refsect3 id="MetaFrameType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-NORMAL:CAPS">META_FRAME_TYPE_NORMAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-DIALOG:CAPS">META_FRAME_TYPE_DIALOG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-MODAL-DIALOG:CAPS">META_FRAME_TYPE_MODAL_DIALOG</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-UTILITY:CAPS">META_FRAME_TYPE_UTILITY</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-MENU:CAPS">META_FRAME_TYPE_MENU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-BORDER:CAPS">META_FRAME_TYPE_BORDER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-ATTACHED:CAPS">META_FRAME_TYPE_ATTACHED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-FRAME-TYPE-LAST:CAPS">META_FRAME_TYPE_LAST</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaVirtualModifier" role="enum">
+<title>enum MetaVirtualModifier</title>
+<indexterm zone="MetaVirtualModifier"><primary>MetaVirtualModifier</primary></indexterm>
+<refsect3 id="MetaVirtualModifier.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-SHIFT-MASK:CAPS">META_VIRTUAL_SHIFT_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-CONTROL-MASK:CAPS">META_VIRTUAL_CONTROL_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-ALT-MASK:CAPS">META_VIRTUAL_ALT_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-META-MASK:CAPS">META_VIRTUAL_META_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-SUPER-MASK:CAPS">META_VIRTUAL_SUPER_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-HYPER-MASK:CAPS">META_VIRTUAL_HYPER_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-MOD2-MASK:CAPS">META_VIRTUAL_MOD2_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-MOD3-MASK:CAPS">META_VIRTUAL_MOD3_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-MOD4-MASK:CAPS">META_VIRTUAL_MOD4_MASK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-VIRTUAL-MOD5-MASK:CAPS">META_VIRTUAL_MOD5_MASK</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaDirection" role="enum">
+<title>enum MetaDirection</title>
+<indexterm zone="MetaDirection"><primary>MetaDirection</primary></indexterm>
+<refsect3 id="MetaDirection.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-LEFT:CAPS">META_DIRECTION_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-RIGHT:CAPS">META_DIRECTION_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-TOP:CAPS">META_DIRECTION_TOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-BOTTOM:CAPS">META_DIRECTION_BOTTOM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-UP:CAPS">META_DIRECTION_UP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-DOWN:CAPS">META_DIRECTION_DOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-HORIZONTAL:CAPS">META_DIRECTION_HORIZONTAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-DIRECTION-VERTICAL:CAPS">META_DIRECTION_VERTICAL</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaMotionDirection" role="enum">
+<title>enum MetaMotionDirection</title>
+<indexterm zone="MetaMotionDirection"><primary>MetaMotionDirection</primary></indexterm>
+<refsect3 id="MetaMotionDirection.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-UP:CAPS">META_MOTION_UP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-DOWN:CAPS">META_MOTION_DOWN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-LEFT:CAPS">META_MOTION_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-RIGHT:CAPS">META_MOTION_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-UP-LEFT:CAPS">META_MOTION_UP_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-UP-RIGHT:CAPS">META_MOTION_UP_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-DOWN-LEFT:CAPS">META_MOTION_DOWN_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-DOWN-RIGHT:CAPS">META_MOTION_DOWN_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MOTION-NOT-EXIST-YET:CAPS">META_MOTION_NOT_EXIST_YET</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaSide" role="enum">
+<title>enum MetaSide</title>
+<indexterm zone="MetaSide"><primary>MetaSide</primary></indexterm>
+<refsect3 id="MetaSide.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-SIDE-LEFT:CAPS">META_SIDE_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-SIDE-RIGHT:CAPS">META_SIDE_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-SIDE-TOP:CAPS">META_SIDE_TOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-SIDE-BOTTOM:CAPS">META_SIDE_BOTTOM</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaButtonFunction" role="enum">
+<title>enum MetaButtonFunction</title>
+<indexterm zone="MetaButtonFunction"><primary>MetaButtonFunction</primary></indexterm>
+<refsect3 id="MetaButtonFunction.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-MENU:CAPS">META_BUTTON_FUNCTION_MENU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-MINIMIZE:CAPS">META_BUTTON_FUNCTION_MINIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-MAXIMIZE:CAPS">META_BUTTON_FUNCTION_MAXIMIZE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-CLOSE:CAPS">META_BUTTON_FUNCTION_CLOSE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-SHADE:CAPS">META_BUTTON_FUNCTION_SHADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-ABOVE:CAPS">META_BUTTON_FUNCTION_ABOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-STICK:CAPS">META_BUTTON_FUNCTION_STICK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-UNSHADE:CAPS">META_BUTTON_FUNCTION_UNSHADE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-UNABOVE:CAPS">META_BUTTON_FUNCTION_UNABOVE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-UNSTICK:CAPS">META_BUTTON_FUNCTION_UNSTICK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BUTTON-FUNCTION-LAST:CAPS">META_BUTTON_FUNCTION_LAST</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaTileMode" role="enum">
+<title>enum MetaTileMode</title>
+<indexterm zone="MetaTileMode"><primary>MetaTileMode</primary></indexterm>
+<refsect3 id="MetaTileMode.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-NONE:CAPS">META_TILE_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-LEFT:CAPS">META_TILE_LEFT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-RIGHT:CAPS">META_TILE_RIGHT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-ULC:CAPS">META_TILE_ULC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-LLC:CAPS">META_TILE_LLC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-URC:CAPS">META_TILE_URC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-LRC:CAPS">META_TILE_LRC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-TOP:CAPS">META_TILE_TOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-BOTTOM:CAPS">META_TILE_BOTTOM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-TILE-MAXIMIZE:CAPS">META_TILE_MAXIMIZE</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaWindowTileType" role="enum">
+<title>enum MetaWindowTileType</title>
+<indexterm zone="MetaWindowTileType"><primary>MetaWindowTileType</primary></indexterm>
+<refsect3 id="MetaWindowTileType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-TILE-TYPE-NONE:CAPS">META_WINDOW_TILE_TYPE_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-TILE-TYPE-TILED:CAPS">META_WINDOW_TILE_TYPE_TILED</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-WINDOW-TILE-TYPE-SNAPPED:CAPS">META_WINDOW_TILE_TYPE_SNAPPED</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaBellType" role="enum">
+<title>enum MetaBellType</title>
+<indexterm zone="MetaBellType"><primary>MetaBellType</primary></indexterm>
+<refsect3 id="MetaBellType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-BELL-TYPE-NONE:CAPS">META_BELL_TYPE_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BELL-TYPE-STICKY-KEYS:CAPS">META_BELL_TYPE_STICKY_KEYS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BELL-TYPE-SLOW-KEYS:CAPS">META_BELL_TYPE_SLOW_KEYS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BELL-TYPE-BOUNCE-KEYS:CAPS">META_BELL_TYPE_BOUNCE_KEYS</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MAX-BUTTONS-PER-CORNER:CAPS" role="macro">
+<title>MAX_BUTTONS_PER_CORNER</title>
+<indexterm zone="MAX-BUTTONS-PER-CORNER:CAPS"><primary>MAX_BUTTONS_PER_CORNER</primary></indexterm>
+<programlisting language="C">#define MAX_BUTTONS_PER_CORNER META_BUTTON_FUNCTION_LAST
+</programlisting>
+</refsect2>
+<refsect2 id="MetaButtonLayout" role="struct">
+<title>struct MetaButtonLayout</title>
+<indexterm zone="MetaButtonLayout"><primary>MetaButtonLayout</primary></indexterm>
+<programlisting language="C">struct MetaButtonLayout {
+  /* buttons in the group on the left side */
+  MetaButtonFunction left_buttons[MAX_BUTTONS_PER_CORNER];
+  gboolean left_buttons_has_spacer[MAX_BUTTONS_PER_CORNER];
+
+  /* buttons in the group on the right side */
+  MetaButtonFunction right_buttons[MAX_BUTTONS_PER_CORNER];
+  gboolean right_buttons_has_spacer[MAX_BUTTONS_PER_CORNER];
+};
+</programlisting>
+<refsect3 id="MetaButtonLayout.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="MetaButtonFunction"><type>MetaButtonFunction</type></link>&#160;<structfield id="MetaButtonLayout.left-buttons">left_buttons</structfield>[MAX_BUTTONS_PER_CORNER];</para></entry>
+<entry role="struct_member_description"><para>. </para></entry>
+<entry role="struct_member_annotations"><emphasis role="annotation">[<acronym>array</acronym> fixed-size=10]</emphasis></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gboolean"><type>gboolean</type></link>&#160;<structfield id="MetaButtonLayout.left-buttons-has-spacer">left_buttons_has_spacer</structfield>[MAX_BUTTONS_PER_CORNER];</para></entry>
+<entry role="struct_member_description"><para>. </para></entry>
+<entry role="struct_member_annotations"><emphasis role="annotation">[<acronym>array</acronym> fixed-size=10]</emphasis></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><link linkend="MetaButtonFunction"><type>MetaButtonFunction</type></link>&#160;<structfield id="MetaButtonLayout.right-buttons">right_buttons</structfield>[MAX_BUTTONS_PER_CORNER];</para></entry>
+<entry role="struct_member_description"><para>. </para></entry>
+<entry role="struct_member_annotations"><emphasis role="annotation">[<acronym>array</acronym> fixed-size=10]</emphasis></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gboolean"><type>gboolean</type></link>&#160;<structfield id="MetaButtonLayout.right-buttons-has-spacer">right_buttons_has_spacer</structfield>[MAX_BUTTONS_PER_CORNER];</para></entry>
+<entry role="struct_member_description"><para>. </para></entry>
+<entry role="struct_member_annotations"><emphasis role="annotation">[<acronym>array</acronym> fixed-size=10]</emphasis></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+<refsect2 id="MetaFrameBorders" role="struct">
+<title>struct MetaFrameBorders</title>
+<indexterm zone="MetaFrameBorders"><primary>MetaFrameBorders</primary></indexterm>
+<programlisting language="C">struct MetaFrameBorders {
+  /* The frame border is made up of two pieces - an inner visible portion
+   * and an outer portion that is invisible but responds to events.
+   */
+  GtkBorder visible;
+  GtkBorder invisible;
+
+  /* For convenience, we have a "total" border which is equal to the sum
+   * of the two borders above. */
+  GtkBorder total;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="META-DEFAULT-ICON-NAME:CAPS" role="macro">
+<title>META_DEFAULT_ICON_NAME</title>
+<indexterm zone="META-DEFAULT-ICON-NAME:CAPS"><primary>META_DEFAULT_ICON_NAME</primary></indexterm>
+<programlisting language="C">#define META_DEFAULT_ICON_NAME "window"
+</programlisting>
+</refsect2>
+<refsect2 id="META-PRIORITY-RESIZE:CAPS" role="macro">
+<title>META_PRIORITY_RESIZE</title>
+<indexterm zone="META-PRIORITY-RESIZE:CAPS"><primary>META_PRIORITY_RESIZE</primary></indexterm>
+<programlisting language="C">#define META_PRIORITY_RESIZE    (G_PRIORITY_HIGH_IDLE + 15)
+</programlisting>
+</refsect2>
+<refsect2 id="META-PRIORITY-BEFORE-REDRAW:CAPS" role="macro">
+<title>META_PRIORITY_BEFORE_REDRAW</title>
+<indexterm zone="META-PRIORITY-BEFORE-REDRAW:CAPS"><primary>META_PRIORITY_BEFORE_REDRAW</primary></indexterm>
+<programlisting language="C">#define META_PRIORITY_BEFORE_REDRAW  (G_PRIORITY_HIGH_IDLE + 40)
+</programlisting>
+</refsect2>
+<refsect2 id="META-PRIORITY-REDRAW:CAPS" role="macro">
+<title>META_PRIORITY_REDRAW</title>
+<indexterm zone="META-PRIORITY-REDRAW:CAPS"><primary>META_PRIORITY_REDRAW</primary></indexterm>
+<programlisting language="C">#define META_PRIORITY_REDRAW    (G_PRIORITY_HIGH_IDLE + 50)
+</programlisting>
+</refsect2>
+<refsect2 id="META-PRIORITY-PREFS-NOTIFY:CAPS" role="macro">
+<title>META_PRIORITY_PREFS_NOTIFY</title>
+<indexterm zone="META-PRIORITY-PREFS-NOTIFY:CAPS"><primary>META_PRIORITY_PREFS_NOTIFY</primary></indexterm>
+<programlisting language="C">#define META_PRIORITY_PREFS_NOTIFY   (G_PRIORITY_DEFAULT_IDLE + 10)
+</programlisting>
+</refsect2>
+<refsect2 id="MetaStackLayer" role="enum">
+<title>enum MetaStackLayer</title>
+<indexterm zone="MetaStackLayer"><primary>MetaStackLayer</primary></indexterm>
+<refsect3 id="MetaStackLayer.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-DESKTOP:CAPS">META_LAYER_DESKTOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-BOTTOM:CAPS">META_LAYER_BOTTOM</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-NORMAL:CAPS">META_LAYER_NORMAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-TOP:CAPS">META_LAYER_TOP</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-DOCK:CAPS">META_LAYER_DOCK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-FULLSCREEN:CAPS">META_LAYER_FULLSCREEN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-FOCUSED-WINDOW:CAPS">META_LAYER_FOCUSED_WINDOW</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-OVERRIDE-REDIRECT:CAPS">META_LAYER_OVERRIDE_REDIRECT</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-LAYER-LAST:CAPS">META_LAYER_LAST</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaPlacementMode" role="enum">
+<title>enum MetaPlacementMode</title>
+<indexterm zone="MetaPlacementMode"><primary>MetaPlacementMode</primary></indexterm>
+<refsect3 id="MetaPlacementMode.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-PLACEMENT-MODE-AUTOMATIC:CAPS">META_PLACEMENT_MODE_AUTOMATIC</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-PLACEMENT-MODE-POINTER:CAPS">META_PLACEMENT_MODE_POINTER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-PLACEMENT-MODE-MANUAL:CAPS">META_PLACEMENT_MODE_MANUAL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-PLACEMENT-MODE-CENTER:CAPS">META_PLACEMENT_MODE_CENTER</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaBackgroundTransition" role="enum">
+<title>enum MetaBackgroundTransition</title>
+<indexterm zone="MetaBackgroundTransition"><primary>MetaBackgroundTransition</primary></indexterm>
+<refsect3 id="MetaBackgroundTransition.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-BACKGROUND-TRANSITION-NONE:CAPS">META_BACKGROUND_TRANSITION_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BACKGROUND-TRANSITION-FADEIN:CAPS">META_BACKGROUND_TRANSITION_FADEIN</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-BACKGROUND-TRANSITION-BLEND:CAPS">META_BACKGROUND_TRANSITION_BLEND</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaSyncMethod" role="enum">
+<title>enum MetaSyncMethod</title>
+<indexterm zone="MetaSyncMethod"><primary>MetaSyncMethod</primary></indexterm>
+<refsect3 id="MetaSyncMethod.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-SYNC-NONE:CAPS">META_SYNC_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-SYNC-FALLBACK:CAPS">META_SYNC_FALLBACK</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-SYNC-SWAP-THROTTLING:CAPS">META_SYNC_SWAP_THROTTLING</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-SYNC-PRESENTATION-TIME:CAPS">META_SYNC_PRESENTATION_TIME</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="MetaResizePopup" role="struct">
+<title>MetaResizePopup</title>
+<indexterm zone="MetaResizePopup"><primary>MetaResizePopup</primary></indexterm>
+<programlisting language="C">typedef struct _MetaResizePopup MetaResizePopup;</programlisting>
+</refsect2>
+<refsect2 id="MetaWindowMenu" role="struct">
+<title>MetaWindowMenu</title>
+<indexterm zone="MetaWindowMenu"><primary>MetaWindowMenu</primary></indexterm>
+<programlisting language="C">typedef struct {
+  MetaFrames *frames;
+  Window client_xwindow;
+  GtkWidget *menu;
+  MetaWindowMenuFunc func;
+  gpointer data;
+  MetaMenuOp ops;
+  MetaMenuOp insensitive;
+} MetaWindowMenu;
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

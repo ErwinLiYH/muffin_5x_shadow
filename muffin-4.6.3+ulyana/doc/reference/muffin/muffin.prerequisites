@@ -1,0 +1,5 @@
+GtkBuildable GObject
+ClutterContainer GObject
+ClutterScriptable GObject
+ClutterAnimatable GObject
+ClutterContent GObject

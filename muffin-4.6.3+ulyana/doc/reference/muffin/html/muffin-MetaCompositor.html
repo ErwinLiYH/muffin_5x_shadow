@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MetaCompositor: Muffin Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Muffin Reference Manual">
+<link rel="up" href="core-reference.html" title="Part III. Muffin Core Reference">
+<link rel="prev" href="MetaRectangle.html" title="MetaRectangle">
+<link rel="next" href="MetaDisplay.html" title="MetaDisplay">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#muffin-MetaCompositor.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="MetaRectangle.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="MetaDisplay.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="muffin-MetaCompositor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="muffin-MetaCompositor.top_of_page"></a>MetaCompositor</span></h2>
+<p>MetaCompositor — Compositor API</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="muffin-MetaCompositor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">MetaCompositor</span> *
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-new" title="meta_compositor_new ()">meta_compositor_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-destroy" title="meta_compositor_destroy ()">meta_compositor_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-manage-screen" title="meta_compositor_manage_screen ()">meta_compositor_manage_screen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-unmanage-screen" title="meta_compositor_unmanage_screen ()">meta_compositor_unmanage_screen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-window-shape-changed" title="meta_compositor_window_shape_changed ()">meta_compositor_window_shape_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-process-event" title="meta_compositor_process_event ()">meta_compositor_process_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-add-window" title="meta_compositor_add_window ()">meta_compositor_add_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-remove-window" title="meta_compositor_remove_window ()">meta_compositor_remove_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-show-window" title="meta_compositor_show_window ()">meta_compositor_show_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-hide-window" title="meta_compositor_hide_window ()">meta_compositor_hide_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-switch-workspace" title="meta_compositor_switch_workspace ()">meta_compositor_switch_workspace</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-maximize-window" title="meta_compositor_maximize_window ()">meta_compositor_maximize_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-unmaximize-window" title="meta_compositor_unmaximize_window ()">meta_compositor_unmaximize_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-sync-window-geometry" title="meta_compositor_sync_window_geometry ()">meta_compositor_sync_window_geometry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-set-updates-frozen" title="meta_compositor_set_updates_frozen ()">meta_compositor_set_updates_frozen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-queue-frame-drawn" title="meta_compositor_queue_frame_drawn ()">meta_compositor_queue_frame_drawn</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-sync-stack" title="meta_compositor_sync_stack ()">meta_compositor_sync_stack</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-sync-screen-size" title="meta_compositor_sync_screen_size ()">meta_compositor_sync_screen_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-flash-screen" title="meta_compositor_flash_screen ()">meta_compositor_flash_screen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-tile-window" title="meta_compositor_tile_window ()">meta_compositor_tile_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-show-tile-preview" title="meta_compositor_show_tile_preview ()">meta_compositor_show_tile_preview</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-hide-tile-preview" title="meta_compositor_hide_tile_preview ()">meta_compositor_hide_tile_preview</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-show-hud-preview" title="meta_compositor_show_hud_preview ()">meta_compositor_show_hud_preview</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-hide-hud-preview" title="meta_compositor_hide_hud_preview ()">meta_compositor_hide_hud_preview</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-toggle-send-frame-timings" title="meta_compositor_toggle_send_frame_timings ()">meta_compositor_toggle_send_frame_timings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="muffin-MetaCompositor.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="muffin-MetaCompositor.html#MetaCompEffect" title="enum MetaCompEffect">MetaCompEffect</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="muffin-MetaCompositor.description"></a><h2>Description</h2>
+<p>At a high-level, a window is not-visible or visible. When a
+window is added (with <a class="link" href="muffin-MetaCompositor.html#meta-compositor-add-window" title="meta_compositor_add_window ()"><code class="function">meta_compositor_add_window()</code></a>) it is not visible.
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-show-window" title="meta_compositor_show_window ()"><code class="function">meta_compositor_show_window()</code></a> indicates a transition from not-visible to
+visible. Some of the reasons for this:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Window newly created</p></li>
+<li class="listitem"><p>Window is unminimized</p></li>
+<li class="listitem"><p>Window is moved to the current desktop</p></li>
+<li class="listitem"><p>Window was made sticky</p></li>
+</ul></div>
+<p>meta_compositor_hide_window() indicates that the window has transitioned from
+visible to not-visible. Some reasons include:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Window was destroyed</p></li>
+<li class="listitem"><p>Window is minimized</p></li>
+<li class="listitem"><p>Window is moved to a different desktop</p></li>
+<li class="listitem"><p>Window no longer sticky.</p></li>
+</ul></div>
+<p>Note that combinations are possible - a window might have first
+been minimized and then moved to a different desktop. The 'effect' parameter
+to <a class="link" href="muffin-MetaCompositor.html#meta-compositor-show-window" title="meta_compositor_show_window ()"><code class="function">meta_compositor_show_window()</code></a> and <a class="link" href="muffin-MetaCompositor.html#meta-compositor-hide-window" title="meta_compositor_hide_window ()"><code class="function">meta_compositor_hide_window()</code></a> is a hint
+as to the appropriate effect to show the user and should not
+be considered to be indicative of a state change.</p>
+<p>When the active workspace is changed, <a class="link" href="muffin-MetaCompositor.html#meta-compositor-switch-workspace" title="meta_compositor_switch_workspace ()"><code class="function">meta_compositor_switch_workspace()</code></a> is
+called first, then <a class="link" href="muffin-MetaCompositor.html#meta-compositor-show-window" title="meta_compositor_show_window ()"><code class="function">meta_compositor_show_window()</code></a> and
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-hide-window" title="meta_compositor_hide_window ()"><code class="function">meta_compositor_hide_window()</code></a> are called individually for each window
+affected, with an effect of META_COMP_EFFECT_NONE.
+If hiding windows will affect the switch workspace animation, the
+compositor needs to delay hiding the windows until the switch
+workspace animation completes.</p>
+<p>meta_compositor_maximize_window() and <a class="link" href="muffin-MetaCompositor.html#meta-compositor-unmaximize-window" title="meta_compositor_unmaximize_window ()"><code class="function">meta_compositor_unmaximize_window()</code></a>
+are transitions within the visible state. The window is resized __before__
+the call, so it may be necessary to readjust the display based on the
+old_rect to start the animation.</p>
+<div class="refsect2">
+<a name="id-1.4.9.5.9"></a><h3>Containers</h3>
+<p>There's two containers in the stage that are used to place window actors, here
+are listed in the order in which they are painted:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>window group, accessible with <code class="function">meta_get_window_group_for_screen()</code></p></li>
+<li class="listitem"><p>top window group, accessible with <code class="function">meta_get_top_window_group_for_screen()</code></p></li>
+</ul></div>
+<p>Muffin will place actors representing windows in the window group, except for
+override-redirect windows (ie. popups and menus) which will be placed in the
+top window group.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="muffin-MetaCompositor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="meta-compositor-new"></a><h3>meta_compositor_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">MetaCompositor</span> *
+meta_compositor_new (<em class="parameter"><code><a class="link" href="MetaDisplay.html" title="MetaDisplay"><span class="type">MetaDisplay</span></a> *display</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-destroy"></a><h3>meta_compositor_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_destroy (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-manage-screen"></a><h3>meta_compositor_manage_screen ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_manage_screen (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                               <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-unmanage-screen"></a><h3>meta_compositor_unmanage_screen ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_unmanage_screen (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                 <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-window-shape-changed"></a><h3>meta_compositor_window_shape_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_window_shape_changed (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                      <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-process-event"></a><h3>meta_compositor_process_event ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+meta_compositor_process_event (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                               <em class="parameter"><code><span class="type">XEvent</span> *event</code></em>,
+                               <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-add-window"></a><h3>meta_compositor_add_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_add_window (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                            <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-remove-window"></a><h3>meta_compositor_remove_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_remove_window (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                               <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-show-window"></a><h3>meta_compositor_show_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_show_window (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                             <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                             <em class="parameter"><code><a class="link" href="muffin-MetaCompositor.html#MetaCompEffect" title="enum MetaCompEffect"><span class="type">MetaCompEffect</span></a> effect</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-hide-window"></a><h3>meta_compositor_hide_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_hide_window (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                             <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                             <em class="parameter"><code><a class="link" href="muffin-MetaCompositor.html#MetaCompEffect" title="enum MetaCompEffect"><span class="type">MetaCompEffect</span></a> effect</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-switch-workspace"></a><h3>meta_compositor_switch_workspace ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_switch_workspace (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                  <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>,
+                                  <em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *from</code></em>,
+                                  <em class="parameter"><code><a class="link" href="MetaWorkspace.html" title="MetaWorkspace"><span class="type">MetaWorkspace</span></a> *to</code></em>,
+                                  <em class="parameter"><code><a class="link" href="muffin-Common.html#MetaMotionDirection" title="enum MetaMotionDirection"><span class="type">MetaMotionDirection</span></a> direction</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-maximize-window"></a><h3>meta_compositor_maximize_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_maximize_window (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                 <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                                 <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *old_rect</code></em>,
+                                 <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *new_rect</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-unmaximize-window"></a><h3>meta_compositor_unmaximize_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_unmaximize_window (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *old_rect</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *new_rect</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-sync-window-geometry"></a><h3>meta_compositor_sync_window_geometry ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_sync_window_geometry (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                      <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                                      <em class="parameter"><code><span class="type">gboolean</span> did_placement</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-set-updates-frozen"></a><h3>meta_compositor_set_updates_frozen ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_set_updates_frozen (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                    <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                                    <em class="parameter"><code><span class="type">gboolean</span> updates_frozen</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-queue-frame-drawn"></a><h3>meta_compositor_queue_frame_drawn ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_queue_frame_drawn (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                                   <em class="parameter"><code><span class="type">gboolean</span> no_delay_frame</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-sync-stack"></a><h3>meta_compositor_sync_stack ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_sync_stack (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                            <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>,
+                            <em class="parameter"><code><span class="type">GList</span> *stack</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-sync-screen-size"></a><h3>meta_compositor_sync_screen_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_sync_screen_size (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                  <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>,
+                                  <em class="parameter"><code><span class="type">guint</span> width</code></em>,
+                                  <em class="parameter"><code><span class="type">guint</span> height</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-flash-screen"></a><h3>meta_compositor_flash_screen ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_flash_screen (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                              <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-tile-window"></a><h3>meta_compositor_tile_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_tile_window (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                             <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                             <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *old_rect</code></em>,
+                             <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *new_rect</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-show-tile-preview"></a><h3>meta_compositor_show_tile_preview ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_show_tile_preview (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaWindow.html" title="MetaWindow"><span class="type">MetaWindow</span></a> *window</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *tile_rect</code></em>,
+                                   <em class="parameter"><code><span class="type">int</span> tile_monitor_number</code></em>,
+                                   <em class="parameter"><code><span class="type">guint</span> snap_queued</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-hide-tile-preview"></a><h3>meta_compositor_hide_tile_preview ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_hide_tile_preview (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                   <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-show-hud-preview"></a><h3>meta_compositor_show_hud_preview ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_show_hud_preview (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                  <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>,
+                                  <em class="parameter"><code><span class="type">guint</span> current_proximity_zone</code></em>,
+                                  <em class="parameter"><code><a class="link" href="MetaRectangle.html" title="MetaRectangle"><span class="type">MetaRectangle</span></a> *work_area</code></em>,
+                                  <em class="parameter"><code><span class="type">guint</span> snap_queued</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-hide-hud-preview"></a><h3>meta_compositor_hide_hud_preview ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_hide_hud_preview (<em class="parameter"><code><span class="type">MetaCompositor</span> *compositor</code></em>,
+                                  <em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="meta-compositor-toggle-send-frame-timings"></a><h3>meta_compositor_toggle_send_frame_timings ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+meta_compositor_toggle_send_frame_timings
+                               (<em class="parameter"><code><a class="link" href="MetaScreen.html" title="MetaScreen"><span class="type">MetaScreen</span></a> *screen</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="muffin-MetaCompositor.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MetaCompEffect"></a><h3>enum MetaCompEffect</h3>
+<p>Indicates the appropriate effect to show the user for
+<a class="link" href="muffin-MetaCompositor.html#meta-compositor-show-window" title="meta_compositor_show_window ()"><code class="function">meta_compositor_show_window()</code></a> and <a class="link" href="muffin-MetaCompositor.html#meta-compositor-hide-window" title="meta_compositor_hide_window ()"><code class="function">meta_compositor_hide_window()</code></a></p>
+<div class="refsect3">
+<a name="MetaCompEffect.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="META-COMP-EFFECT-CREATE:CAPS"></a>META_COMP_EFFECT_CREATE</p></td>
+<td class="enum_member_description">
+<p>The window is newly created
+(also used for a window that was previously on a different
+workspace and is changed to become visible on the active
+workspace.)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="META-COMP-EFFECT-UNMINIMIZE:CAPS"></a>META_COMP_EFFECT_UNMINIMIZE</p></td>
+<td class="enum_member_description">
+<p>The window should be shown
+as unminimizing from its icon geometry.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="META-COMP-EFFECT-DESTROY:CAPS"></a>META_COMP_EFFECT_DESTROY</p></td>
+<td class="enum_member_description">
+<p>The window is being destroyed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="META-COMP-EFFECT-MINIMIZE:CAPS"></a>META_COMP_EFFECT_MINIMIZE</p></td>
+<td class="enum_member_description">
+<p>The window should be shown
+as minimizing to its icon geometry.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="META-COMP-EFFECT-NONE:CAPS"></a>META_COMP_EFFECT_NONE</p></td>
+<td class="enum_member_description">
+<p>No effect, the window should be
+shown or hidden immediately.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

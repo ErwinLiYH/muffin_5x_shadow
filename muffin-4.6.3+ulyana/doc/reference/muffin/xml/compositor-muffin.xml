@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-compositor-muffin">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-compositor-muffin.top_of_page">compositor-muffin</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>compositor-muffin</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-compositor-muffin.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-stage-for-screen">meta_get_stage_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-overlay-group-for-screen">meta_get_overlay_group_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="Window"><returnvalue>Window</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-get-overlay-window">meta_get_overlay_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-window-actors">meta_get_window_actors</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-window-group-for-screen">meta_get_window_group_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-bottom-window-group-for-screen">meta_get_bottom_window_group_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-top-window-group-for-screen">meta_get_top_window_group_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-disable-unredirect-for-screen">meta_disable_unredirect_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-enable-unredirect-for-screen">meta_enable_unredirect_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-get-background-actor-for-screen">meta_get_background_actor_for_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-set-stage-input-region">meta_set_stage_input_region</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-empty-stage-input-region">meta_empty_stage_input_region</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-compositor-muffin.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-compositor-muffin.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-get-stage-for-screen" role="function">
+<title>meta_get_stage_for_screen&#160;()</title>
+<indexterm zone="meta-get-stage-for-screen"><primary>meta_get_stage_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_get_stage_for_screen (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<refsect3 id="meta-get-stage-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-get-stage-for-screen.returns" role="returns">
+<title>Returns</title>
+<para>The <link linkend="ClutterStage"><type>ClutterStage</type></link> for the screen. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-get-overlay-group-for-screen" role="function">
+<title>meta_get_overlay_group_for_screen&#160;()</title>
+<indexterm zone="meta-get-overlay-group-for-screen"><primary>meta_get_overlay_group_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_get_overlay_group_for_screen (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<refsect3 id="meta-get-overlay-group-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-get-overlay-group-for-screen.returns" role="returns">
+<title>Returns</title>
+<para>The overlay group corresponding to <parameter>screen</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-get-overlay-window" role="function">
+<title>meta_get_overlay_window&#160;()</title>
+<indexterm zone="meta-get-overlay-window"><primary>meta_get_overlay_window</primary></indexterm>
+<programlisting language="C"><link linkend="Window"><returnvalue>Window</returnvalue></link>
+meta_get_overlay_window (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+
+<para><emphasis role="annotation">[<acronym>skip</acronym>]</emphasis></para></refsect2>
+<refsect2 id="meta-get-window-actors" role="function">
+<title>meta_get_window_actors&#160;()</title>
+<indexterm zone="meta-get-window-actors"><primary>meta_get_window_actors</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+meta_get_window_actors (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<refsect3 id="meta-get-window-actors.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-get-window-actors.returns" role="returns">
+<title>Returns</title>
+<para>The set of <link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> on <parameter>screen</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>][<acronym>element-type</acronym> Clutter.Actor]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-get-window-group-for-screen" role="function">
+<title>meta_get_window_group_for_screen&#160;()</title>
+<indexterm zone="meta-get-window-group-for-screen"><primary>meta_get_window_group_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_get_window_group_for_screen (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<refsect3 id="meta-get-window-group-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-get-window-group-for-screen.returns" role="returns">
+<title>Returns</title>
+<para>The window group corresponding to <parameter>screen</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-get-bottom-window-group-for-screen" role="function">
+<title>meta_get_bottom_window_group_for_screen&#160;()</title>
+<indexterm zone="meta-get-bottom-window-group-for-screen"><primary>meta_get_bottom_window_group_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_get_bottom_window_group_for_screen
+                               (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<refsect3 id="meta-get-bottom-window-group-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-get-bottom-window-group-for-screen.returns" role="returns">
+<title>Returns</title>
+<para>The bottom window group corresponding to <parameter>screen</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-get-top-window-group-for-screen" role="function">
+<title>meta_get_top_window_group_for_screen&#160;()</title>
+<indexterm zone="meta-get-top-window-group-for-screen"><primary>meta_get_top_window_group_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_get_top_window_group_for_screen (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<refsect3 id="meta-get-top-window-group-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-get-top-window-group-for-screen.returns" role="returns">
+<title>Returns</title>
+<para>The top window group corresponding to <parameter>screen</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-disable-unredirect-for-screen" role="function">
+<title>meta_disable_unredirect_for_screen&#160;()</title>
+<indexterm zone="meta-disable-unredirect-for-screen"><primary>meta_disable_unredirect_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_disable_unredirect_for_screen (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<para>Disables unredirection, can be usefull in situations where having
+unredirected windows is undesireable like when recording a video.</para>
+<refsect3 id="meta-disable-unredirect-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-enable-unredirect-for-screen" role="function">
+<title>meta_enable_unredirect_for_screen&#160;()</title>
+<indexterm zone="meta-enable-unredirect-for-screen"><primary>meta_enable_unredirect_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_enable_unredirect_for_screen (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<para>Enables unredirection which reduces the overhead for apps like games.</para>
+<refsect3 id="meta-enable-unredirect-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-get-background-actor-for-screen" role="function">
+<title>meta_get_background_actor_for_screen&#160;()</title>
+<indexterm zone="meta-get-background-actor-for-screen"><primary>meta_get_background_actor_for_screen</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_get_background_actor_for_screen (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+<para>Gets the actor that draws the root window background under the windows.
+The root window background automatically tracks the image or color set
+by the environment.</para>
+<refsect3 id="meta-get-background-actor-for-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>screen</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaScreen"><type>MetaScreen</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-get-background-actor-for-screen.returns" role="returns">
+<title>Returns</title>
+<para>The background actor corresponding to <parameter>screen</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-set-stage-input-region" role="function">
+<title>meta_set_stage_input_region&#160;()</title>
+<indexterm zone="meta-set-stage-input-region"><primary>meta_set_stage_input_region</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_set_stage_input_region (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                             <parameter><link linkend="XserverRegion"><type>XserverRegion</type></link> region</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-empty-stage-input-region" role="function">
+<title>meta_empty_stage_input_region&#160;()</title>
+<indexterm zone="meta-empty-stage-input-region"><primary>meta_empty_stage_input_region</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_empty_stage_input_region (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

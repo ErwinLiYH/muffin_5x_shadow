@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-types">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-types.top_of_page">types</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>types</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-types.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="MetaWindow"><type>MetaWindow</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaDisplay--focus-window">focus-window</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaScreen--keyboard-grabbed">keyboard-grabbed</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="MetaScreen--n-workspaces">n-workspaces</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--above">above</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--appears-focused">appears-focused</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--decorated">decorated</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--demands-attention">demands-attention</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--fullscreen">fullscreen</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--gtk-app-menu-object-path">gtk-app-menu-object-path</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--gtk-application-id">gtk-application-id</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--gtk-application-object-path">gtk-application-object-path</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--gtk-menubar-object-path">gtk-menubar-object-path</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--gtk-unique-bus-name">gtk-unique-bus-name</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--gtk-window-object-path">gtk-window-object-path</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--maximized-horizontally">maximized-horizontally</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--maximized-vertically">maximized-vertically</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--minimized">minimized</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--muffin-hints">muffin-hints</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="MetaWindow--progress">progress</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--progress-pulse">progress-pulse</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--resizeable">resizeable</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="MetaWindow--tile-type">tile-type</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--title">title</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaWindow--urgent">urgent</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="MetaWindow--user-time">user-time</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="MetaWindowType"><type>MetaWindowType</type></link></entry><entry role="property_name"><link linkend="MetaWindow--window-type">window-type</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaWindow--wm-class">wm-class</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="MetaWorkspace--n-windows">n-windows</link></entry><entry role="property_flags">Read</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-types.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signal_proto_type" colwidth="150px"/>
+<colspec colname="signal_proto_name" colwidth="300px"/>
+<colspec colname="signal_proto_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-bell">bell</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-gl-video-memory-purged">gl-video-memory-purged</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-grab-op-begin">grab-op-begin</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-grab-op-end">grab-op-end</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-restart">restart</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-window-created">window-created</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-window-demands-attention">window-demands-attention</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-window-marked-urgent">window-marked-urgent</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-zoom-scroll-in">zoom-scroll-in</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaDisplay-zoom-scroll-out">zoom-scroll-out</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-hide-snap-osd">hide-snap-osd</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-in-fullscreen-changed">in-fullscreen-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-monitors-changed">monitors-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-restacked">restacked</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-show-snap-osd">show-snap-osd</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-show-workspace-osd">show-workspace-osd</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-startup-sequence-changed">startup-sequence-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-toggle-recording">toggle-recording</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-window-added">window-added</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-window-entered-monitor">window-entered-monitor</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-window-left-monitor">window-left-monitor</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-window-monitor-changed">window-monitor-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-window-removed">window-removed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-window-skip-taskbar-changed">window-skip-taskbar-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-window-workspace-changed">window-workspace-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-workareas-changed">workareas-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-workspace-added">workspace-added</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-workspace-removed">workspace-removed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaScreen-workspace-switched">workspace-switched</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindow-focus">focus</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindow-icon-changed">icon-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindow-position-changed">position-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindow-raised">raised</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindow-size-changed">size-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindow-unmanaged">unmanaged</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWindow-workspace-changed">workspace-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWorkspace-window-added">window-added</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaWorkspace-window-removed">window-removed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<anchor id="MetaDisplay"/><anchor id="MetaKeyBinding"/><anchor id="MetaScreen"/><anchor id="MetaWindow"/><anchor id="MetaWorkspace"/><refsect1 id="muffin-types.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaCompositor">MetaCompositor</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaDisplay-struct">MetaDisplay</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaFrame">MetaFrame</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaGroup">MetaGroup</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaKeyBinding-struct">MetaKeyBinding</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaScreen-struct">MetaScreen</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaWindow-struct">MetaWindow</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="MetaWorkspace-struct">MetaWorkspace</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-types.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GBoxed">GBoxed</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaKeyBinding
+    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> MetaDisplay
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> MetaScreen
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> MetaWindow
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaWorkspace
+</screen>
+</refsect1>
+
+
+<refsect1 id="muffin-types.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-types.functions_details" role="details">
+<title role="details.title">Functions</title>
+<para />
+</refsect1>
+<refsect1 id="muffin-types.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaCompositor" role="struct">
+<title>MetaCompositor</title>
+<indexterm zone="MetaCompositor"><primary>MetaCompositor</primary></indexterm>
+<programlisting language="C">typedef struct _MetaCompositor MetaCompositor;</programlisting>
+</refsect2>
+<refsect2 id="MetaDisplay-struct" role="struct">
+<title>MetaDisplay</title>
+<indexterm zone="MetaDisplay-struct"><primary>MetaDisplay</primary></indexterm>
+<programlisting language="C">typedef struct _MetaDisplay MetaDisplay;</programlisting>
+</refsect2>
+<refsect2 id="MetaFrame" role="struct">
+<title>MetaFrame</title>
+<indexterm zone="MetaFrame"><primary>MetaFrame</primary></indexterm>
+<programlisting language="C">typedef struct _MetaFrame MetaFrame;</programlisting>
+</refsect2>
+<refsect2 id="MetaGroup" role="struct">
+<title>MetaGroup</title>
+<indexterm zone="MetaGroup"><primary>MetaGroup</primary></indexterm>
+<programlisting language="C">typedef struct _MetaGroup MetaGroup;</programlisting>
+</refsect2>
+<refsect2 id="MetaKeyBinding-struct" role="struct">
+<title>MetaKeyBinding</title>
+<indexterm zone="MetaKeyBinding-struct"><primary>MetaKeyBinding</primary></indexterm>
+<programlisting language="C">typedef struct _MetaKeyBinding MetaKeyBinding;</programlisting>
+</refsect2>
+<refsect2 id="MetaScreen-struct" role="struct">
+<title>MetaScreen</title>
+<indexterm zone="MetaScreen-struct"><primary>MetaScreen</primary></indexterm>
+<programlisting language="C">typedef struct _MetaScreen MetaScreen;</programlisting>
+</refsect2>
+<refsect2 id="MetaWindow-struct" role="struct">
+<title>MetaWindow</title>
+<indexterm zone="MetaWindow-struct"><primary>MetaWindow</primary></indexterm>
+<programlisting language="C">typedef struct _MetaWindow MetaWindow;</programlisting>
+</refsect2>
+<refsect2 id="MetaWorkspace-struct" role="struct">
+<title>MetaWorkspace</title>
+<indexterm zone="MetaWorkspace-struct"><primary>MetaWorkspace</primary></indexterm>
+<programlisting language="C">typedef struct _MetaWorkspace MetaWorkspace;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-types.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="MetaDisplay--focus-window" role="property"><title>The <literal>“focus-window”</literal> property</title>
+<indexterm zone="MetaDisplay--focus-window"><primary>MetaDisplay:focus-window</primary></indexterm>
+<programlisting>  “focus-window”             <link linkend="MetaWindow"><type>MetaWindow</type></link>&#160;*</programlisting>
+<para>Currently focused window.</para><para>Owner: MetaDisplay</para>
+<para>Flags: Read</para>
+</refsect2>
+<refsect2 id="MetaScreen--keyboard-grabbed" role="property"><title>The <literal>“keyboard-grabbed”</literal> property</title>
+<indexterm zone="MetaScreen--keyboard-grabbed"><primary>MetaScreen:keyboard-grabbed</primary></indexterm>
+<programlisting>  “keyboard-grabbed”         <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether the keyboard is grabbed.</para><para>Owner: MetaScreen</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaScreen--n-workspaces" role="property"><title>The <literal>“n-workspaces”</literal> property</title>
+<indexterm zone="MetaScreen--n-workspaces"><primary>MetaScreen:n-workspaces</primary></indexterm>
+<programlisting>  “n-workspaces”             <link linkend="gint"><type>gint</type></link></programlisting>
+<para>Number of workspaces.</para><para>Owner: MetaScreen</para>
+<para>Flags: Read</para>
+<para>Allowed values: &gt;= 1</para>
+<para>Default value: 1</para>
+</refsect2>
+<refsect2 id="MetaWindow--above" role="property"><title>The <literal>“above”</literal> property</title>
+<indexterm zone="MetaWindow--above"><primary>MetaWindow:above</primary></indexterm>
+<programlisting>  “above”                    <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether the window is shown as always-on-top.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--appears-focused" role="property"><title>The <literal>“appears-focused”</literal> property</title>
+<indexterm zone="MetaWindow--appears-focused"><primary>MetaWindow:appears-focused</primary></indexterm>
+<programlisting>  “appears-focused”          <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether the window is drawn as being focused.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--decorated" role="property"><title>The <literal>“decorated”</literal> property</title>
+<indexterm zone="MetaWindow--decorated"><primary>MetaWindow:decorated</primary></indexterm>
+<programlisting>  “decorated”                <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether window is decorated.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: TRUE</para>
+</refsect2>
+<refsect2 id="MetaWindow--demands-attention" role="property"><title>The <literal>“demands-attention”</literal> property</title>
+<indexterm zone="MetaWindow--demands-attention"><primary>MetaWindow:demands-attention</primary></indexterm>
+<programlisting>  “demands-attention”        <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether the window has _NET_WM_STATE_DEMANDS_ATTENTION set.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--fullscreen" role="property"><title>The <literal>“fullscreen”</literal> property</title>
+<indexterm zone="MetaWindow--fullscreen"><primary>MetaWindow:fullscreen</primary></indexterm>
+<programlisting>  “fullscreen”               <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether window is fullscreened.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--gtk-app-menu-object-path" role="property"><title>The <literal>“gtk-app-menu-object-path”</literal> property</title>
+<indexterm zone="MetaWindow--gtk-app-menu-object-path"><primary>MetaWindow:gtk-app-menu-object-path</primary></indexterm>
+<programlisting>  “gtk-app-menu-object-path” <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the _GTK_APP_MENU_OBJECT_PATH property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--gtk-application-id" role="property"><title>The <literal>“gtk-application-id”</literal> property</title>
+<indexterm zone="MetaWindow--gtk-application-id"><primary>MetaWindow:gtk-application-id</primary></indexterm>
+<programlisting>  “gtk-application-id”       <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the _GTK_APPLICATION_ID property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--gtk-application-object-path" role="property"><title>The <literal>“gtk-application-object-path”</literal> property</title>
+<indexterm zone="MetaWindow--gtk-application-object-path"><primary>MetaWindow:gtk-application-object-path</primary></indexterm>
+<programlisting>  “gtk-application-object-path” <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the _GTK_APPLICATION_OBJECT_PATH property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--gtk-menubar-object-path" role="property"><title>The <literal>“gtk-menubar-object-path”</literal> property</title>
+<indexterm zone="MetaWindow--gtk-menubar-object-path"><primary>MetaWindow:gtk-menubar-object-path</primary></indexterm>
+<programlisting>  “gtk-menubar-object-path”  <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the _GTK_MENUBAR_OBJECT_PATH property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--gtk-unique-bus-name" role="property"><title>The <literal>“gtk-unique-bus-name”</literal> property</title>
+<indexterm zone="MetaWindow--gtk-unique-bus-name"><primary>MetaWindow:gtk-unique-bus-name</primary></indexterm>
+<programlisting>  “gtk-unique-bus-name”      <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the _GTK_UNIQUE_BUS_NAME property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--gtk-window-object-path" role="property"><title>The <literal>“gtk-window-object-path”</literal> property</title>
+<indexterm zone="MetaWindow--gtk-window-object-path"><primary>MetaWindow:gtk-window-object-path</primary></indexterm>
+<programlisting>  “gtk-window-object-path”   <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the _GTK_WINDOW_OBJECT_PATH property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--maximized-horizontally" role="property"><title>The <literal>“maximized-horizontally”</literal> property</title>
+<indexterm zone="MetaWindow--maximized-horizontally"><primary>MetaWindow:maximized-horizontally</primary></indexterm>
+<programlisting>  “maximized-horizontally”   <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether window is maximized horizontally.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--maximized-vertically" role="property"><title>The <literal>“maximized-vertically”</literal> property</title>
+<indexterm zone="MetaWindow--maximized-vertically"><primary>MetaWindow:maximized-vertically</primary></indexterm>
+<programlisting>  “maximized-vertically”     <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether window is maximized vertically.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--minimized" role="property"><title>The <literal>“minimized”</literal> property</title>
+<indexterm zone="MetaWindow--minimized"><primary>MetaWindow:minimized</primary></indexterm>
+<programlisting>  “minimized”                <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether window is minimized.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--muffin-hints" role="property"><title>The <literal>“muffin-hints”</literal> property</title>
+<indexterm zone="MetaWindow--muffin-hints"><primary>MetaWindow:muffin-hints</primary></indexterm>
+<programlisting>  “muffin-hints”             <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the _MUFFIN_HINTS property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--progress" role="property"><title>The <literal>“progress”</literal> property</title>
+<indexterm zone="MetaWindow--progress"><primary>MetaWindow:progress</primary></indexterm>
+<programlisting>  “progress”                 <link linkend="guint"><type>guint</type></link></programlisting>
+<para>The progress of some long-running operation.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Allowed values: &lt;= 100</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="MetaWindow--progress-pulse" role="property"><title>The <literal>“progress-pulse”</literal> property</title>
+<indexterm zone="MetaWindow--progress-pulse"><primary>MetaWindow:progress-pulse</primary></indexterm>
+<programlisting>  “progress-pulse”           <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Show indeterminate or ongoing progress of an operation.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--resizeable" role="property"><title>The <literal>“resizeable”</literal> property</title>
+<indexterm zone="MetaWindow--resizeable"><primary>MetaWindow:resizeable</primary></indexterm>
+<programlisting>  “resizeable”               <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether the window can be resized.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--tile-type" role="property"><title>The <literal>“tile-type”</literal> property</title>
+<indexterm zone="MetaWindow--tile-type"><primary>MetaWindow:tile-type</primary></indexterm>
+<programlisting>  “tile-type”                <link linkend="gint"><type>gint</type></link></programlisting>
+<para>Whether window is tiled or snapped.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Allowed values: [0,2]</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="MetaWindow--title" role="property"><title>The <literal>“title”</literal> property</title>
+<indexterm zone="MetaWindow--title"><primary>MetaWindow:title</primary></indexterm>
+<programlisting>  “title”                    <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The title of the window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWindow--urgent" role="property"><title>The <literal>“urgent”</literal> property</title>
+<indexterm zone="MetaWindow--urgent"><primary>MetaWindow:urgent</primary></indexterm>
+<programlisting>  “urgent”                   <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Whether the urgent flag of WM_HINTS is set.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaWindow--user-time" role="property"><title>The <literal>“user-time”</literal> property</title>
+<indexterm zone="MetaWindow--user-time"><primary>MetaWindow:user-time</primary></indexterm>
+<programlisting>  “user-time”                <link linkend="guint"><type>guint</type></link></programlisting>
+<para>Timestamp of last user interaction.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="MetaWindow--window-type" role="property"><title>The <literal>“window-type”</literal> property</title>
+<indexterm zone="MetaWindow--window-type"><primary>MetaWindow:window-type</primary></indexterm>
+<programlisting>  “window-type”              <link linkend="MetaWindowType"><type>MetaWindowType</type></link></programlisting>
+<para>The type of the window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: META_WINDOW_NORMAL</para>
+</refsect2>
+<refsect2 id="MetaWindow--wm-class" role="property"><title>The <literal>“wm-class”</literal> property</title>
+<indexterm zone="MetaWindow--wm-class"><primary>MetaWindow:wm-class</primary></indexterm>
+<programlisting>  “wm-class”                 <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>Contents of the WM_CLASS property of this window.</para><para>Owner: MetaWindow</para>
+<para>Flags: Read</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="MetaWorkspace--n-windows" role="property"><title>The <literal>“n-windows”</literal> property</title>
+<indexterm zone="MetaWorkspace--n-windows"><primary>MetaWorkspace:n-windows</primary></indexterm>
+<programlisting>  “n-windows”                <link linkend="guint"><type>guint</type></link></programlisting>
+<para>Number of windows.</para><para>Owner: MetaWorkspace</para>
+<para>Flags: Read</para>
+<para>Default value: 0</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-types.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="MetaDisplay-bell" role="signal"><title>The <literal>“bell”</literal> signal</title>
+<indexterm zone="MetaDisplay-bell"><primary>MetaDisplay::bell</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>  *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-gl-video-memory-purged" role="signal"><title>The <literal>“gl-video-memory-purged”</literal> signal</title>
+<indexterm zone="MetaDisplay-gl-video-memory-purged"><primary>MetaDisplay::gl-video-memory-purged</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-grab-op-begin" role="signal"><title>The <literal>“grab-op-begin”</literal> signal</title>
+<indexterm zone="MetaDisplay-grab-op-begin"><primary>MetaDisplay::grab-op-begin</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="MetaScreen"><type>MetaScreen</type></link>  *arg1,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>  *arg2,
+               <link linkend="MetaGrabOp"><type>MetaGrabOp</type></link>   arg3,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-grab-op-end" role="signal"><title>The <literal>“grab-op-end”</literal> signal</title>
+<indexterm zone="MetaDisplay-grab-op-end"><primary>MetaDisplay::grab-op-end</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="MetaScreen"><type>MetaScreen</type></link>  *arg1,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>  *arg2,
+               <link linkend="MetaGrabOp"><type>MetaGrabOp</type></link>   arg3,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-restart" role="signal"><title>The <literal>“restart”</literal> signal</title>
+<indexterm zone="MetaDisplay-restart"><primary>MetaDisplay::restart</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *display,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>The ::restart signal is emitted to indicate that Muffin
+will restart the process.</para>
+<refsect3 id="MetaDisplay-restart.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>display</para></entry>
+<entry role="parameter_description"><para>the <link linkend="MetaDisplay"><type>MetaDisplay</type></link> instance</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-window-created" role="signal"><title>The <literal>“window-created”</literal> signal</title>
+<indexterm zone="MetaDisplay-window-created"><primary>MetaDisplay::window-created</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>  *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-window-demands-attention" role="signal"><title>The <literal>“window-demands-attention”</literal> signal</title>
+<indexterm zone="MetaDisplay-window-demands-attention"><primary>MetaDisplay::window-demands-attention</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>  *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-window-marked-urgent" role="signal"><title>The <literal>“window-marked-urgent”</literal> signal</title>
+<indexterm zone="MetaDisplay-window-marked-urgent"><primary>MetaDisplay::window-marked-urgent</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>  *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-zoom-scroll-in" role="signal"><title>The <literal>“zoom-scroll-in”</literal> signal</title>
+<indexterm zone="MetaDisplay-zoom-scroll-in"><primary>MetaDisplay::zoom-scroll-in</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaDisplay-zoom-scroll-out" role="signal"><title>The <literal>“zoom-scroll-out”</literal> signal</title>
+<indexterm zone="MetaDisplay-zoom-scroll-out"><primary>MetaDisplay::zoom-scroll-out</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaDisplay"><type>MetaDisplay</type></link> *metadisplay,
+               <link linkend="gpointer"><type>gpointer</type></link>     user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-hide-snap-osd" role="signal"><title>The <literal>“hide-snap-osd”</literal> signal</title>
+<indexterm zone="MetaScreen-hide-snap-osd"><primary>MetaScreen::hide-snap-osd</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-in-fullscreen-changed" role="signal"><title>The <literal>“in-fullscreen-changed”</literal> signal</title>
+<indexterm zone="MetaScreen-in-fullscreen-changed"><primary>MetaScreen::in-fullscreen-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-monitors-changed" role="signal"><title>The <literal>“monitors-changed”</literal> signal</title>
+<indexterm zone="MetaScreen-monitors-changed"><primary>MetaScreen::monitors-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-restacked" role="signal"><title>The <literal>“restacked”</literal> signal</title>
+<indexterm zone="MetaScreen-restacked"><primary>MetaScreen::restacked</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-show-snap-osd" role="signal"><title>The <literal>“show-snap-osd”</literal> signal</title>
+<indexterm zone="MetaScreen-show-snap-osd"><primary>MetaScreen::show-snap-osd</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gint"><type>gint</type></link>        arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-show-workspace-osd" role="signal"><title>The <literal>“show-workspace-osd”</literal> signal</title>
+<indexterm zone="MetaScreen-show-workspace-osd"><primary>MetaScreen::show-workspace-osd</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-startup-sequence-changed" role="signal"><title>The <literal>“startup-sequence-changed”</literal> signal</title>
+<indexterm zone="MetaScreen-startup-sequence-changed"><primary>MetaScreen::startup-sequence-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-toggle-recording" role="signal"><title>The <literal>“toggle-recording”</literal> signal</title>
+<indexterm zone="MetaScreen-toggle-recording"><primary>MetaScreen::toggle-recording</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-window-added" role="signal"><title>The <literal>“window-added”</literal> signal</title>
+<indexterm zone="MetaScreen-window-added"><primary>MetaScreen::window-added</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link> *arg1,
+               <link linkend="gint"><type>gint</type></link>        arg2,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-window-entered-monitor" role="signal"><title>The <literal>“window-entered-monitor”</literal> signal</title>
+<indexterm zone="MetaScreen-window-entered-monitor"><primary>MetaScreen::window-entered-monitor</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gint"><type>gint</type></link>        arg1,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link> *arg2,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-window-left-monitor" role="signal"><title>The <literal>“window-left-monitor”</literal> signal</title>
+<indexterm zone="MetaScreen-window-left-monitor"><primary>MetaScreen::window-left-monitor</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gint"><type>gint</type></link>        arg1,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link> *arg2,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-window-monitor-changed" role="signal"><title>The <literal>“window-monitor-changed”</literal> signal</title>
+<indexterm zone="MetaScreen-window-monitor-changed"><primary>MetaScreen::window-monitor-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link> *arg1,
+               <link linkend="gint"><type>gint</type></link>        arg2,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-window-removed" role="signal"><title>The <literal>“window-removed”</literal> signal</title>
+<indexterm zone="MetaScreen-window-removed"><primary>MetaScreen::window-removed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link> *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-window-skip-taskbar-changed" role="signal"><title>The <literal>“window-skip-taskbar-changed”</literal> signal</title>
+<indexterm zone="MetaScreen-window-skip-taskbar-changed"><primary>MetaScreen::window-skip-taskbar-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link> *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-window-workspace-changed" role="signal"><title>The <literal>“window-workspace-changed”</literal> signal</title>
+<indexterm zone="MetaScreen-window-workspace-changed"><primary>MetaScreen::window-workspace-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link>    *metascreen,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>    *arg1,
+               <link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *arg2,
+               <link linkend="gpointer"><type>gpointer</type></link>       user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-workareas-changed" role="signal"><title>The <literal>“workareas-changed”</literal> signal</title>
+<indexterm zone="MetaScreen-workareas-changed"><primary>MetaScreen::workareas-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-workspace-added" role="signal"><title>The <literal>“workspace-added”</literal> signal</title>
+<indexterm zone="MetaScreen-workspace-added"><primary>MetaScreen::workspace-added</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gint"><type>gint</type></link>        arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-workspace-removed" role="signal"><title>The <literal>“workspace-removed”</literal> signal</title>
+<indexterm zone="MetaScreen-workspace-removed"><primary>MetaScreen::workspace-removed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link> *metascreen,
+               <link linkend="gint"><type>gint</type></link>        arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaScreen-workspace-switched" role="signal"><title>The <literal>“workspace-switched”</literal> signal</title>
+<indexterm zone="MetaScreen-workspace-switched"><primary>MetaScreen::workspace-switched</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaScreen"><type>MetaScreen</type></link>         *metascreen,
+               <link linkend="gint"><type>gint</type></link>                arg1,
+               <link linkend="gint"><type>gint</type></link>                arg2,
+               <link linkend="MetaMotionDirection"><type>MetaMotionDirection</type></link> arg3,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindow-focus" role="signal"><title>The <literal>“focus”</literal> signal</title>
+<indexterm zone="MetaWindow-focus"><primary>MetaWindow::focus</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindow"><type>MetaWindow</type></link> *metawindow,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindow-icon-changed" role="signal"><title>The <literal>“icon-changed”</literal> signal</title>
+<indexterm zone="MetaWindow-icon-changed"><primary>MetaWindow::icon-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindow"><type>MetaWindow</type></link> *metawindow,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindow-position-changed" role="signal"><title>The <literal>“position-changed”</literal> signal</title>
+<indexterm zone="MetaWindow-position-changed"><primary>MetaWindow::position-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindow"><type>MetaWindow</type></link> *metawindow,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindow-raised" role="signal"><title>The <literal>“raised”</literal> signal</title>
+<indexterm zone="MetaWindow-raised"><primary>MetaWindow::raised</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindow"><type>MetaWindow</type></link> *metawindow,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindow-size-changed" role="signal"><title>The <literal>“size-changed”</literal> signal</title>
+<indexterm zone="MetaWindow-size-changed"><primary>MetaWindow::size-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindow"><type>MetaWindow</type></link> *metawindow,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindow-unmanaged" role="signal"><title>The <literal>“unmanaged”</literal> signal</title>
+<indexterm zone="MetaWindow-unmanaged"><primary>MetaWindow::unmanaged</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindow"><type>MetaWindow</type></link> *metawindow,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWindow-workspace-changed" role="signal"><title>The <literal>“workspace-changed”</literal> signal</title>
+<indexterm zone="MetaWindow-workspace-changed"><primary>MetaWindow::workspace-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWindow"><type>MetaWindow</type></link> *metawindow,
+               <link linkend="gint"><type>gint</type></link>        arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>    user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWorkspace-window-added" role="signal"><title>The <literal>“window-added”</literal> signal</title>
+<indexterm zone="MetaWorkspace-window-added"><primary>MetaWorkspace::window-added</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *metaworkspace,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>    *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>       user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="MetaWorkspace-window-removed" role="signal"><title>The <literal>“window-removed”</literal> signal</title>
+<indexterm zone="MetaWorkspace-window-removed"><primary>MetaWorkspace::window-removed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaWorkspace"><type>MetaWorkspace</type></link> *metaworkspace,
+               <link linkend="MetaWindow"><type>MetaWindow</type></link>    *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>       user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

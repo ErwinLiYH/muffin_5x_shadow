@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaPlugin">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaPlugin.top_of_page">MetaPlugin</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaPlugin</refname>
+<refpurpose>Entry point for plugins</refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaPlugin.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-running">meta_plugin_running</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-debug-mode">meta_plugin_debug_mode</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="MetaPluginInfo"><returnvalue>MetaPluginInfo</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-plugin-get-info">meta_plugin_get_info</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-PLUGIN-DECLARE:CAPS">META_PLUGIN_DECLARE</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-switch-workspace-completed">meta_plugin_switch_workspace_completed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-minimize-completed">meta_plugin_minimize_completed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-maximize-completed">meta_plugin_maximize_completed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-unmaximize-completed">meta_plugin_unmaximize_completed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-tile-completed">meta_plugin_tile_completed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-map-completed">meta_plugin_map_completed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-destroy-completed">meta_plugin_destroy_completed</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-begin-modal">meta_plugin_begin_modal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-end-modal">meta_plugin_end_modal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaScreen"><returnvalue>MetaScreen</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-plugin-get-screen">meta_plugin_get_screen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-plugin-manager-set-plugin-type">meta_plugin_manager_set_plugin_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaPlugin.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="MetaPlugin--debug-mode">debug-mode</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="MetaScreen"><type>MetaScreen</type></link>&#160;*</entry><entry role="property_name"><link linkend="MetaPlugin--screen">screen</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaPlugin.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaPlugin-struct">MetaPlugin</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaPluginClass">MetaPluginClass</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaPluginInfo">MetaPluginInfo</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="MetaPluginVersion">MetaPluginVersion</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="MetaModalOptions">MetaModalOptions</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaPlugin.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaPlugin
+</screen>
+</refsect1>
+
+
+<refsect1 id="MetaPlugin.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="MetaPlugin.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-plugin-running" role="function">
+<title>meta_plugin_running&#160;()</title>
+<indexterm zone="meta-plugin-running"><primary>meta_plugin_running</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_plugin_running (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-debug-mode" role="function">
+<title>meta_plugin_debug_mode&#160;()</title>
+<indexterm zone="meta-plugin-debug-mode"><primary>meta_plugin_debug_mode</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_plugin_debug_mode (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-get-info" role="function">
+<title>meta_plugin_get_info&#160;()</title>
+<indexterm zone="meta-plugin-get-info"><primary>meta_plugin_get_info</primary></indexterm>
+<programlisting language="C">const <link linkend="MetaPluginInfo"><returnvalue>MetaPluginInfo</returnvalue></link>&#160;*
+meta_plugin_get_info (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="META-PLUGIN-DECLARE:CAPS" role="macro">
+<title>META_PLUGIN_DECLARE()</title>
+<indexterm zone="META-PLUGIN-DECLARE:CAPS"><primary>META_PLUGIN_DECLARE</primary></indexterm>
+<programlisting language="C">#define             META_PLUGIN_DECLARE(ObjectName, object_name)</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-switch-workspace-completed" role="function">
+<title>meta_plugin_switch_workspace_completed&#160;()</title>
+<indexterm zone="meta-plugin-switch-workspace-completed"><primary>meta_plugin_switch_workspace_completed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_switch_workspace_completed
+                               (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-minimize-completed" role="function">
+<title>meta_plugin_minimize_completed&#160;()</title>
+<indexterm zone="meta-plugin-minimize-completed"><primary>meta_plugin_minimize_completed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_minimize_completed (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                                <parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *actor</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-maximize-completed" role="function">
+<title>meta_plugin_maximize_completed&#160;()</title>
+<indexterm zone="meta-plugin-maximize-completed"><primary>meta_plugin_maximize_completed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_maximize_completed (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                                <parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *actor</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-unmaximize-completed" role="function">
+<title>meta_plugin_unmaximize_completed&#160;()</title>
+<indexterm zone="meta-plugin-unmaximize-completed"><primary>meta_plugin_unmaximize_completed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_unmaximize_completed (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                                  <parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *actor</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-tile-completed" role="function">
+<title>meta_plugin_tile_completed&#160;()</title>
+<indexterm zone="meta-plugin-tile-completed"><primary>meta_plugin_tile_completed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_tile_completed (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                            <parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *actor</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-map-completed" role="function">
+<title>meta_plugin_map_completed&#160;()</title>
+<indexterm zone="meta-plugin-map-completed"><primary>meta_plugin_map_completed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_map_completed (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                           <parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *actor</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-destroy-completed" role="function">
+<title>meta_plugin_destroy_completed&#160;()</title>
+<indexterm zone="meta-plugin-destroy-completed"><primary>meta_plugin_destroy_completed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_destroy_completed (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                               <parameter><link linkend="MetaWindowActor"><type>MetaWindowActor</type></link> *actor</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-plugin-begin-modal" role="function">
+<title>meta_plugin_begin_modal&#160;()</title>
+<indexterm zone="meta-plugin-begin-modal"><primary>meta_plugin_begin_modal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_plugin_begin_modal (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                         <parameter><link linkend="Window"><type>Window</type></link> grab_window</parameter>,
+                         <parameter><link linkend="Cursor"><type>Cursor</type></link> cursor</parameter>,
+                         <parameter><link linkend="MetaModalOptions"><type>MetaModalOptions</type></link> options</parameter>,
+                         <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+<para>This function is used to grab the keyboard and mouse for the exclusive
+use of the plugin. Correct operation requires that both the keyboard
+and mouse are grabbed, or thing will break. (In particular, other
+passive X grabs in Meta can trigger but not be handled by the normal
+keybinding handling code.) However, the plugin can establish the keyboard
+and/or mouse grabs ahead of time and pass in the
+<link linkend="META-MODAL-POINTER-ALREADY-GRABBED:CAPS"><literal>META_MODAL_POINTER_ALREADY_GRABBED</literal></link> and/or <link linkend="META-MODAL-KEYBOARD-ALREADY-GRABBED:CAPS"><literal>META_MODAL_KEYBOARD_ALREADY_GRABBED</literal></link>
+options. This facility is provided for two reasons: first to allow using
+this function to establish modality after a passive grab, and second to
+allow using obscure features of <link linkend="XGrabPointer"><function>XGrabPointer()</function></link> and <link linkend="XGrabKeyboard"><function>XGrabKeyboard()</function></link> without
+having to add them to this API.</para>
+<refsect3 id="meta-plugin-begin-modal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>plugin</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaPlugin"><type>MetaPlugin</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>grab_window</para></entry>
+<entry role="parameter_description"><para>the X window to grab the keyboard and mouse on</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>cursor</para></entry>
+<entry role="parameter_description"><para>the cursor to use for the pointer grab, or None,
+to use the normal cursor for the grab window and
+its descendants.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>options</para></entry>
+<entry role="parameter_description"><para>flags that modify the behavior of the modal grab</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>timestamp</para></entry>
+<entry role="parameter_description"><para>the timestamp used for establishing grabs</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-plugin-begin-modal.returns" role="returns">
+<title>Returns</title>
+<para> whether we successfully grabbed the keyboard and
+mouse and made the plugin modal.</para>
+</refsect3></refsect2>
+<refsect2 id="meta-plugin-end-modal" role="function">
+<title>meta_plugin_end_modal&#160;()</title>
+<indexterm zone="meta-plugin-end-modal"><primary>meta_plugin_end_modal</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_end_modal (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>,
+                       <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+<para>Ends the modal operation begun with <link linkend="meta-plugin-begin-modal"><function>meta_plugin_begin_modal()</function></link>. This
+ungrabs both the mouse and keyboard even when
+<link linkend="META-MODAL-POINTER-ALREADY-GRABBED:CAPS"><literal>META_MODAL_POINTER_ALREADY_GRABBED</literal></link> or
+<link linkend="META-MODAL-KEYBOARD-ALREADY-GRABBED:CAPS"><literal>META_MODAL_KEYBOARD_ALREADY_GRABBED</literal></link> were provided as options
+when beginnning the modal operation.</para>
+<refsect3 id="meta-plugin-end-modal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>plugin</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaPlugin"><type>MetaPlugin</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>timestamp</para></entry>
+<entry role="parameter_description"><para>the time used for releasing grabs</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-plugin-get-screen" role="function">
+<title>meta_plugin_get_screen&#160;()</title>
+<indexterm zone="meta-plugin-get-screen"><primary>meta_plugin_get_screen</primary></indexterm>
+<programlisting language="C"><link linkend="MetaScreen"><returnvalue>MetaScreen</returnvalue></link>&#160;*
+meta_plugin_get_screen (<parameter><link linkend="MetaPlugin"><type>MetaPlugin</type></link> *plugin</parameter>);</programlisting>
+<para>Gets the <link linkend="MetaScreen"><type>MetaScreen</type></link> corresponding to a plugin. Each plugin instance
+is associated with exactly one screen; if Metacity is managing
+multiple screens, multiple plugin instances will be created.</para>
+<refsect3 id="meta-plugin-get-screen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>plugin</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaPlugin"><type>MetaPlugin</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-plugin-get-screen.returns" role="returns">
+<title>Returns</title>
+<para>the <link linkend="MetaScreen"><type>MetaScreen</type></link> for the plugin. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-plugin-manager-set-plugin-type" role="function">
+<title>meta_plugin_manager_set_plugin_type&#160;()</title>
+<indexterm zone="meta-plugin-manager-set-plugin-type"><primary>meta_plugin_manager_set_plugin_type</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_plugin_manager_set_plugin_type (<parameter><link linkend="GType"><type>GType</type></link> gtype</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="MetaPlugin.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="MetaPlugin-struct" role="struct">
+<title>struct MetaPlugin</title>
+<indexterm zone="MetaPlugin-struct"><primary>MetaPlugin</primary></indexterm>
+<programlisting language="C">struct MetaPlugin;</programlisting>
+</refsect2>
+<refsect2 id="MetaPluginClass" role="struct">
+<title>struct MetaPluginClass</title>
+<indexterm zone="MetaPluginClass"><primary>MetaPluginClass</primary></indexterm>
+<programlisting language="C">struct MetaPluginClass {
+  GObjectClass parent_class;
+
+  void (*start)            (MetaPlugin         *plugin);
+
+  void (*minimize)         (MetaPlugin         *plugin,
+                            MetaWindowActor    *actor);
+
+  void (*maximize)         (MetaPlugin         *plugin,
+                            MetaWindowActor    *actor,
+                            gint                x,
+                            gint                y,
+                            gint                width,
+                            gint                height);
+
+  void (*unmaximize)       (MetaPlugin         *plugin,
+                            MetaWindowActor    *actor,
+                            gint                x,
+                            gint                y,
+                            gint                width,
+                            gint                height);
+
+  void (*tile)             (MetaPlugin         *plugin,
+                            MetaWindowActor    *actor,
+                            gint                x,
+                            gint                y,
+                            gint                width,
+                            gint                height);
+
+  void (*map)              (MetaPlugin         *plugin,
+                            MetaWindowActor    *actor);
+
+  void (*destroy)          (MetaPlugin         *plugin,
+                            MetaWindowActor    *actor);
+
+  void (*switch_workspace) (MetaPlugin         *plugin,
+                            gint                from,
+                            gint                to,
+                            MetaMotionDirection direction);
+
+  void (*show_tile_preview) (MetaPlugin         *plugin,
+                             MetaWindow         *window,
+                             MetaRectangle      *tile_rect,
+                             int                tile_monitor_number,
+                             guint              snap_queued);
+
+  void (*hide_tile_preview) (MetaPlugin         *plugin);
+
+  void (*show_hud_preview) (MetaPlugin          *plugin,
+                            guint               current_proximity_zone,
+                            MetaRectangle       *work_area,
+                            guint               snap_queued);
+
+  void (*hide_hud_preview) (MetaPlugin         *plugin);
+
+  /*
+   * Called if an effects should be killed prematurely; the plugin must
+   * call the completed() callback as if the effect terminated naturally.
+   */
+  void (*kill_window_effects)      (MetaPlugin      *plugin,
+                                    MetaWindowActor *actor);
+
+  /* General XEvent filter. This is fired *before* meta itself handles
+   * an event. Return TRUE to block any further processing.
+   */
+  gboolean (*xevent_filter) (MetaPlugin       *plugin,
+                             XEvent           *event);
+
+  const MetaPluginInfo * (*plugin_info) (MetaPlugin *plugin);
+};
+</programlisting>
+</refsect2>
+<refsect2 id="MetaPluginInfo" role="struct">
+<title>struct MetaPluginInfo</title>
+<indexterm zone="MetaPluginInfo"><primary>MetaPluginInfo</primary></indexterm>
+<programlisting language="C">struct MetaPluginInfo {
+  const gchar *name;
+  const gchar *version;
+  const gchar *author;
+  const gchar *license;
+  const gchar *description;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="MetaPluginVersion" role="struct">
+<title>struct MetaPluginVersion</title>
+<indexterm zone="MetaPluginVersion"><primary>MetaPluginVersion</primary></indexterm>
+<programlisting language="C">struct MetaPluginVersion {
+  /*
+   * Version information; the first three numbers match the Meta version
+   * with which the plugin was compiled (see clutter-plugins/simple.c for sample
+   * code).
+   */
+  guint version_major;
+  guint version_minor;
+  guint version_micro;
+
+  /*
+   * Version of the plugin API; this is unrelated to the matacity version
+   * per se. The API version is checked by the plugin manager and must match
+   * the one used by it (see clutter-plugins/default.c for sample code).
+   */
+  guint version_api;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="MetaModalOptions" role="enum">
+<title>enum MetaModalOptions</title>
+<indexterm zone="MetaModalOptions"><primary>MetaModalOptions</primary></indexterm>
+<para>Options that can be provided when calling <link linkend="meta-plugin-begin-modal"><function>meta_plugin_begin_modal()</function></link>.</para>
+<refsect3 id="MetaModalOptions.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="META-MODAL-POINTER-ALREADY-GRABBED:CAPS">META_MODAL_POINTER_ALREADY_GRABBED</para></entry>
+<entry role="enum_member_description"><para>if set the pointer is already
+grabbed by the plugin and should not be grabbed again.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="META-MODAL-KEYBOARD-ALREADY-GRABBED:CAPS">META_MODAL_KEYBOARD_ALREADY_GRABBED</para></entry>
+<entry role="enum_member_description"><para>if set the keyboard is already
+grabbed by the plugin and should not be grabbed again.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="MetaPlugin.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="MetaPlugin--debug-mode" role="property"><title>The <literal>“debug-mode”</literal> property</title>
+<indexterm zone="MetaPlugin--debug-mode"><primary>MetaPlugin:debug-mode</primary></indexterm>
+<programlisting>  “debug-mode”               <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Debug Mode.</para><para>Owner: MetaPlugin</para>
+<para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="MetaPlugin--screen" role="property"><title>The <literal>“screen”</literal> property</title>
+<indexterm zone="MetaPlugin--screen"><primary>MetaPlugin:screen</primary></indexterm>
+<programlisting>  “screen”                   <link linkend="MetaScreen"><type>MetaScreen</type></link>&#160;*</programlisting>
+<para>MetaScreen.</para><para>Owner: MetaPlugin</para>
+<para>Flags: Read / Write</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

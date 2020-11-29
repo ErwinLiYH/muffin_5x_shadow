@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaBackground">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaBackground.top_of_page">MetaBackground</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaBackground</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaBackground.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-background-new">meta_background_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-background-set-layer">meta_background_set_layer</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-background-set-layer-wrap-mode">meta_background_set_layer_wrap_mode</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-background-set-visible-region">meta_background_set_visible_region</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaBackground.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="ClutterActor">ClutterActor</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaBackground
+</screen>
+</refsect1>
+
+
+<refsect1 id="MetaBackground.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="MetaBackground.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-background-new" role="function">
+<title>meta_background_new&#160;()</title>
+<indexterm zone="meta-background-new"><primary>meta_background_new</primary></indexterm>
+<programlisting language="C"><link linkend="ClutterActor"><returnvalue>ClutterActor</returnvalue></link>&#160;*
+meta_background_new (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-background-set-layer" role="function">
+<title>meta_background_set_layer&#160;()</title>
+<indexterm zone="meta-background-set-layer"><primary>meta_background_set_layer</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_background_set_layer (<parameter><link linkend="MetaBackground"><type>MetaBackground</type></link> *self</parameter>,
+                           <parameter><link linkend="CoglTexture"><type>CoglTexture</type></link> *texture</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-background-set-layer-wrap-mode" role="function">
+<title>meta_background_set_layer_wrap_mode&#160;()</title>
+<indexterm zone="meta-background-set-layer-wrap-mode"><primary>meta_background_set_layer_wrap_mode</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_background_set_layer_wrap_mode (<parameter><link linkend="MetaBackground"><type>MetaBackground</type></link> *self</parameter>,
+                                     <parameter><link linkend="CoglPipelineWrapMode"><type>CoglPipelineWrapMode</type></link> wrap_mode</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-background-set-visible-region" role="function">
+<title>meta_background_set_visible_region&#160;()</title>
+<indexterm zone="meta-background-set-visible-region"><primary>meta_background_set_visible_region</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_background_set_visible_region (<parameter><link linkend="MetaBackground"><type>MetaBackground</type></link> *self</parameter>,
+                                    <parameter><link linkend="cairo-region-t"><type>cairo_region_t</type></link> *visible_region</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

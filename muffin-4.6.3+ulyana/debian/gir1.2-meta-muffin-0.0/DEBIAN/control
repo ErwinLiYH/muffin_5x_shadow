@@ -1,0 +1,17 @@
+Package: gir1.2-meta-muffin-0.0
+Source: muffin
+Version: 4.6.3+ulyana
+Architecture: amd64
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 672
+Depends: gir1.2-atk-1.0, gir1.2-cinnamondesktop-3.0 (>= 3.6), gir1.2-freedesktop (>= 0.9.12), gir1.2-glib-2.0 (>= 0.9.12), gir1.2-gtk-3.0 (>= 3.9.12), gir1.2-json-1.0, gir1.2-pango-1.0 (>= 1.14.0), libmuffin0
+Breaks: gir1.2-muffin-3.0
+Replaces: gir1.2-muffin-3.0
+Section: introspection
+Priority: optional
+Description: GObject introspection data for Muffin
+ Muffin is a window manager performing compositing as well based on
+ GTK+ and Clutter and used in Cinnamon desktop environment.
+ .
+ This package contains the GObject introspection data which may be
+ used to generate dynamic bindings.

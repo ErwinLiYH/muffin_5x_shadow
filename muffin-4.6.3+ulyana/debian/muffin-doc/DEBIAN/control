@@ -1,0 +1,14 @@
+Package: muffin-doc
+Source: muffin
+Version: 4.6.3+ulyana
+Architecture: all
+Maintainer: Linux Mint <root@linuxmint.com>
+Installed-Size: 923
+Depends: devhelp
+Section: doc
+Priority: optional
+Description: Muffin documentation
+ Muffin is a window manager performing compositing as well based on
+ GTK+ and Clutter and used in Cinnamon desktop environment.
+ .
+ This package contains the code documentation for Muffin.

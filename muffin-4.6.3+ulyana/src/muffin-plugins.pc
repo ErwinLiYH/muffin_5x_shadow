@@ -1,0 +1,17 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+plugindir=${prefix}/lib/x86_64-linux-gnu/muffin/plugins
+libgnome_serverdir=${prefix}/libexec
+muffin_major_version=4
+muffin_minor_version=6
+muffin_micro_version=3
+muffin_plugin_api_version=0
+
+Name: muffin-plugins
+Description: Dev parameters for muffin plugins
+Requires: muffin-clutter-0
+Version: 4.6.3
+Libs: @CLUTTER_LIBS@
+Cflags: @CLUTTER_CFLAGS@ -DWITH_CLUTTER -I${includedir}/muffin/muffin-private -DMUFFIN_MAJOR_VERSION=${muffin_major_version} -DMUFFIN_MINOR_VERSION=${muffin_minor_version} -DMUFFIN_MICRO_VERSION=${muffin_micro_version} -DMUFFIN_PLUGIN_API_VERSION=${muffin_plugin_api_version} -DMUFFIN_PLUGIN_DIR=\"${plugindir}\"

@@ -1,0 +1,319 @@
+<SIGNAL>
+<NAME>MetaDisplay::bell</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+MetaWindow *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::gl-video-memory-purged</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::grab-op-begin</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+MetaScreen *arg1
+MetaWindow *arg2
+MetaGrabOp  arg3
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::grab-op-end</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+MetaScreen *arg1
+MetaWindow *arg2
+MetaGrabOp  arg3
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::restart</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::window-created</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+MetaWindow *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::window-demands-attention</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+MetaWindow *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::window-marked-urgent</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+MetaWindow *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::zoom-scroll-in</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaDisplay::zoom-scroll-out</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaDisplay *metadisplay
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::hide-snap-osd</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::in-fullscreen-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::monitors-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::restacked</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::show-snap-osd</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+gint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::show-workspace-osd</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::startup-sequence-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+gpointer  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::toggle-recording</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::window-added</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+MetaWindow *arg1
+gint  arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::window-entered-monitor</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+gint  arg1
+MetaWindow *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::window-left-monitor</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+gint  arg1
+MetaWindow *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::window-monitor-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+MetaWindow *arg1
+gint  arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::window-removed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+MetaWindow *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::window-skip-taskbar-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+MetaWindow *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::window-workspace-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+MetaWindow *arg1
+MetaWorkspace *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::workareas-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::workspace-added</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+gint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::workspace-removed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+gint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaScreen::workspace-switched</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaScreen *metascreen
+gint  arg1
+gint  arg2
+MetaMotionDirection  arg3
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaShapedTexture::size-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaShapedTexture *metashapedtexture
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindowActor::position-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindowActor *metawindowactor
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindowActor::size-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindowActor *metawindowactor
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindow::focus</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindow *metawindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindow::icon-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindow *metawindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindow::position-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindow *metawindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindow::raised</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindow *metawindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindow::size-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindow *metawindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindow::unmanaged</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindow *metawindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWindow::workspace-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWindow *metawindow
+gint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWorkspace::window-added</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWorkspace *metaworkspace
+MetaWindow *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>MetaWorkspace::window-removed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+MetaWorkspace *metaworkspace
+MetaWindow *arg1
+</SIGNAL>
+

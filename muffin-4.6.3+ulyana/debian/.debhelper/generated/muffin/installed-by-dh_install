@@ -1,0 +1,3 @@
+debian/tmp/usr/bin
+debian/tmp/usr/lib/x86_64-linux-gnu/muffin/plugins
+debian/tmp/usr/share/applications

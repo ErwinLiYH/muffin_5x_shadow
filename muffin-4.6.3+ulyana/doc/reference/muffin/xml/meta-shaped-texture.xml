@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="MetaShapedTexture">
+<refmeta>
+<refentrytitle role="top_of_page" id="MetaShapedTexture.top_of_page">MetaShapedTexture</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaShapedTexture</refname>
+<refpurpose>An actor to draw a masked texture.</refpurpose>
+</refnamediv>
+
+<refsect1 id="MetaShapedTexture.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-set-create-mipmaps">meta_shaped_texture_set_create_mipmaps</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-update-area">meta_shaped_texture_update_area</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="CoglTexture"><returnvalue>CoglTexture</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-get-texture">meta_shaped_texture_get_texture</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-set-overlay-path">meta_shaped_texture_set_overlay_path</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-set-clip-region">meta_shaped_texture_set_clip_region</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-set-opaque-region">meta_shaped_texture_set_opaque_region</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="cairo-surface-t"><returnvalue>cairo_surface_t</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-get-image">meta_shaped_texture_get_image</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-ensure-mask">meta_shaped_texture_ensure_mask</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-shaped-texture-dirty-mask">meta_shaped_texture_dirty_mask</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaShapedTexture.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signal_proto_type" colwidth="150px"/>
+<colspec colname="signal_proto_name" colwidth="300px"/>
+<colspec colname="signal_proto_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="MetaShapedTexture-size-changed">size-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="MetaShapedTexture.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="ClutterActor">ClutterActor</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> MetaShapedTexture
+</screen>
+</refsect1>
+
+
+<refsect1 id="MetaShapedTexture.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="MetaShapedTexture.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-shaped-texture-set-create-mipmaps" role="function">
+<title>meta_shaped_texture_set_create_mipmaps&#160;()</title>
+<indexterm zone="meta-shaped-texture-set-create-mipmaps"><primary>meta_shaped_texture_set_create_mipmaps</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shaped_texture_set_create_mipmaps
+                               (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>,
+                                <parameter><link linkend="gboolean"><type>gboolean</type></link> create_mipmaps</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-shaped-texture-update-area" role="function">
+<title>meta_shaped_texture_update_area&#160;()</title>
+<indexterm zone="meta-shaped-texture-update-area"><primary>meta_shaped_texture_update_area</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_shaped_texture_update_area (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>,
+                                 <parameter><link linkend="int"><type>int</type></link> x</parameter>,
+                                 <parameter><link linkend="int"><type>int</type></link> y</parameter>,
+                                 <parameter><link linkend="int"><type>int</type></link> width</parameter>,
+                                 <parameter><link linkend="int"><type>int</type></link> height</parameter>,
+                                 <parameter><link linkend="cairo-region-t"><type>cairo_region_t</type></link> *unobscured_region</parameter>);</programlisting>
+<para>Repairs the damaged area indicated by <parameter>x</parameter>
+, <parameter>y</parameter>
+, <parameter>width</parameter>
+ and <parameter>height</parameter>
+
+and queues a redraw for the intersection <parameter>visibible_region</parameter>
+ and
+the damage area. If <parameter>visibible_region</parameter>
+ is <link linkend="NULL:CAPS"><literal>NULL</literal></link> a redraw will always
+get queued.</para>
+<refsect3 id="meta-shaped-texture-update-area.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>stex</para></entry>
+<entry role="parameter_description"><para><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>x</para></entry>
+<entry role="parameter_description"><para>the x coordinate of the damaged area</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>y</para></entry>
+<entry role="parameter_description"><para>the y coordinate of the damaged area</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>width</para></entry>
+<entry role="parameter_description"><para>the width of the damaged area</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>height</para></entry>
+<entry role="parameter_description"><para>the height of the damaged area</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>unobscured_region</para></entry>
+<entry role="parameter_description"><para>The unobscured region of the window or <link linkend="NULL:CAPS"><literal>NULL</literal></link> if
+there is no valid one (like when the actor is transformed or
+has a mapped clone)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-shaped-texture-update-area.returns" role="returns">
+<title>Returns</title>
+<para> Whether a redraw have been queued or not</para>
+</refsect3></refsect2>
+<refsect2 id="meta-shaped-texture-get-texture" role="function">
+<title>meta_shaped_texture_get_texture&#160;()</title>
+<indexterm zone="meta-shaped-texture-get-texture"><primary>meta_shaped_texture_get_texture</primary></indexterm>
+<programlisting language="C"><link linkend="CoglTexture"><returnvalue>CoglTexture</returnvalue></link>&#160;*
+meta_shaped_texture_get_texture (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>);</programlisting>
+<refsect3 id="meta-shaped-texture-get-texture.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>stex</para></entry>
+<entry role="parameter_description"><para>The <link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-shaped-texture-get-texture.returns" role="returns">
+<title>Returns</title>
+<para>the unshaped texture. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-shaped-texture-set-overlay-path" role="function">
+<title>meta_shaped_texture_set_overlay_path&#160;()</title>
+<indexterm zone="meta-shaped-texture-set-overlay-path"><primary>meta_shaped_texture_set_overlay_path</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shaped_texture_set_overlay_path (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>,
+                                      <parameter><link linkend="cairo-region-t"><type>cairo_region_t</type></link> *overlay_region</parameter>,
+                                      <parameter><link linkend="cairo-path-t"><type>cairo_path_t</type></link> *overlay_path</parameter>);</programlisting>
+<refsect3 id="meta-shaped-texture-set-overlay-path.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>stex</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>overlay_region</para></entry>
+<entry role="parameter_description"><para>A region containing the parts of the mask to overlay.
+All rectangles in this region are wiped clear to full transparency,
+and the overlay path is clipped to this region.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>overlay_path</para></entry>
+<entry role="parameter_description"><para>This path will be painted onto the mask
+texture with a fully opaque source. Due to the lack of refcounting
+in <link linkend="cairo-path-t"><type>cairo_path_t</type></link>, ownership of the path is assumed. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-shaped-texture-set-clip-region" role="function">
+<title>meta_shaped_texture_set_clip_region&#160;()</title>
+<indexterm zone="meta-shaped-texture-set-clip-region"><primary>meta_shaped_texture_set_clip_region</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shaped_texture_set_clip_region (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>,
+                                     <parameter><link linkend="cairo-region-t"><type>cairo_region_t</type></link> *clip_region</parameter>);</programlisting>
+<para>Provides a hint to the texture about what areas of the texture
+are not completely obscured and thus need to be painted. This
+is an optimization and is not supposed to have any effect on
+the output.</para>
+<para>Typically a parent container will set the clip region before
+painting its children, and then unset it afterwards.</para>
+<refsect3 id="meta-shaped-texture-set-clip-region.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>stex</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>clip_region</para></entry>
+<entry role="parameter_description"><para>the region of the texture that is visible and
+should be painted.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-shaped-texture-set-opaque-region" role="function">
+<title>meta_shaped_texture_set_opaque_region&#160;()</title>
+<indexterm zone="meta-shaped-texture-set-opaque-region"><primary>meta_shaped_texture_set_opaque_region</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shaped_texture_set_opaque_region (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>,
+                                       <parameter><link linkend="cairo-region-t"><type>cairo_region_t</type></link> *opaque_region</parameter>);</programlisting>
+<para>As most windows have a large portion that does not require blending,
+we can easily turn off blending if we know the areas that do not
+require blending. This sets the region where we will not blend for
+optimization purposes.</para>
+<refsect3 id="meta-shaped-texture-set-opaque-region.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>stex</para></entry>
+<entry role="parameter_description"><para>a <link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>opaque_region</para></entry>
+<entry role="parameter_description"><para>the region of the texture that
+can have blending turned off. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="meta-shaped-texture-get-image" role="function">
+<title>meta_shaped_texture_get_image&#160;()</title>
+<indexterm zone="meta-shaped-texture-get-image"><primary>meta_shaped_texture_get_image</primary></indexterm>
+<programlisting language="C"><link linkend="cairo-surface-t"><returnvalue>cairo_surface_t</returnvalue></link>&#160;*
+meta_shaped_texture_get_image (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>,
+                               <parameter><link linkend="cairo-rectangle-int-t"><type>cairo_rectangle_int_t</type></link> *clip</parameter>);</programlisting>
+<para>Flattens the two layers of the shaped texture into one ARGB32
+image by alpha blending the two images, and returns the flattened
+image.</para>
+<refsect3 id="meta-shaped-texture-get-image.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>stex</para></entry>
+<entry role="parameter_description"><para>A <link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>clip</para></entry>
+<entry role="parameter_description"><para>A clipping rectangle, to help prevent extra processing.
+In the case that the clipping rectangle is partially or fully
+outside the bounds of the texture, the rectangle will be clipped.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="meta-shaped-texture-get-image.returns" role="returns">
+<title>Returns</title>
+<para>a new cairo surface to be freed with
+<link linkend="cairo-surface-destroy"><function>cairo_surface_destroy()</function></link>. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="meta-shaped-texture-ensure-mask" role="function">
+<title>meta_shaped_texture_ensure_mask&#160;()</title>
+<indexterm zone="meta-shaped-texture-ensure-mask"><primary>meta_shaped_texture_ensure_mask</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shaped_texture_ensure_mask (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>,
+                                 <parameter><link linkend="cairo-region-t"><type>cairo_region_t</type></link> *shape_region</parameter>,
+                                 <parameter><link linkend="gboolean"><type>gboolean</type></link> has_frame</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-shaped-texture-dirty-mask" role="function">
+<title>meta_shaped_texture_dirty_mask&#160;()</title>
+<indexterm zone="meta-shaped-texture-dirty-mask"><primary>meta_shaped_texture_dirty_mask</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_shaped_texture_dirty_mask (<parameter><link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *stex</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="MetaShapedTexture.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="MetaShapedTexture-size-changed" role="signal"><title>The <literal>“size-changed”</literal> signal</title>
+<indexterm zone="MetaShapedTexture-size-changed"><primary>MetaShapedTexture::size-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="MetaShapedTexture"><type>MetaShapedTexture</type></link> *metashapedtexture,
+               <link linkend="gpointer"><type>gpointer</type></link>           user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

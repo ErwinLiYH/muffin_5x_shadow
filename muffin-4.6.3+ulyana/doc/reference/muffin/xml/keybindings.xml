@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version "4.6.3">
+]>
+<refentry id="muffin-MetaKeybinding">
+<refmeta>
+<refentrytitle role="top_of_page" id="muffin-MetaKeybinding.top_of_page">MetaKeybinding</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>MUFFIN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>MetaKeybinding</refname>
+<refpurpose>Key bindings</refpurpose>
+</refnamediv>
+
+<refsect1 id="muffin-MetaKeybinding.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="meta-key-binding-get-name">meta_key_binding_get_name</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="MetaVirtualModifier"><returnvalue>MetaVirtualModifier</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-key-binding-get-modifiers">meta_key_binding_get_modifiers</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-key-binding-get-mask">meta_key_binding_get_mask</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-keybindings-set-custom-handler">meta_keybindings_set_custom_handler</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-screen-ungrab-all-keys">meta_screen_ungrab_all_keys</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="meta-screen-grab-all-keys">meta_screen_grab_all_keys</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="muffin-MetaKeybinding.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="META-TYPE-KEY-BINDING:CAPS">META_TYPE_KEY_BINDING</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="muffin-MetaKeybinding.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="muffin-MetaKeybinding.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="meta-key-binding-get-name" role="function">
+<title>meta_key_binding_get_name&#160;()</title>
+<indexterm zone="meta-key-binding-get-name"><primary>meta_key_binding_get_name</primary></indexterm>
+<programlisting language="C">const <link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+meta_key_binding_get_name (<parameter><link linkend="MetaKeyBinding"><type>MetaKeyBinding</type></link> *binding</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-key-binding-get-modifiers" role="function">
+<title>meta_key_binding_get_modifiers&#160;()</title>
+<indexterm zone="meta-key-binding-get-modifiers"><primary>meta_key_binding_get_modifiers</primary></indexterm>
+<programlisting language="C"><link linkend="MetaVirtualModifier"><returnvalue>MetaVirtualModifier</returnvalue></link>
+meta_key_binding_get_modifiers (<parameter><link linkend="MetaKeyBinding"><type>MetaKeyBinding</type></link> *binding</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-key-binding-get-mask" role="function">
+<title>meta_key_binding_get_mask&#160;()</title>
+<indexterm zone="meta-key-binding-get-mask"><primary>meta_key_binding_get_mask</primary></indexterm>
+<programlisting language="C"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+meta_key_binding_get_mask (<parameter><link linkend="MetaKeyBinding"><type>MetaKeyBinding</type></link> *binding</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-keybindings-set-custom-handler" role="function">
+<title>meta_keybindings_set_custom_handler&#160;()</title>
+<indexterm zone="meta-keybindings-set-custom-handler"><primary>meta_keybindings_set_custom_handler</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_keybindings_set_custom_handler (<parameter>const <link linkend="gchar"><type>gchar</type></link> *name</parameter>,
+                                     <parameter><link linkend="MetaKeyHandlerFunc"><type>MetaKeyHandlerFunc</type></link> handler</parameter>,
+                                     <parameter><link linkend="gpointer"><type>gpointer</type></link> user_data</parameter>,
+                                     <parameter><link linkend="GDestroyNotify"><type>GDestroyNotify</type></link> free_data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-screen-ungrab-all-keys" role="function">
+<title>meta_screen_ungrab_all_keys&#160;()</title>
+<indexterm zone="meta-screen-ungrab-all-keys"><primary>meta_screen_ungrab_all_keys</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+meta_screen_ungrab_all_keys (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                             <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="meta-screen-grab-all-keys" role="function">
+<title>meta_screen_grab_all_keys&#160;()</title>
+<indexterm zone="meta-screen-grab-all-keys"><primary>meta_screen_grab_all_keys</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+meta_screen_grab_all_keys (<parameter><link linkend="MetaScreen"><type>MetaScreen</type></link> *screen</parameter>,
+                           <parameter><link linkend="guint32"><type>guint32</type></link> timestamp</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="muffin-MetaKeybinding.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="META-TYPE-KEY-BINDING:CAPS" role="macro">
+<title>META_TYPE_KEY_BINDING</title>
+<indexterm zone="META-TYPE-KEY-BINDING:CAPS"><primary>META_TYPE_KEY_BINDING</primary></indexterm>
+<programlisting language="C">#define META_TYPE_KEY_BINDING               (meta_key_binding_get_type ())
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

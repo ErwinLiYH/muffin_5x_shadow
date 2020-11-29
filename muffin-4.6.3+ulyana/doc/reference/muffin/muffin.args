@@ -1,0 +1,360 @@
+<ARG>
+<NAME>MetaBackgroundActor::dim-factor</NAME>
+<TYPE>gfloat</TYPE>
+<RANGE>[0,1]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Dim factor</NICK>
+<BLURB>Factor to dim the background by.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaDisplay::focus-window</NAME>
+<TYPE>MetaWindow*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Focus window</NICK>
+<BLURB>Currently focused window.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaPlugin::debug-mode</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Debug Mode</NICK>
+<BLURB>Debug Mode.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaPlugin::screen</NAME>
+<TYPE>MetaScreen*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>MetaScreen</NICK>
+<BLURB>MetaScreen.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaScreen::keyboard-grabbed</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Keyboard grabbed</NICK>
+<BLURB>Whether the keyboard is grabbed.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaScreen::n-workspaces</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>r</FLAGS>
+<NICK>N Workspaces</NICK>
+<BLURB>Number of workspaces.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindowActor::meta-screen</NAME>
+<TYPE>gpointer</TYPE>
+<RANGE></RANGE>
+<FLAGS>rwx</FLAGS>
+<NICK>MetaScreen</NICK>
+<BLURB>MetaScreen.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindowActor::meta-window</NAME>
+<TYPE>MetaWindow*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rwx</FLAGS>
+<NICK>MetaWindow</NICK>
+<BLURB>The displayed MetaWindow.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindowActor::no-shadow</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>No shadow</NICK>
+<BLURB>Do not add shaddow to this window.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindowActor::shadow-class</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Name of the shadow class for this window.</NICK>
+<BLURB>NULL means to use the default shadow class for this window type.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindowActor::x-window</NAME>
+<TYPE>gulong</TYPE>
+<RANGE></RANGE>
+<FLAGS>rwx</FLAGS>
+<NICK>Window</NICK>
+<BLURB>Window.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::above</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Above</NICK>
+<BLURB>Whether the window is shown as always-on-top.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::appears-focused</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Appears focused</NICK>
+<BLURB>Whether the window is drawn as being focused.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::decorated</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Decorated</NICK>
+<BLURB>Whether window is decorated.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::demands-attention</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Demands Attention</NICK>
+<BLURB>Whether the window has _NET_WM_STATE_DEMANDS_ATTENTION set.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::fullscreen</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Fullscreen</NICK>
+<BLURB>Whether window is fullscreened.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::gtk-app-menu-object-path</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>_GTK_APP_MENU_OBJECT_PATH</NICK>
+<BLURB>Contents of the _GTK_APP_MENU_OBJECT_PATH property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::gtk-application-id</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>_GTK_APPLICATION_ID</NICK>
+<BLURB>Contents of the _GTK_APPLICATION_ID property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::gtk-application-object-path</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>_GTK_APPLICATION_OBJECT_PATH</NICK>
+<BLURB>Contents of the _GTK_APPLICATION_OBJECT_PATH property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::gtk-menubar-object-path</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>_GTK_MENUBAR_OBJECT_PATH</NICK>
+<BLURB>Contents of the _GTK_MENUBAR_OBJECT_PATH property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::gtk-unique-bus-name</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>_GTK_UNIQUE_BUS_NAME</NICK>
+<BLURB>Contents of the _GTK_UNIQUE_BUS_NAME property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::gtk-window-object-path</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>_GTK_WINDOW_OBJECT_PATH</NICK>
+<BLURB>Contents of the _GTK_WINDOW_OBJECT_PATH property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::maximized-horizontally</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Maximized horizontally</NICK>
+<BLURB>Whether window is maximized horizontally.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::maximized-vertically</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Maximizing vertically</NICK>
+<BLURB>Whether window is maximized vertically.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::minimized</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Minimizing</NICK>
+<BLURB>Whether window is minimized.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::muffin-hints</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>_MUFFIN_HINTS</NICK>
+<BLURB>Contents of the _MUFFIN_HINTS property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::progress</NAME>
+<TYPE>guint</TYPE>
+<RANGE><= 100</RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Progress</NICK>
+<BLURB>The progress of some long-running operation.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::progress-pulse</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Pulsing progress</NICK>
+<BLURB>Show indeterminate or ongoing progress of an operation.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::resizeable</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Resizeable</NICK>
+<BLURB>Whether the window can be resized.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::tile-type</NAME>
+<TYPE>gint</TYPE>
+<RANGE>[0,2]</RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Window is tiled or snapped</NICK>
+<BLURB>Whether window is tiled or snapped.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::title</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Title</NICK>
+<BLURB>The title of the window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::urgent</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Urgent</NICK>
+<BLURB>Whether the urgent flag of WM_HINTS is set.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::user-time</NAME>
+<TYPE>guint</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>User time</NICK>
+<BLURB>Timestamp of last user interaction.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::window-type</NAME>
+<TYPE>MetaWindowType</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Window Type</NICK>
+<BLURB>The type of the window.</BLURB>
+<DEFAULT>META_WINDOW_NORMAL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWindow::wm-class</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>WM_CLASS</NICK>
+<BLURB>Contents of the WM_CLASS property of this window.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>MetaWorkspace::n-windows</NAME>
+<TYPE>guint</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>N Windows</NICK>
+<BLURB>Number of windows.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+

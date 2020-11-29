@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Tue, 11 Aug 2020 12:36:00 +0100
+Source: muffin
+Binary: gir1.2-meta-muffin-0.0 libmuffin0 muffin muffin-common muffin-dbg muffin-doc
+Architecture: source amd64 all
+Version: 4.6.3+ulyana
+Distribution: ulyana
+Urgency: medium
+Maintainer: Linux Mint <root@linuxmint.com>
+Changed-By: Clement Lefebvre <root@linuxmint.com>
+Description:
+ gir1.2-meta-muffin-0.0 - GObject introspection data for Muffin
+ libmuffin0 - window and compositing manager (shared library)
+ muffin     - window and compositing manager
+ muffin-common - window and compositing manager (data files)
+ muffin-dbg - window and compositing manager (debugging symbols)
+ muffin-doc - Muffin documentation
+Changes:
+ muffin (4.6.3+ulyana) ulyana; urgency=medium
+ .
+   [ Michael Webster ]
+   * screen.c: Check for MetaMonitorInfo being non-null before attempting to access it.
+Checksums-Sha1:
+ 9ff312f73a46e14f391369e292e92f4476ec0f49 1470 muffin_4.6.3+ulyana.dsc
+ 3ccdbd00ae1a6b24daee3e107e4964575f920b6f 3113984 muffin_4.6.3+ulyana.tar.xz
+ 116feb783bdd18e573a50258efb9eb5bddbed3ba 150932 gir1.2-meta-muffin-0.0_4.6.3+ulyana_amd64.deb
+ adc21fd2f9b3e5d832b0a43ecccd15a0c82dd181 1569976 libmuffin0_4.6.3+ulyana_amd64.deb
+ 192294009c4aaa95645b1caa1a061b062dc0879a 594216 muffin-common_4.6.3+ulyana_all.deb
+ e61baf08d80a64f9c3789bfb7c149eb8e9a99d51 6601596 muffin-dbg_4.6.3+ulyana_amd64.deb
+ 0db30cbc8242d558b467e6f24aeeec17bedad281 81944 muffin-doc_4.6.3+ulyana_all.deb
+ 96d07b0fd43ba2d899228c93caa947e000186c45 23791 muffin_4.6.3+ulyana_amd64.buildinfo
+ 83707b71062e6499b0e447c7480139df52452749 40936 muffin_4.6.3+ulyana_amd64.deb
+Checksums-Sha256:
+ 1cfe177b8fba11967304cf8463ce6019dc4cfffb62d0bdc61192ba696e48e959 1470 muffin_4.6.3+ulyana.dsc
+ 80c6c64fb37d87d9468e2a1b0e105d33e9965416cee4d3e0b53980d836581b84 3113984 muffin_4.6.3+ulyana.tar.xz
+ 2609c889e9d4922ab1ec297a78cfad24bcaae31184405435a913d7c48b291823 150932 gir1.2-meta-muffin-0.0_4.6.3+ulyana_amd64.deb
+ 84eed020b043e3479bcf501397fca2539a4193a7bc81ba107af67bd2f6f64818 1569976 libmuffin0_4.6.3+ulyana_amd64.deb
+ a52e26ae3015ff08aa7126bec187fb43c567f0de794c92d94f7efebfc45051b1 594216 muffin-common_4.6.3+ulyana_all.deb
+ 8079a6df5114e2d1cf205bdb81ba5c56b177ca43b450cbba3fe9b65025b6d4a4 6601596 muffin-dbg_4.6.3+ulyana_amd64.deb
+ 567b4d8ec08f865e436d5074db6ff4174ea28a4d47938cad4bc3c18e54c5f2fd 81944 muffin-doc_4.6.3+ulyana_all.deb
+ 25144f247e936d91f19020fd57b82b8215376aa6cf8bb063fcda8ec8ea83f2c5 23791 muffin_4.6.3+ulyana_amd64.buildinfo
+ a8be567a9d2dbb6357e5add0847f0bd92000c949f8d46c939a484eab2652a7a9 40936 muffin_4.6.3+ulyana_amd64.deb
+Files:
+ ea08575d451fa307848eb5f9afb5e9c3 1470 x11 optional muffin_4.6.3+ulyana.dsc
+ 78e89341dc4dbd40636a9fc746b3fb34 3113984 x11 optional muffin_4.6.3+ulyana.tar.xz
+ 2da0346aef6ac31d97ba155db2855637 150932 introspection optional gir1.2-meta-muffin-0.0_4.6.3+ulyana_amd64.deb
+ cfcbe45ddb2f6cc32a8042d11259c8df 1569976 libs optional libmuffin0_4.6.3+ulyana_amd64.deb
+ bbbceef80432caf43bd2999b54fa2352 594216 misc optional muffin-common_4.6.3+ulyana_all.deb
+ d5a5020b14da335fe13c3a0a547114d8 6601596 debug extra muffin-dbg_4.6.3+ulyana_amd64.deb
+ 6cd1bc10845a61d483b152950001a08e 81944 doc optional muffin-doc_4.6.3+ulyana_all.deb
+ d64535837e25be4561b3eeb09bb78196 23791 x11 optional muffin_4.6.3+ulyana_amd64.buildinfo
+ 277d68ea3ab4c96754c51b222f71397c 40936 x11 optional muffin_4.6.3+ulyana_amd64.deb
